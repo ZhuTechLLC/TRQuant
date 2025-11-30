@@ -2,12 +2,16 @@
 
 ## 概述
 
-根据《Alpha因子模块集成方案设计》，实现了完整的因子工程模块，包括：
+根据《Alpha因子模块集成方案设计》和《补充因子构建模块完善建议》，实现了完整的因子工程模块，包括：
 
-- **因子计算**：提供价值、成长、质量、动量、资金流五大类因子
+- **因子计算**：提供价值、成长、质量、动量、资金流、规模、波动率、流动性八大类因子
 - **因子验证**：IC/IR计算、分组回测、因子有效性检验
+- **因子中性化**：行业中性化、市值中性化
+- **因子相关性分析**：冗余因子检测、因子筛选建议
+- **换手率分析**：交易成本估算、可交易性评估
 - **因子存储**：MongoDB + 文件存储双模式
 - **因子组合**：等权、IC加权、自定义权重组合
+- **自动化流水线**：定期计算、存储、监控
 - **候选池集成**：与主线选股无缝对接
 
 ## 目录结构
@@ -19,12 +23,18 @@ core/factors/
 ├── factor_manager.py        # 因子管理器
 ├── factor_evaluator.py      # 因子验证评估
 ├── factor_storage.py        # MongoDB/文件存储
+├── factor_neutralizer.py    # 因子中性化（新增）
+├── factor_pipeline.py       # 自动化流水线（新增）
 ├── factor_pool_integration.py  # 候选池集成
+├── extended_factors.py      # 扩展因子（新增）
 ├── value_factors.py         # 价值因子
 ├── growth_factors.py        # 成长因子
 ├── quality_factors.py       # 质量因子
 ├── momentum_factors.py      # 动量因子
 └── flow_factors.py          # 资金流因子
+
+tests/
+└── test_factors_real.py     # 因子真实数据测试（新增）
 ```
 
 ## 因子分类
@@ -70,6 +80,28 @@ core/factors/
 | MainForceFlow | 主力资金流入 | 正向 |
 | MarginBalance | 融资融券余额 | 正向 |
 | CompositeFlow | 综合资金流因子 | 正向 |
+
+### 6. 规模因子 (Size) - 新增
+| 因子名 | 描述 | 方向 |
+|--------|------|------|
+| Size | 规模因子（-log市值） | 负向 |
+| MarketCap | 市值因子（log市值） | 无 |
+| CompositeSize | 综合规模因子 | 负向 |
+
+### 7. 波动率因子 (Volatility) - 新增
+| 因子名 | 描述 | 方向 |
+|--------|------|------|
+| Volatility | 波动率（年化） | 负向 |
+| Beta | 市场Beta | 负向 |
+| CompositeVolatility | 综合波动率因子 | 负向 |
+
+### 8. 流动性因子 (Liquidity) - 新增
+| 因子名 | 描述 | 方向 |
+|--------|------|------|
+| Turnover | 换手率 | 负向 |
+| Amount | 成交额（log） | 无 |
+| Illiquidity | 非流动性（Amihud） | 负向 |
+| CompositeLiquidity | 综合流动性因子 | 无 |
 
 ## 使用示例
 
@@ -316,8 +348,107 @@ class NewFactor(BaseFactor):
 2. 或在具体因子中实现数据获取逻辑
 3. 支持JQData、AKShare等多数据源
 
+## 因子中性化
+
+根据建议文档，实现了因子中性化处理：
+
+```python
+from core.factors import FactorNeutralizer
+
+neutralizer = FactorNeutralizer(jq_client=jq_client)
+
+# 行业+市值中性化
+neutralized = neutralizer.neutralize(
+    factor_values, stocks, date,
+    neutralize_industry=True,
+    neutralize_size=True
+)
+```
+
+## 因子相关性分析
+
+```python
+from core.factors import FactorCorrelationAnalyzer
+
+analyzer = FactorCorrelationAnalyzer(correlation_threshold=0.7)
+
+# 计算相关性矩阵
+corr_matrix = analyzer.calculate_correlation_matrix(factor_dict)
+
+# 检测冗余因子
+redundant = analyzer.detect_redundant_factors(factor_dict)
+
+# 因子筛选建议
+selected = analyzer.suggest_factor_selection(factor_dict, ic_values)
+```
+
+## 换手率与交易成本
+
+```python
+from core.factors import TurnoverAnalyzer
+
+analyzer = TurnoverAnalyzer(
+    commission_rate=0.001,
+    slippage_rate=0.001,
+    stamp_tax_rate=0.001
+)
+
+# 评估可交易性
+result = analyzer.evaluate_factor_tradability(
+    factor_annual_return=0.15,
+    avg_turnover=0.5,
+    periods_per_year=12
+)
+print(f"净收益: {result['net_return']:.2%}")
+```
+
+## 自动化流水线
+
+```python
+from core.factors import FactorPipeline
+
+# 创建流水线
+pipeline = FactorPipeline(
+    jq_client=jq_client,
+    stock_pool='hs300',
+    neutralize=True
+)
+
+# 运行每日计算
+stats = pipeline.run_daily(date='2024-01-15')
+
+# 运行月度评估
+evaluation = pipeline.run_monthly_evaluation()
+```
+
+命令行运行：
+```bash
+cd /home/taotao/dev/QuantTest/TRQuant
+source venv/bin/activate
+python -m core.factors.factor_pipeline --pool hs300
+```
+
+## 测试脚本
+
+运行因子模块综合测试：
+```bash
+cd /home/taotao/dev/QuantTest/TRQuant
+source venv/bin/activate
+python tests/test_factors_real.py
+```
+
+测试内容：
+1. JQData连接测试
+2. 因子计算正确性
+3. 多因子组合与选股
+4. 因子评估（IC计算）
+5. 因子中性化
+6. 扩展因子测试
+7. PTrade策略生成
+
 ## 版本历史
 
+- v2.1.0: 添加扩展因子、中性化、流水线等模块（补充建议）
 - v2.0.0: 添加因子验证、存储和候选池集成模块
 - v1.0.0: 初始版本，包含基础因子计算功能
 
