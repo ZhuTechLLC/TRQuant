@@ -72,7 +72,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -223,7 +223,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -374,7 +374,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -525,7 +525,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -676,7 +676,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -827,7 +827,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -978,7 +978,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -1129,7 +1129,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -1280,7 +1280,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
@@ -1431,7 +1431,7 @@ def main():
         
         # 设置应用信息
         app.setApplicationName("韬睿量化专业版")
-        app.setApplicationVersion("2.0.0")
+        app.setApplicationVersion(get_app_version())
         app.setOrganizationName("TaoRui Technology")
         
         # 设置默认字体
