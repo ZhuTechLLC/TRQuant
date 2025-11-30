@@ -566,6 +566,7 @@ class FactorBuilderPanel(QWidget):
         self.tab_widget.addTab(self._create_classic_factors_tab(), "🏆 经典因子库")
         self.tab_widget.addTab(self._create_quant_companies_tab(), "🏢 量化公司")
         self.tab_widget.addTab(self._create_examples_tab(), "💡 应用案例")
+        self.tab_widget.addTab(self._create_factor_filter_tab(), "🔍 因子筛选")
         self.tab_widget.addTab(self._create_factor_calc_tab(), "🔧 因子计算")
         # 策略生成功能已整合到"策略开发"模块
         
@@ -3279,6 +3280,67 @@ class FactorBuilderPanel(QWidget):
         layout.addWidget(code_btn)
         
         return card
+    
+    def _create_factor_filter_tab(self) -> QWidget:
+        """创建因子筛选标签页 - 从候选池筛选股票"""
+        try:
+            from gui.widgets.factor_filter_tab import FactorFilterTab
+            tab = FactorFilterTab(jq_client=self.jq_client)
+            
+            # 如果JQData已连接，设置客户端
+            if self.jq_client:
+                tab.set_jq_client(self.jq_client)
+            
+            logger.info("✅ 因子筛选标签页加载成功")
+            return tab
+            
+        except Exception as e:
+            logger.error(f"因子筛选标签页加载失败: {e}")
+            import traceback
+            traceback.print_exc()
+            
+            # 返回错误提示页面
+            widget = QWidget()
+            layout = QVBoxLayout(widget)
+            layout.setContentsMargins(24, 20, 24, 20)
+            layout.setSpacing(16)
+            
+            error_frame = QFrame()
+            error_frame.setStyleSheet(f"""
+                QFrame {{
+                    background-color: {Colors.BG_PRIMARY};
+                    border: 1px solid {Colors.ERROR}44;
+                    border-radius: 12px;
+                }}
+            """)
+            error_layout = QVBoxLayout(error_frame)
+            error_layout.setContentsMargins(20, 20, 20, 20)
+            
+            title = QLabel("⚠️ 因子筛选模块加载失败")
+            title.setStyleSheet(f"font-size: 18px; font-weight: bold; color: {Colors.ERROR};")
+            error_layout.addWidget(title)
+            
+            error_label = QLabel(f"错误信息: {e}")
+            error_label.setStyleSheet(f"color: {Colors.TEXT_SECONDARY};")
+            error_label.setWordWrap(True)
+            error_layout.addWidget(error_label)
+            
+            hint = QLabel(
+                "可能的原因：\n"
+                "1. 缺少依赖模块 (pymongo, jqdatasdk)\n"
+                "2. MongoDB未启动\n"
+                "3. JQData未配置\n\n"
+                "解决方法：\n"
+                "1. 确保已安装: pip install pymongo jqdatasdk\n"
+                "2. 启动MongoDB服务\n"
+                "3. 配置JQData账户"
+            )
+            hint.setStyleSheet(f"color: {Colors.TEXT_MUTED}; font-size: 12px;")
+            error_layout.addWidget(hint)
+            
+            layout.addWidget(error_frame)
+            layout.addStretch()
+            return widget
     
     def _create_factor_calc_tab(self) -> QWidget:
         """创建因子计算选项卡"""
