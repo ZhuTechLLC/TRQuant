@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trquant.local/schema/investment-case-v1.json",
+  "title": "TRQuant Investment Case",
+  "type": "object",
+  "required": ["schema_version", "case_id", "market", "ticker", "company", "status", "as_of", "dominant_variable", "value_driver_chain", "decision_state", "evidence_summary"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "case_id": {"type": "string"},
+    "market": {"type": "string"},
+    "ticker": {"type": "string"},
+    "company": {"type": "string"},
+    "status": {"enum": ["draft", "evidence_verified", "research_complete", "decision_grade", "postmortem_complete"]},
+    "as_of": {"type": "string", "format": "date"},
+    "golden_case": {"type": "boolean"},
+    "archetypes": {"type": "array", "items": {"type": "string"}},
+    "dominant_variable": {"type": "string"},
+    "value_driver_chain": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "lifecycle": {"type": "array", "items": {"type": "object", "required": ["date", "state"], "properties": {"date": {"type": "string", "format": "date"}, "state": {"type": "string"}, "note": {"type": "string"}}}},
+    "decision_state": {
+      "type": "object",
+      "required": ["business_thesis", "stock_attractiveness", "trade_state"],
+      "properties": {
+        "business_thesis": {"type": "string"},
+        "stock_attractiveness": {"type": "string"},
+        "trade_state": {"type": "string"},
+        "action": {"type": "string"},
+        "kill_criteria": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "historical_checkpoints": {"type": "array", "items": {"type": "object"}},
+    "evidence_summary": {
+      "type": "object",
+      "required": ["primary_sources", "inference_count", "unknowns"],
+      "properties": {
+        "primary_sources": {"type": "integer", "minimum": 0},
+        "inference_count": {"type": "integer", "minimum": 0},
+        "unknowns": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "lessons": {"type": "array", "items": {"type": "object", "required": ["status", "principle"], "properties": {"status": {"enum": ["candidate", "supported", "promoted", "rejected"]}, "principle": {"type": "string"}, "scope": {"type": "string"}}}}
+  },
+  "additionalProperties": true
+}
