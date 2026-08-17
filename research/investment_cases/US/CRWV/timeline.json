@@ -1,0 +1,10 @@
+{
+  "case_id": "US-CRWV-2025-2026",
+  "events": [
+    {"date":"2025-03-28","event":"IPO / public listing","research_state":"discovered","lifecycle":"ipo_discovery","note":"Public-market vehicle begins; financing and concentration risks are material from inception."},
+    {"date":"2025-05-14","event":"Q1 2025 earnings","research_state":"thesis_ready","lifecycle":"confirmation","note":"Revenue +420% YoY and $25.9B backlog validate demand; operating loss and high interest burden remain visible."},
+    {"date":"2025-06-16","event":"Price near $158.50","research_state":"trigger_ready","lifecycle":"momentum_valuation_expansion","note":"Business evidence strong, but valuation reconstruction implies roughly 18.9x forward EV/Sales and 115.9x EV/adjusted operating income under the stated convention."},
+    {"date":"2026-08-11","event":"Q2 2026 earnings","research_state":"active_case","lifecycle":"reunderwrite","note":"Revenue $2.575B and backlog ~$104B confirm demand; debt, leases, interest, and capital intensity remain the dominant shareholder-return questions."},
+    {"date":"2026-08-16","event":"TRQuant case review","research_state":"research_complete","lifecycle":"confirmation_to_early_momentum","note":"Case formalized as a golden example of capital-intensive hypergrowth where business quality and stock attractiveness diverge."}
+  ]
+}
