@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "generated_from": "git",
+  "cases": [
+    {
+      "case_id": "US-CRWV-2025-2026",
+      "market": "US",
+      "ticker": "CRWV",
+      "company": "CoreWeave, Inc.",
+      "path": "research/investment_cases/US/CRWV",
+      "status": "research_complete",
+      "golden_case": true,
+      "archetypes": [
+        "capital_intensive_hypergrowth",
+        "valuation_expansion",
+        "financing_dependency",
+        "strategy_drift_risk"
+      ],
+      "first_research_date": "2025-06-16",
+      "latest_review_date": "2026-08-16",
+      "dominant_variable": "capital_conversion",
+      "promotion_note": "Do not promote to decision_grade until the 2025 entry reconstruction, 2026 re-underwrite, and valuation checkpoints are independently rechecked and approved."
+    }
+  ]
+}
