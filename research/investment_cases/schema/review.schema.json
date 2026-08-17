@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trquant.local/schema/case-review-v1.json",
+  "title": "TRQuant Case Review",
+  "type": "object",
+  "required": ["review_id", "case_id", "review_date", "review_type", "prior_state", "new_evidence", "updated_state", "process_diagnosis"],
+  "properties": {
+    "review_id": {"type": "string"},
+    "case_id": {"type": "string"},
+    "review_date": {"type": "string", "format": "date"},
+    "review_type": {"enum": ["catalyst_reunderwrite", "entry_audit", "postmortem", "periodic_review", "thesis_change"]},
+    "prior_state": {"type": "object"},
+    "new_evidence": {"type": "array", "items": {"type": "string"}},
+    "updated_state": {"type": "object"},
+    "process_diagnosis": {"type": "array", "items": {"type": "string"}},
+    "candidate_lessons": {"type": "array", "items": {"type": "string"}},
+    "promotion_decision": {"type": "string"}
+  },
+  "additionalProperties": true
+}
