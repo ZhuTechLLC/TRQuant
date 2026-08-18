@@ -10,12 +10,7 @@
       "path": "research/investment_cases/US/CRWV",
       "status": "research_complete",
       "golden_case": true,
-      "archetypes": [
-        "capital_intensive_hypergrowth",
-        "valuation_expansion",
-        "financing_dependency",
-        "strategy_drift_risk"
-      ],
+      "archetypes": ["capital_intensive_hypergrowth","valuation_expansion","financing_dependency","strategy_drift_risk"],
       "first_research_date": "2025-06-16",
       "latest_review_date": "2026-08-16",
       "dominant_variable": "capital_conversion",
@@ -29,18 +24,25 @@
       "path": "research/investment_cases/US/TSM",
       "status": "research_complete",
       "golden_case": false,
-      "archetypes": [
-        "structural_compounder",
-        "ai_infrastructure_bottleneck",
-        "capital_intensive_quality",
-        "expectation_rerating",
-        "attention_failure",
-        "persistent_monitor"
-      ],
+      "archetypes": ["structural_compounder","ai_infrastructure_bottleneck","capital_intensive_quality","expectation_rerating","attention_failure","persistent_monitor"],
       "first_research_date": "2025-08-19",
       "latest_review_date": "2026-08-18",
       "dominant_variable": "ai_hpc_capacity_capital_productivity_vs_expectations",
       "promotion_note": "Research complete, not decision grade: historical original trade decision is not established, EV history uses provisional FX conventions, factor attribution is incomplete, and current sizing/kill criteria require explicit reviewer approval."
+    },
+    {
+      "case_id": "US-HTFL-2025-2026",
+      "market": "US",
+      "ticker": "HTFL",
+      "company": "Heartflow, Inc.",
+      "path": "research/investment_cases/US/HTFL",
+      "status": "research_complete",
+      "golden_case": false,
+      "archetypes": ["post_ipo_high_growth","medtech_software","second_product_s_curve","false_new_ignition","valuation_rerating"],
+      "first_research_date": "2026-08-15",
+      "latest_review_date": "2026-08-18",
+      "dominant_variable": "plaque_monetization_vs_price_implied_expectations",
+      "promotion_note": "Research complete, not decision grade: no verified historical transaction/sizing record; IPO valuation and PIT consensus reconstruction remain partial; economic diluted-share convention and current sizing require independent validation and explicit reviewer approval."
     }
   ]
 }
