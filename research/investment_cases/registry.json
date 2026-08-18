@@ -20,6 +20,27 @@
       "latest_review_date": "2026-08-16",
       "dominant_variable": "capital_conversion",
       "promotion_note": "Do not promote to decision_grade until the 2025 entry reconstruction, 2026 re-underwrite, and valuation checkpoints are independently rechecked and approved."
+    },
+    {
+      "case_id": "US-TSM-2025-2026",
+      "market": "US",
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Company Limited",
+      "path": "research/investment_cases/US/TSM",
+      "status": "research_complete",
+      "golden_case": false,
+      "archetypes": [
+        "structural_compounder",
+        "ai_infrastructure_bottleneck",
+        "capital_intensive_quality",
+        "expectation_rerating",
+        "attention_failure",
+        "persistent_monitor"
+      ],
+      "first_research_date": "2025-08-19",
+      "latest_review_date": "2026-08-18",
+      "dominant_variable": "ai_hpc_capacity_capital_productivity_vs_expectations",
+      "promotion_note": "Research complete, not decision grade: historical original trade decision is not established, EV history uses provisional FX conventions, factor attribution is incomplete, and current sizing/kill criteria require explicit reviewer approval."
     }
   ]
 }
