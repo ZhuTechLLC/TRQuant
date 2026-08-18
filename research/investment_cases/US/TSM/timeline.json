@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "US-TSM-2025-2026",
+  "timeline": [
+    {
+      "date": "2025-01-16",
+      "event": "TSMC_4Q24_results_and_2025_capex_guidance",
+      "price_usd": null,
+      "price_note": "Historical event-close not canonicalized in this migration; do not substitute a later price.",
+      "known_information": [
+        "Continued AI-related demand expected to partly offset smartphone seasonality.",
+        "2025 capital budget guided to $38-42B."
+      ],
+      "market_expectation_at_time": "AI growth was already visible, but durability and return on the coming capex cycle remained open questions.",
+      "expectation_type": "inference_from_guidance_and_price_context",
+      "investment_state": "Discovery",
+      "decision_record_type": "market_evidence_only_no_user_decision"
+    },
+    {
+      "date": "2025-04-17",
+      "event": "TSMC_1Q25_results_AI_long_term_guidance",
+      "price_usd": 151.74,
+      "price_note": "Historical close reconstructed from IBKR daily series previously retrieved; retain as direct-market reconstruction.",
+      "known_information": [
+        "Q1 revenue $25.53B; HPC 59% of revenue; advanced technology 73% of wafer revenue.",
+        "AI accelerator revenue expected to double in 2025.",
+        "CoWoS capacity expected to double in 2025.",
+        "AI accelerator revenue planning view approached a mid-40s percentage CAGR for five years starting 2024.",
+        "2025 capex reiterated at $38-42B; roughly 70% for advanced process technology.",
+        "No material change in customer behavior from tariffs had yet been observed."
+      ],
+      "market_expectation_at_time": "Tariff/macro uncertainty was high while company-specific AI demand guidance remained strong; exact archival sell-side consensus is not established.",
+      "expectation_type": "management_guidance_plus_price_implied_inference",
+      "investment_state": "Confirmation",
+      "decision_record_type": "retrospective_reconstruction_only"
+    },
+    {
+      "date": "2025-07-17",
+      "event": "TSMC_2Q25_results",
+      "price_usd": null,
+      "price_note": "Event-close row is not separately canonicalized here; use IBKR direct history in future deterministic refresh rather than a third-party quote.",
+      "known_information": [
+        "Q2 revenue $30.07B, +44.4% YoY USD and +17.8% QoQ.",
+        "Gross margin 58.6%; operating margin 49.6%; ADR EPS $2.47.",
+        "Advanced technology represented 74% of wafer revenue.",
+        "Q3 revenue guided to $31.8-33.0B.",
+        "Management cited continued robust AI/HPC-related demand."
+      ],
+      "market_expectation_at_time": "The structural AI thesis had moved from discovery to broad confirmation; valuation and future estimate revisions became increasingly important.",
+      "expectation_type": "inference",
+      "investment_state": "Confirmation",
+      "decision_record_type": "retrospective_reconstruction_only"
+    },
+    {
+      "date": "2025-07-23",
+      "event": "Alphabet_2Q25_capex_update",
+      "price_usd": null,
+      "price_note": "Not a TSM trading-event price checkpoint.",
+      "known_information": [
+        "Alphabet Q2 capex $22.4B.",
+        "2025 capex outlook raised from $75B to about $85B.",
+        "Further capex increase expected in 2026.",
+        "Cloud expected to remain in a tight demand-supply environment into 2026."
+      ],
+      "market_expectation_at_time": "Primary-source upstream demand evidence strengthened the multi-year AI infrastructure cycle.",
+      "expectation_type": "reported_guidance",
+      "investment_state": "Confirmation",
+      "decision_record_type": "upstream_evidence_node"
+    },
+    {
+      "date": "2025-07-30",
+      "event": "Meta_2Q25_capex_update",
+      "price_usd": null,
+      "price_note": "Not a TSM trading-event price checkpoint.",
+      "known_information": [
+        "Meta guided 2025 capex to $66-72B.",
+        "Meta expected another year of similarly significant capex-dollar growth in 2026 to add capacity for AI efforts and business operations."
+      ],
+      "market_expectation_at_time": "Independent hyperscaler evidence further reduced the probability that AI infrastructure spending was only a short-lived spike.",
+      "expectation_type": "reported_guidance",
+      "investment_state": "Confirmation",
+      "decision_record_type": "upstream_evidence_node"
+    },
+    {
+      "date": "2025-08-19",
+      "event": "earliest_recovered_user_side_TSM_research_record",
+      "price_usd": 232.70,
+      "price_note": "Direct IBKR close.",
+      "known_information": [
+        "TSMC April five-year AI accelerator growth framework was public.",
+        "Q2 financial acceleration and Q3 guidance were public.",
+        "TSMC $38-42B 2025 capex and CoWoS expansion were public.",
+        "Alphabet and Meta had already disclosed 2026 capex expansion expectations."
+      ],
+      "market_expectation_at_time": "The AI/TSMC thesis was no longer obscure; the relevant edge was whether earnings/capacity economics would exceed increasingly positive expectations.",
+      "expectation_type": "price_implied_inference_no_archival_sell_side_consensus",
+      "investment_state": "Confirmation",
+      "secondary_state": "Momentum",
+      "decision_record_type": "verified_awareness_not_verified_trade_decision"
+    },
+    {
+      "date": "2025-10-16",
+      "event": "TSMC_3Q25_results",
+      "price_usd": 299.84,
+      "price_note": "Direct IBKR historical close.",
+      "known_information": [
+        "Q3 revenue $33.10B, gross margin 59.5%, operating margin 50.6%.",
+        "Q4 revenue guidance $32.2-33.4B.",
+        "TTM ADR EPS approximately $9.75 and trailing P/E approximately 30.8x."
+      ],
+      "market_expectation_at_time": "Fundamental confirmation had been accompanied by substantial valuation rerating; further upside increasingly required continuing estimate revisions.",
+      "expectation_type": "price_implied_inference",
+      "investment_state": "Momentum",
+      "decision_record_type": "missed_research_update_retrospective"
+    },
+    {
+      "date": "2026-01-15",
+      "event": "TSMC_4Q25_results",
+      "price_usd": 341.64,
+      "price_note": "Direct IBKR historical close.",
+      "known_information": [
+        "Q4 revenue $33.73B, gross margin 62.3%, operating margin 54.0%, ADR EPS $3.14.",
+        "Full-year 2025 ADR EPS approximately $10.65.",
+        "Q1 2026 revenue guidance $34.6-35.8B."
+      ],
+      "market_expectation_at_time": "Business confidence was high and trailing valuation had expanded to roughly 32x P/E, reducing the original asymmetry.",
+      "expectation_type": "price_implied_inference",
+      "investment_state": "Harvest",
+      "secondary_state": "Re_underwrite",
+      "decision_record_type": "missed_research_update_retrospective"
+    },
+    {
+      "date": "2026-04-16",
+      "event": "TSMC_1Q26_results",
+      "price_usd": null,
+      "price_note": "Current migration does not freeze a canonical event-close; financial evidence is primary and price can be deterministically refreshed later.",
+      "known_information": [
+        "Q1 revenue $35.90B; gross margin 66.2%; operating margin 58.1%; ADR EPS $3.49.",
+        "Q2 revenue guidance $39.0-40.2B."
+      ],
+      "market_expectation_at_time": "Earnings trajectory was accelerating, requiring another expectations update.",
+      "expectation_type": "inference",
+      "investment_state": "Re_ignition",
+      "secondary_state": "Momentum"
+    },
+    {
+      "date": "2026-07-16",
+      "event": "TSMC_2Q26_results",
+      "price_usd": null,
+      "price_note": "Canonical event-close pending deterministic refresh.",
+      "known_information": [
+        "Q2 revenue $40.20B, +33.7% YoY USD; gross margin 67.7%; operating margin 60.3%; ADR EPS $4.31.",
+        "2nm represented 3% of wafer revenue.",
+        "Q3 revenue guidance $44.6-45.8B.",
+        "Full-year 2026 USD revenue growth expected slightly above 40%."
+      ],
+      "market_expectation_at_time": "TSMC had become a high-consensus structural compounder; further returns depended on durability and estimate revision more than simple recognition of AI.",
+      "expectation_type": "management_guidance_plus_inference",
+      "investment_state": "Momentum",
+      "secondary_state": "Confirmation"
+    },
+    {
+      "date": "2026-08-18",
+      "event": "investment_case_library_migration_review",
+      "price_usd": 420.00,
+      "price_note": "IBKR intraday snapshot; current values can change.",
+      "known_information": [
+        "TTM ADR EPS approximately $13.86.",
+        "Current trailing P/E approximately 30.3x.",
+        "52-week high $478.89 and 13-week low $372.74.",
+        "Next known TSMC monthly-sales evidence node is 2026-09-10."
+      ],
+      "market_expectation_at_time": "High thesis confidence, high consensus and high price-implied expectations; current risk/reward is positive but not discovery-like.",
+      "expectation_type": "current_price_implied_inference",
+      "investment_state": "Momentum",
+      "secondary_state": "Re_underwrite",
+      "decision_record_type": "current_research_decision"
+    }
+  ]
+}
