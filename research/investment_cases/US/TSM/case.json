@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "US-TSM-2025-2026",
+  "market": "US",
+  "ticker": "TSM",
+  "company": "Taiwan Semiconductor Manufacturing Company Limited",
+  "security": "NYSE ADR",
+  "status": "research_complete",
+  "as_of": "2026-08-18",
+  "golden_case": false,
+  "first_research_date": "2025-08-19",
+  "original_decision_date": null,
+  "latest_review_date": "2026-08-18",
+  "archetypes": [
+    "structural_compounder",
+    "ai_infrastructure_bottleneck",
+    "capital_intensive_quality",
+    "expectation_rerating",
+    "attention_failure",
+    "persistent_monitor"
+  ],
+  "core_question": "Can TSMC continue converting the structural AI/HPC capital-spending cycle into leading-edge and advanced-packaging revenue, high utilization, durable operating margins and free cash flow fast enough to outrun elevated expectations while avoiding material technology, customer, overseas-cost or geopolitical impairment?",
+  "dominant_variable": "Durability and capital productivity of AI/HPC-driven leading-edge and advanced-packaging capacity expansion relative to already-high market expectations.",
+  "value_driver_chain": [
+    "ai_hpc_end_demand",
+    "customer_designs_and_tapeouts",
+    "leading_edge_and_packaging_demand",
+    "installed_capacity",
+    "utilization_mix_and_pricing",
+    "revenue",
+    "gross_margin",
+    "operating_income",
+    "operating_cash_flow",
+    "capex",
+    "free_cash_flow",
+    "reinvestment_and_dividends",
+    "shareholder_value"
+  ],
+  "epistemic_audit": {
+    "awareness_failure": false,
+    "recognition_failure": "mostly_false",
+    "research_failure": "partial",
+    "preparation_failure": true,
+    "priority_resource_failure": "likely",
+    "monitoring_failure": "primary",
+    "execution_failure": "not_established",
+    "review_failure": "historically_yes_now_being_corrected",
+    "note": "Earliest recovered user-side explicit TSM research record is 2025-08-19. No verified contemporaneous buy/add/trim/stop/target record was recovered; connected IBKR returned no trades in the checked 2025 Q3/Q4 windows."
+  },
+  "lifecycle": [
+    {
+      "date": "2025-01-16",
+      "state": "discovery_market_evidence",
+      "price_usd": null,
+      "note": "4Q24 results guided 2025 capex to $38-42B and cited continued AI-related demand. No user-side decision record established."
+    },
+    {
+      "date": "2025-04-17",
+      "state": "confirmation",
+      "price_usd": null,
+      "note": "Q1 transcript reaffirmed 2025 AI-accelerator revenue doubling, doubling CoWoS capacity, and an internal planning view of mid-40s percentage AI-accelerator revenue CAGR for five years starting 2024."
+    },
+    {
+      "date": "2025-07-17",
+      "state": "confirmation_to_early_momentum",
+      "price_usd": null,
+      "note": "Q2 revenue $30.07B, +44.4% YoY USD; GM 58.6%, OM 49.6%; Q3 revenue guide $31.8-33.0B; robust AI/HPC demand explicitly cited."
+    },
+    {
+      "date": "2025-08-19",
+      "state": "confirmation_momentum",
+      "price_usd": 232.70,
+      "note": "Earliest recovered user-side explicit TSM research record. At this point TSMC and hyperscaler primary disclosures already supported a multi-year AI infrastructure cycle."
+    },
+    {
+      "date": "2025-10-16",
+      "state": "momentum_continuation",
+      "price_usd": 299.84,
+      "note": "Q3 revenue $33.10B, GM 59.5%, OM 50.6%; trailing valuation had rerated materially."
+    },
+    {
+      "date": "2026-01-15",
+      "state": "quality_compounder_harvest_boundary",
+      "price_usd": 341.64,
+      "note": "Q4 revenue $33.73B, GM 62.3%, OM 54.0%; full-year 2025 ADR EPS about $10.65."
+    },
+    {
+      "date": "2026-07-16",
+      "state": "confirmation_momentum_continuation",
+      "price_usd": null,
+      "note": "Q2 2026 revenue $40.20B, GM 67.7%, OM 60.3%, ADR EPS $4.31; Q3 guide $44.6-45.8B; 2026 USD revenue expected slightly above 40% growth."
+    },
+    {
+      "date": "2026-08-18",
+      "state": "confirmation_momentum_quality_compounder",
+      "price_usd": 420.00,
+      "note": "Current review. Strong thesis and high consensus; selective entry rather than unconditional chase."
+    }
+  ],
+  "decision_state": {
+    "business_thesis": "strong_validated",
+    "thesis_confidence": "high",
+    "market_consensus": "high",
+    "price_implied_expectations": "high",
+    "trade_state": "confirmation_to_momentum_continuation",
+    "action": "watch_hold_or_selective_start_small",
+    "action_logic": "Do not use price alone. Require joint alignment of price, evidence, expectations and portfolio risk.",
+    "start_small_conditions": [
+      "Thesis confidence remains high and valuation remains supportable by observable earnings growth.",
+      "Next evidence nodes and kill criteria are explicitly defined.",
+      "Initial position remains a small research sleeve rather than a full-size conviction position."
+    ],
+    "add_conditions": [
+      "Fundamental upgrade: revenue/EPS guidance or upstream AI capex evidence rises enough to improve expected return despite a higher price.",
+      "Price reset: valuation compresses materially while AI/HPC demand, technology execution, margin framework and geopolitical operating conditions remain intact."
+    ],
+    "trim_conditions": [
+      "Price/multiple expands materially faster than earnings estimates.",
+      "Portfolio AI/semiconductor concentration becomes excessive.",
+      "Expected return compresses without corresponding new fundamental evidence."
+    ],
+    "kill_criteria": [
+      "AI/HPC demand deteriorates for multiple quarters and major customers materially reduce infrastructure plans.",
+      "N2/A16/advanced-packaging execution or yield leadership suffers a structural failure or major leading-edge designs migrate away.",
+      "Gross/operating margin suffers persistent impairment beyond explained ramp/overseas-fab effects without a credible recovery path.",
+      "Capex stays elevated while utilization/revenue guidance and free cash flow deteriorate, indicating poor incremental capital productivity.",
+      "A geopolitical event materially impairs production, logistics, personnel, export capability or market access."
+    ]
+  },
+  "historical_checkpoints": [
+    {
+      "date": "2025-08-19",
+      "type": "reconstructed_valuation",
+      "pit_available_from": "2025-08-19",
+      "price_usd": 232.70,
+      "ordinary_shares_b_reported": 25.933,
+      "ads_ratio_ordinary_per_adr": 5,
+      "adr_equivalent_shares_b_reconstructed": 5.1866,
+      "equity_value_usd_b_reconstructed": 1206.92,
+      "cash_and_marketables_ntd_b_reported_q2": 2634.43,
+      "long_term_interest_bearing_debt_ntd_b_reported_q2": 883.67,
+      "net_cash_ntd_b_reconstructed": 1750.76,
+      "fx_ntd_per_usd_assumption": 29.9,
+      "enterprise_value_usd_b_inferred": 1148.37,
+      "ttm_revenue_usd_b_reconstructed": 105.98,
+      "ttm_ev_sales_x_inferred": 10.84,
+      "ttm_adr_eps_usd_reconstructed": 8.77,
+      "ttm_pe_x_reconstructed": 26.53,
+      "ttm_operating_income_usd_b_reconstructed_approx": 51.6,
+      "ttm_ev_operating_income_x_inferred_approx": 22.3,
+      "ttm_fcf_ntd_b_reconstructed_approx": 937.8,
+      "fcf_yield_range_pct_inferred": "2-3",
+      "valuation_status": "provisional",
+      "note": "EV uses a provisional balance-sheet FX convention. P/E is the cleaner production candidate pending deterministic FX validation."
+    },
+    {
+      "date": "2025-10-16",
+      "type": "reconstructed_valuation",
+      "pit_available_from": "2025-10-16",
+      "price_usd": 299.84,
+      "ttm_adr_eps_usd_reconstructed": 9.75,
+      "ttm_pe_x_reconstructed": 30.75,
+      "ttm_revenue_usd_b_reconstructed": 115.58,
+      "valuation_status": "provisional",
+      "note": "Rerating checkpoint; detailed EV bridge awaits canonical quarter-end FX convention."
+    },
+    {
+      "date": "2026-01-15",
+      "type": "reconstructed_valuation",
+      "pit_available_from": "2026-01-15",
+      "price_usd": 341.64,
+      "fy2025_adr_eps_usd_reconstructed": 10.65,
+      "pe_x_reconstructed": 32.08,
+      "fy2025_revenue_usd_b_reported": 122.42,
+      "fy2025_gross_margin_pct_reported": 59.9,
+      "fy2025_operating_margin_pct_reported": 50.8,
+      "fy2025_fcf_ntd_b_reconstructed": 1002.57,
+      "valuation_status": "provisional"
+    },
+    {
+      "date": "2026-08-18",
+      "type": "current_reunderwrite",
+      "pit_available_from": "2026-08-18",
+      "price_usd": 420.00,
+      "ordinary_shares_b_reported": 25.932,
+      "adr_equivalent_shares_b_reconstructed": 5.1864,
+      "equity_value_usd_b_reconstructed": 2178.29,
+      "cash_and_marketables_ntd_b_reported_q2": 3518.01,
+      "long_term_interest_bearing_debt_ntd_b_reported_q2": 864.27,
+      "fx_ntd_per_usd_assumption": 31.6,
+      "net_cash_usd_b_inferred": 83.98,
+      "enterprise_value_usd_b_inferred": 2094.31,
+      "ttm_revenue_usd_b_reconstructed": 142.93,
+      "ttm_ev_sales_x_inferred": 14.65,
+      "ttm_adr_eps_usd_reconstructed": 13.86,
+      "ttm_pe_x_reconstructed": 30.30,
+      "ttm_operating_income_usd_b_reconstructed_approx": 80.06,
+      "ttm_ev_operating_income_x_inferred_approx": 26.16,
+      "ttm_capex_revenue_pct_reconstructed": 33.58,
+      "valuation_status": "provisional",
+      "note": "Q2 average FX is used only as an analytical conversion convention, not as a production-grade quarter-end balance-sheet FX rate."
+    }
+  ],
+  "result_attribution": {
+    "window": "2025-08-19_to_2026-08-18",
+    "price_change_pct": 80.49,
+    "ttm_eps_change_pct": 58.04,
+    "ttm_pe_start_x": 26.53,
+    "ttm_pe_end_x": 30.30,
+    "multiple_change_pct_approx": 14.2,
+    "log_decomposition": {
+      "earnings_growth_share_of_log_price_move_approx_pct": 77,
+      "multiple_expansion_share_of_log_price_move_approx_pct": 23
+    },
+    "capital_structure": "immaterial_to_positive_net_cash; no material dilution",
+    "market_sector_beta": "not_separately_quantified",
+    "positioning_flow": "not_separately_quantified",
+    "execution_exit_management": "no verified executed position; opportunity cost only"
+  },
+  "monitoring_policy": {
+    "priority": "P0_persistent_monitor",
+    "daily_exception_only": [
+      "single_day_move_abs_gte_7pct",
+      "drawdown_from_recent_high_gte_12pct",
+      "new_52_week_high",
+      "material_export_control_customer_or_geopolitical_event"
+    ],
+    "monthly_mandatory": [
+      "monthly_revenue",
+      "three_month_revenue_trend",
+      "quarter_guidance_bridge"
+    ],
+    "quarterly_mandatory": [
+      "revenue",
+      "platform_mix_hpc",
+      "node_mix",
+      "gross_margin",
+      "operating_margin",
+      "eps",
+      "operating_cash_flow",
+      "capex",
+      "free_cash_flow",
+      "inventory_days",
+      "ar_days",
+      "guidance",
+      "technology_roadmap",
+      "customer_concentration",
+      "valuation"
+    ],
+    "upstream_triggers": [
+      "material_hyperscaler_capex_guidance_change",
+      "major_ai_accelerator_architecture_or_demand_change",
+      "advanced_packaging_or_hbm_bottleneck_change"
+    ],
+    "staleness_rule": "If the next scheduled evidence node passes without review, mark case stale_attention and keep it in the decision queue."
+  },
+  "evidence_summary": {
+    "source_policy": "Primary issuer/SEC and direct IBKR market/account data are load-bearing; third-party material is excluded from load-bearing claims.",
+    "unknowns": [
+      "No verified contemporaneous 2025 TSM buy/add/trim/target/stop/size record was recovered.",
+      "Historical EV checkpoints require deterministic quarter-end FX validation before decision-grade promotion.",
+      "Exact historical sell-side forward consensus was not established; market expectations are therefore represented by company guidance, primary hyperscaler capex disclosures and price-implied valuation rather than invented consensus estimates.",
+      "Sector-beta and positioning contribution to the 2025-2026 rerating has not been separately regressed."
+    ]
+  },
+  "lessons": [
+    {
+      "status": "candidate",
+      "principle": "Once a security is thesis-ready, missing a scheduled material evidence node without an explicit deprioritization reason is an attention-continuity process failure.",
+      "scope": "Core research universe securities with recurring public evidence."
+    },
+    {
+      "status": "candidate",
+      "principle": "Industry capex guidance can be an upstream evidence node for bottleneck suppliers and should trigger re-underwriting even without a company-specific announcement.",
+      "scope": "Semiconductor, cloud, power and other infrastructure bottleneck suppliers."
+    },
+    {
+      "status": "candidate",
+      "principle": "For capital-intensive quality compounders, evaluate capex productivity through utilization, margin, operating cash flow and FCF rather than treating capex magnitude as bullish or bearish by itself.",
+      "scope": "Capital-intensive profitable compounders."
+    },
+    {
+      "status": "candidate",
+      "principle": "A missed winner is not automatically an execution failure; distinguish awareness, preparation, priority, monitoring and execution from the contemporaneous record.",
+      "scope": "Historical missed-opportunity reviews."
+    }
+  ],
+  "promotion_requirements": [
+    "Validate historical balance-sheet-date FX convention and recompute EV checkpoints deterministically.",
+    "Confirm or explicitly accept absence of any 2025 contemporaneous trade-decision record across other broker/account sources if available.",
+    "Run benchmark/sector attribution if result decomposition is to become production-grade.",
+    "Founder/reviewer explicitly approves current decision, sizing and kill criteria before decision_grade promotion."
+  ]
+}
