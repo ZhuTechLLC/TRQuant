@@ -1,0 +1,30 @@
+{
+  "case_id": "US-TSM-2025-2026",
+  "macro_context_id": "MACRO-US-TW-AI-SEMIS-2026-08-18",
+  "macro_context_path": "research/macro_context/contexts/US_TW_AI_SEMICONDUCTOR/2026-08-18/context.json",
+  "macro_relevance": "HIGH",
+  "as_of": "2026-08-18",
+  "company_specific_transmission": {
+    "operating_demand": "AI/HPC end demand and hyperscaler real-compute capex transmit through accelerator/custom-ASIC designs into leading-edge wafer demand and advanced packaging.",
+    "capital_productivity": "High capex is constructive only while utilization, margins, operating cash flow and FCF validate returns on incremental capacity.",
+    "valuation": "Elevated real yields and sticky inflation raise the required return and compress the acceptable multiple even when the earnings thesis remains intact.",
+    "fx": "USD/TWD affects reported translation and ADR/local-share parity; it is an attribution/earnings variable, not a standalone trade signal.",
+    "policy": "Export controls and industrial policy can directly alter customers, product addressable markets, equipment access, location economics and overseas-fab cost.",
+    "geopolitics": "Taiwan Strait risk is a persistent risk-premium overlay; verified impairment to production, logistics, power, people, shipping or market access is an immediate re-underwrite/kill trigger."
+  },
+  "current_macro_state": {
+    "operating_demand": "GREEN",
+    "discount_rate": "YELLOW_RED",
+    "growth": "YELLOW",
+    "inflation": "YELLOW_RED",
+    "policy_geopolitics": "YELLOW_RED_WITH_STRUCTURAL_RED_TAIL",
+    "combined": "FUNDAMENTALS_STRONG_BUT_HURDLE_RATE_ELEVATED"
+  },
+  "action_interaction": {
+    "rule": "Macro may change position risk budget, expected-return hurdle and entry attractiveness; company evidence remains primary for thesis validation.",
+    "current_price_close_usd": 413.41,
+    "existing_review_zone": "$395-$420 first accumulation / buy-review zone if thesis remains intact",
+    "current_action": "START_SMALL_OR_BUY_REVIEW_CONDITIONAL",
+    "not_allowed": "No automatic buy/sell from a single macro threshold or price level."
+  }
+}
