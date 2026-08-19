@@ -12,7 +12,8 @@
     "medtech_software",
     "second_product_s_curve",
     "false_new_ignition",
-    "valuation_rerating"
+    "valuation_rerating",
+    "post_earnings_revision_continuation_candidate"
   ],
   "first_research_date": "2026-08-15",
   "original_decision_date": null,
@@ -38,7 +39,9 @@
     "revenue_case": "Each delivered FFRCT or Plaque analysis; one CCTA can create two revenue cases if both products are ordered.",
     "ccta_or_procedure_volume": "Not equivalent to revenue cases; unique-procedure volume is not directly disclosed in the Q2 2026 10-Q.",
     "arr": "Not a core reported KPI; substantially all revenue is usage-driven pay-per-click.",
-    "backlog_rpo": "Not a core economic KPI for this case; contract liabilities are small and the business is usage-driven rather than backlog-driven."
+    "backlog_rpo": "Not a core economic KPI for this case; contract liabilities are small and the business is usage-driven rather than backlog-driven.",
+    "gross_margin_leverage": "Confirmed in Q2 2026: revenue +48% YoY while cost of revenue rose only about 2%, taking GAAP gross margin to ~83%.",
+    "operating_leverage": "Not yet confirmed on a GAAP basis in Q2 2026: total GAAP OpEx rose about 53% YoY, faster than revenue, and operating loss widened YoY."
   },
   "lifecycle": [
     {"date":"2025-08-11","state":"ipo_discovery","note":"IPO completed at $19; public-market price discovery began."},
@@ -47,13 +50,21 @@
     {"date":"2026-05-14","state":"confirmation_valuation_sensitive","note":"Q1 beat/raise and 80%+ gross margin strengthened the thesis, but the stock fell after the event; strong earnings did not equal a positive expectation gap."},
     {"date":"2026-08-13","state":"second_s_curve_confirmation","note":"Q2 accelerated revenue, Plaque adoption and gross margin; guidance rose materially."},
     {"date":"2026-08-14","state":"confirmation_to_early_momentum","note":"Stock gapped +35.7% to $42.08; current diluted EV and ~15.3x FY2026 EV/Sales required re-underwriting and invalidated a strict first-New-Ignition label."},
-    {"date":"2026-08-18","state":"active_case_reunderwrite","note":"Case migrated as a false-stage example: P0 research priority remains high, lifecycle is Confirmation/Early Momentum with second-S-curve optionality."}
+    {"date":"2026-08-18","state":"active_case_reunderwrite","note":"Case remains Confirmation/Early Momentum with second-S-curve optionality; direct IBKR close at $45.23 confirmed follow-through but did not change the economic lifecycle."}
   ],
+  "opportunity_setup": {
+    "as_of": "2026-08-18",
+    "state": "provisional_post_earnings_revision_continuation",
+    "status": "candidate_not_validated_rule",
+    "evidence": "Q2 fundamental revision was followed by a +35.7% event-day gap, a largely held gap on 8/17, and a new high / $45.23 close on 8/18 using direct IBKR history.",
+    "guardrail": "Lifecycle classification and opportunity setup are separate axes. Price follow-through does not prove institutional accumulation, gamma, CTA, short covering, or a positive-expectancy entry rule.",
+    "promotion_evidence_needed": "PIT event study across comparable revenue-beat + guidance-raise gaps controlling for IPO age, market cap, growth, valuation, gap size, relative volume and market regime."
+  },
   "decision_state": {
     "business_thesis": "constructive_strong_growth_and_platform_optionality",
     "stock_attractiveness": "conditional_at_current_valuation",
     "trade_state": "confirmation_early_momentum_second_s_curve",
-    "action": "watch_or_start_small; add only on improved price asymmetry or material upward revision to the 2028-2030 revenue/cash-flow path",
+    "action": "watch_or_start_small; add only on improved price asymmetry, material upward revision to the 2028-2030 revenue/cash-flow path, or separately validated opportunity-capture evidence",
     "kill_criteria": [
       "FFRCT utilization materially deteriorates without a temporary explanation.",
       "Plaque activated-account growth does not translate into sustained attach/utilization growth.",
@@ -107,6 +118,23 @@
       "fy2026_revenue_guidance_midpoint_usd_m": 248.0,
       "forward_ev_sales_x_approx": 15.3,
       "note": "Economic diluted-share and EV figures are analytical reconstructions; leases are separately labeled."
+    },
+    {
+      "date": "2026-08-18",
+      "type": "reconstructed_valuation_with_direct_market_close",
+      "price_usd": 45.23,
+      "basic_shares_m": 86.953627,
+      "economic_diluted_shares_m_approx": 96.408,
+      "diluted_equity_value_usd_b_approx": 4.361,
+      "cash_and_investments_usd_m": 246.84,
+      "financial_debt_usd_m": 0.0,
+      "operating_lease_liabilities_usd_m": 27.127,
+      "enterprise_value_ex_leases_usd_b_approx": 4.114,
+      "lease_adjusted_enterprise_value_usd_b_approx": 4.141,
+      "fy2026_revenue_guidance_midpoint_usd_m": 248.0,
+      "forward_ev_sales_x_approx": 16.6,
+      "lease_adjusted_forward_ev_sales_x_approx": 16.7,
+      "note": "Price/OHLCV from direct IBKR completed-session history; economic dilution reconstructed with treasury-stock treatment. True NTM/FY2027/FY2028 consensus multiples remain unavailable."
     }
   ],
   "event_attribution": {
@@ -117,7 +145,7 @@
     "fy_revenue_guidance_midpoint_revision_pct_approx": 7.8,
     "plaque_guidance_midpoint_revision_pct_approx": 50.0,
     "simple_additional_valuation_probability_factor_pct_approx": 25.9,
-    "note": "The 25.9% factor is 1.357/1.078-1 under a constant-near-term-sales-multiple bridge. It is an analytical decomposition, not a causal microstructure estimate."
+    "note": "The 25.9% factor is 1.357/1.078-1 under a constant-near-term-sales-multiple bridge. It is an analytical decomposition, not a causal microstructure estimate. No buyer-type or derivatives-flow attribution is promoted without direct evidence."
   },
   "false_stage_diagnosis": {
     "scanner_signal_that_was_correct": "P0 research escalation after structural growth, revenue acceleration, guide raise, Plaque adoption, gross-margin expansion and price/volume confirmation.",
@@ -128,17 +156,27 @@
       "New Ignition remains provisional until current diluted EV and reverse 3x/5x/10x math are available.",
       "A second-product S-curve is not automatically a company's first ignition.",
       "Revenue cases must not be substituted for unique procedure/patient volume.",
-      "A material gap triggers re-underwriting at the new price rather than preserving the pre-event label."
+      "A material gap triggers re-underwriting at the new price rather than preserving the pre-event label.",
+      "Rejecting a New Ignition label must not automatically reject a separately underwritten opportunity setup."
     ]
   },
   "evidence_summary": {
     "primary_source_types": ["SEC filings", "company IR", "direct IBKR market data"],
     "secondary_source_types": ["user-provided earnings-call transcript used for management commentary"],
+    "rejected_or_quarantined": [
+      "NTM/FY2027/FY2028 values presented as consensus when they are only model inference.",
+      "HLC/3 or typical price mislabeled as VWAP or anchored VWAP.",
+      "Unsupported attribution to institutional buying, CTA, gamma, short covering or algorithmic flows.",
+      "Arbitrary percentage attribution of valuation premium to narrative or optionality components."
+    ],
     "unknowns": [
       "Exact IPO-instant basic and economic diluted share count after all option exercise timing.",
-      "PIT IPO-date market forward revenue consensus under a canonical source.",
+      "PIT IPO-date and post-Q2 FY2027/FY2028 sell-side consensus under a canonical source.",
+      "True NTM revenue consensus after Q2.",
       "Plaque attach/utilization by activated account and unique CCTA denominator.",
       "Independent competitive win/loss and product-level net ASP data.",
+      "Current float, settlement-date short interest, borrow/utilization, options positioning and defensible flow attribution.",
+      "PIT historical analog event-study evidence for post-earnings continuation.",
       "Verified historical user trade decision or position sizing."
     ]
   },
@@ -146,7 +184,9 @@
     {"status":"candidate","principle":"P0 research priority must be kept separate from New Ignition lifecycle classification.","scope":"Opportunity discovery and multibagger scans."},
     {"status":"candidate","principle":"For a post-IPO high-growth candidate, run current economic diluted EV and reverse 3x/5x/10x math before confirming New Ignition.","scope":"High-growth public equities."},
     {"status":"candidate","principle":"A new product S-curve inside an established core business should be classified separately from first-company ignition.","scope":"Platform and multi-product growth companies."},
-    {"status":"candidate","principle":"Procedure, patient, revenue-case, ARR, backlog and revenue metrics are distinct; acceleration in one cannot be substituted for another without an explicit bridge.","scope":"All growth-equity scanners."}
+    {"status":"candidate","principle":"Procedure, patient, revenue-case, ARR, backlog and revenue metrics are distinct; acceleration in one cannot be substituted for another without an explicit bridge.","scope":"All growth-equity scanners."},
+    {"status":"candidate","principle":"False New Ignition does not imply False Opportunity; lifecycle and opportunity setup require separate underwriting.","scope":"Event-driven opportunity discovery; requires historical validation before becoming an execution rule."},
+    {"status":"candidate","principle":"Gross-margin leverage is not operating leverage; require OpEx, operating-margin and eventually FCF/share confirmation.","scope":"High-growth software/medtech and other scale-economy cases."}
   ],
-  "promotion_note": "Research complete, not decision grade: no verified historical transaction or sizing record; IPO valuation/consensus reconstruction remains partial; diluted-share convention should be independently validated; current entry/sizing requires explicit reviewer approval."
+  "promotion_note": "Research complete, not decision grade: no verified historical transaction or sizing record; PIT post-Q2 consensus and NTM/FY2027/FY2028 valuation remain incomplete; current float/short/options/flow and historical continuation analogs remain unverified; current entry/sizing requires explicit reviewer approval."
 }
