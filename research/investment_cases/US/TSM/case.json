@@ -11,31 +11,10 @@
   "first_research_date": "2025-08-19",
   "original_decision_date": null,
   "latest_review_date": "2026-08-18",
-  "archetypes": [
-    "structural_compounder",
-    "ai_infrastructure_bottleneck",
-    "capital_intensive_quality",
-    "expectation_rerating",
-    "attention_failure",
-    "persistent_monitor"
-  ],
+  "archetypes": ["structural_compounder","ai_infrastructure_bottleneck","capital_intensive_quality","expectation_rerating","attention_failure","persistent_monitor"],
   "core_question": "Can TSMC continue converting the structural AI/HPC capital-spending cycle into leading-edge and advanced-packaging revenue, high utilization, durable operating margins and free cash flow fast enough to outrun elevated expectations while avoiding material technology, customer, overseas-cost or geopolitical impairment?",
   "dominant_variable": "Durability and capital productivity of AI/HPC-driven leading-edge and advanced-packaging capacity expansion relative to already-high market expectations.",
-  "value_driver_chain": [
-    "ai_hpc_end_demand",
-    "customer_designs_and_tapeouts",
-    "leading_edge_and_packaging_demand",
-    "installed_capacity",
-    "utilization_mix_and_pricing",
-    "revenue",
-    "gross_margin",
-    "operating_income",
-    "operating_cash_flow",
-    "capex",
-    "free_cash_flow",
-    "reinvestment_and_dividends",
-    "shareholder_value"
-  ],
+  "value_driver_chain": ["ai_hpc_end_demand","customer_designs_and_tapeouts","leading_edge_and_packaging_demand","installed_capacity","utilization_mix_and_pricing","revenue","gross_margin","operating_income","operating_cash_flow","capex","free_cash_flow","reinvestment_and_dividends","shareholder_value"],
   "epistemic_audit": {
     "awareness_failure": false,
     "recognition_failure": "mostly_false",
@@ -48,14 +27,14 @@
     "note": "Earliest recovered user-side explicit TSM research record is 2025-08-19. No verified contemporaneous buy/add/trim/stop/target record was recovered; connected IBKR returned no trades in the checked 2025 Q3/Q4 windows."
   },
   "lifecycle": [
-    {"date":"2025-01-16","state":"discovery_market_evidence","price_usd":null,"note":"4Q24 results guided 2025 capex to $38-42B and cited continued AI-related demand. No user-side decision record established."},
-    {"date":"2025-04-17","state":"confirmation","price_usd":null,"note":"Q1 transcript reaffirmed 2025 AI-accelerator revenue doubling, doubling CoWoS capacity, and an internal planning view of mid-40s percentage AI-accelerator revenue CAGR for five years starting 2024."},
-    {"date":"2025-07-17","state":"confirmation_to_early_momentum","price_usd":null,"note":"Q2 revenue $30.07B, +44.4% YoY USD; GM 58.6%, OM 49.6%; Q3 revenue guide $31.8-33.0B; robust AI/HPC demand explicitly cited."},
-    {"date":"2025-08-19","state":"confirmation_momentum","price_usd":232.70,"note":"Earliest recovered user-side explicit TSM research record. At this point TSMC and hyperscaler primary disclosures already supported a multi-year AI infrastructure cycle; sell-side FY2026 ADR EPS consensus available from 2025-08-12 was about $10.95."},
-    {"date":"2025-10-16","state":"momentum_continuation","price_usd":299.84,"note":"Q3 revenue $33.10B, GM 59.5%, OM 50.6%; trailing valuation had rerated materially. Latest recovered pre-event FY2026 EPS consensus was about $11.14."},
-    {"date":"2026-01-15","state":"quality_compounder_harvest_boundary","price_usd":341.64,"note":"Q4 revenue $33.73B, GM 62.3%, OM 54.0%; full-year 2025 ADR EPS about $10.65. Do not backdate the 2026-01-30 sell-side estimate snapshot to this date."},
-    {"date":"2026-07-16","state":"confirmation_momentum_continuation","price_usd":null,"note":"Q2 2026 revenue $40.20B, GM 67.7%, OM 60.3%, ADR EPS $4.31; Q3 guide $44.6-45.8B; 2026 USD revenue expected slightly above 40% growth."},
-    {"date":"2026-08-18","state":"confirmation_momentum_quality_compounder","price_usd":420.00,"note":"Current review. Strong thesis and high consensus; selective entry rather than unconditional chase. Current sell-side FY2026 ADR EPS consensus snapshot is about $16.45."}
+    {"date":"2025-01-16","state":"discovery_market_evidence","price_usd":null},
+    {"date":"2025-04-17","state":"confirmation","price_usd":151.74},
+    {"date":"2025-07-17","state":"confirmation_to_early_momentum","price_usd":null},
+    {"date":"2025-08-19","state":"confirmation_momentum","price_usd":232.70},
+    {"date":"2025-10-16","state":"momentum_continuation","price_usd":299.84},
+    {"date":"2026-01-15","state":"quality_compounder_harvest_boundary","price_usd":341.64},
+    {"date":"2026-07-16","state":"confirmation_momentum_continuation","price_usd":null},
+    {"date":"2026-08-18","state":"first_accumulation_buy_review","price_usd":413.41,"price_basis":"IBKR_regular_session_close"}
   ],
   "decision_state": {
     "business_thesis": "strong_validated",
@@ -63,128 +42,65 @@
     "market_consensus": "high",
     "price_implied_expectations": "high",
     "trade_state": "confirmation_to_momentum_continuation",
-    "action": "watch_hold_or_selective_start_small",
-    "action_logic": "Do not use price alone. Require joint alignment of price, evidence, expectations and portfolio risk.",
-    "start_small_conditions": [
-      "Thesis confidence remains high and valuation remains supportable by observable earnings growth.",
-      "Next evidence nodes and kill criteria are explicitly defined.",
-      "Initial position remains a small research sleeve rather than a full-size conviction position."
-    ],
-    "add_conditions": [
-      "Fundamental upgrade: revenue/EPS guidance or upstream AI capex evidence rises enough to improve expected return despite a higher price.",
-      "Price reset: valuation compresses materially while AI/HPC demand, technology execution, margin framework and geopolitical operating conditions remain intact."
-    ],
-    "trim_conditions": [
-      "Price/multiple expands materially faster than earnings estimates.",
-      "Portfolio AI/semiconductor concentration becomes excessive.",
-      "Expected return compresses without corresponding new fundamental evidence."
-    ],
-    "kill_criteria": [
-      "AI/HPC demand deteriorates for multiple quarters and major customers materially reduce real infrastructure plans.",
-      "N2/A16/advanced-packaging execution or yield leadership suffers a structural failure or major leading-edge designs migrate away.",
-      "Gross/operating margin suffers persistent impairment beyond explained ramp/overseas-fab effects without a credible recovery path.",
-      "Capex stays elevated while utilization/revenue guidance and free cash flow deteriorate, indicating poor incremental capital productivity.",
-      "A geopolitical event materially impairs production, logistics, personnel, export capability or market access."
-    ]
+    "action": "start_small_or_buy_review_conditional",
+    "price_reference_usd": 413.41,
+    "price_reference_type": "regular_session_close",
+    "triggered_conditions": ["entered_395_420_first_accumulation_zone","drawdown_from_52w_high_gte_12pct"],
+    "action_logic": "The $395-$420 zone and >=12% drawdown are re-underwrite triggers, not automatic trade signals. Require joint alignment of price, evidence, expectations and portfolio risk.",
+    "start_small_conditions": ["Operating thesis remains intact.","FY2026/FY2027 EPS and company guidance have not deteriorated materially.","Upstream AI compute demand remains supportive.","Portfolio AI/semiconductor concentration is acceptable.","Initial position remains a small research sleeve rather than a full-size conviction position."],
+    "add_conditions": ["Fundamental upgrade: revenue/EPS guidance or upstream AI capex evidence rises enough to improve expected return despite a higher price.","Price reset: valuation compresses materially while AI/HPC demand, technology execution, margin framework and geopolitical operating conditions remain intact."],
+    "trim_conditions": ["Price/multiple expands materially faster than earnings estimates.","Portfolio AI/semiconductor concentration becomes excessive.","Expected return compresses without corresponding new fundamental evidence."],
+    "kill_criteria": ["AI/HPC demand deteriorates for multiple quarters and major customers materially reduce real infrastructure plans.","N2/A16/advanced-packaging execution or yield leadership suffers a structural failure or major leading-edge designs migrate away.","Gross/operating margin suffers persistent impairment beyond explained ramp/overseas-fab effects without a credible recovery path.","Capex stays elevated while utilization/revenue guidance and free cash flow deteriorate, indicating poor incremental capital productivity.","A geopolitical event materially impairs production, logistics, personnel, export capability or market access."]
   },
   "historical_checkpoints": [
-    {
-      "date":"2025-08-19","type":"reconstructed_valuation","pit_available_from":"2025-08-19","price_usd":232.70,"ordinary_shares_b_reported":25.933,"ads_ratio_ordinary_per_adr":5,"adr_equivalent_shares_b_reconstructed":5.1866,"equity_value_usd_b_reconstructed":1206.92,"cash_and_marketables_ntd_b_reported_q2":2634.43,"long_term_interest_bearing_debt_ntd_b_reported_q2":883.67,"net_cash_ntd_b_reconstructed":1750.76,"fx_ntd_per_usd_assumption":29.9,"enterprise_value_usd_b_inferred":1148.37,"ttm_revenue_usd_b_reconstructed":105.98,"ttm_ev_sales_x_inferred":10.84,"ttm_adr_eps_usd_reconstructed":8.77,"ttm_pe_x_reconstructed":26.53,"forward_fy2026_adr_eps_usd_sell_side":10.95,"forward_fy2026_pe_x_reconstructed":21.25,"forward_snapshot_available_from":"2025-08-12","ttm_operating_income_usd_b_reconstructed_approx":51.6,"ttm_ev_operating_income_x_inferred_approx":22.3,"ttm_fcf_ntd_b_reconstructed_approx":937.8,"fcf_yield_range_pct_inferred":"2-3","valuation_status":"provisional","note":"EV uses a provisional balance-sheet FX convention. P/E is the cleaner production candidate pending deterministic FX validation. Forward EPS is a third-party sell-side consensus snapshot, not issuer guidance."},
-    {
-      "date":"2025-10-16","type":"reconstructed_valuation","pit_available_from":"2025-10-16","price_usd":299.84,"ttm_adr_eps_usd_reconstructed":9.75,"ttm_pe_x_reconstructed":30.75,"ttm_revenue_usd_b_reconstructed":115.58,"forward_fy2026_adr_eps_usd_sell_side":11.14,"forward_fy2026_pe_x_reconstructed":26.92,"forward_snapshot_available_from":"2025-10-03","valuation_status":"provisional","note":"Uses the latest recovered pre-Q3 sell-side snapshot; post-event revisions are not backdated. Detailed EV bridge awaits canonical quarter-end FX convention."},
-    {
-      "date":"2026-01-15","type":"reconstructed_valuation","pit_available_from":"2026-01-15","price_usd":341.64,"fy2025_adr_eps_usd_reconstructed":10.65,"pe_x_reconstructed":32.08,"fy2025_revenue_usd_b_reported":122.42,"fy2025_gross_margin_pct_reported":59.9,"fy2025_operating_margin_pct_reported":50.8,"fy2025_fcf_ntd_b_reconstructed":1002.57,"valuation_status":"provisional","note":"No sell-side estimate is inserted for this checkpoint because the next exact recovered snapshot is 2026-01-30; do not use hindsight."},
-    {
-      "date":"2026-01-30","type":"sell_side_expectation_checkpoint","pit_available_from":"2026-01-30","price_usd":330.56,"forward_fy2026_adr_eps_usd_sell_side":14.01,"forward_fy2027_adr_eps_usd_sell_side":17.48,"forward_fy2026_pe_x_reconstructed":23.59,"valuation_status":"validated_forecast_only","note":"Post-Q4 sell-side expectation state; a material upward revision versus the Aug-2025 snapshot."},
-    {
-      "date":"2026-07-21","type":"sell_side_expectation_checkpoint","pit_available_from":"2026-07-21","price_usd":424.61,"forward_fy2026_adr_eps_usd_sell_side":16.05,"forward_fy2027_adr_eps_usd_sell_side":20.42,"forward_fy2026_pe_x_reconstructed":26.46,"valuation_status":"validated_forecast_only","note":"Post-Q2-2026 sell-side expectation state."},
-    {
-      "date":"2026-08-18","type":"current_reunderwrite","pit_available_from":"2026-08-18","price_usd":420.00,"ordinary_shares_b_reported":25.932,"adr_equivalent_shares_b_reconstructed":5.1864,"equity_value_usd_b_reconstructed":2178.29,"cash_and_marketables_ntd_b_reported_q2":3518.01,"long_term_interest_bearing_debt_ntd_b_reported_q2":864.27,"fx_ntd_per_usd_assumption":31.6,"net_cash_usd_b_inferred":83.98,"enterprise_value_usd_b_inferred":2094.31,"ttm_revenue_usd_b_reconstructed":142.93,"ttm_ev_sales_x_inferred":14.65,"ttm_adr_eps_usd_reconstructed":13.86,"ttm_pe_x_reconstructed":30.30,"forward_fy2026_adr_eps_usd_sell_side":16.45,"forward_fy2027_adr_eps_usd_sell_side":20.83,"forward_fy2026_pe_x_reconstructed":25.53,"forward_snapshot_available_from":"2026-08-18","ttm_operating_income_usd_b_reconstructed_approx":80.06,"ttm_ev_operating_income_x_inferred_approx":26.16,"ttm_capex_revenue_pct_reconstructed":33.58,"valuation_status":"provisional","note":"Q2 average FX is used only as an analytical conversion convention. Current sell-side snapshot is not backdated."}
+    {"date":"2025-08-19","type":"reconstructed_valuation","price_usd":232.70,"ttm_adr_eps_usd_reconstructed":8.77,"ttm_pe_x_reconstructed":26.53,"forward_fy2026_adr_eps_usd_sell_side":10.95,"forward_fy2026_pe_x_reconstructed":21.25,"valuation_status":"provisional"},
+    {"date":"2025-10-16","type":"reconstructed_valuation","price_usd":299.84,"ttm_adr_eps_usd_reconstructed":9.75,"ttm_pe_x_reconstructed":30.75,"forward_fy2026_adr_eps_usd_sell_side":11.14,"forward_fy2026_pe_x_reconstructed":26.92,"valuation_status":"provisional"},
+    {"date":"2026-01-15","type":"reconstructed_valuation","price_usd":341.64,"fy2025_adr_eps_usd_reconstructed":10.65,"pe_x_reconstructed":32.08,"valuation_status":"provisional"},
+    {"date":"2026-01-30","type":"sell_side_expectation_checkpoint","price_usd":330.56,"forward_fy2026_adr_eps_usd_sell_side":14.01,"forward_fy2027_adr_eps_usd_sell_side":17.48,"forward_fy2026_pe_x_reconstructed":23.59,"valuation_status":"validated_forecast_only"},
+    {"date":"2026-07-21","type":"sell_side_expectation_checkpoint","price_usd":424.61,"forward_fy2026_adr_eps_usd_sell_side":16.05,"forward_fy2027_adr_eps_usd_sell_side":20.42,"forward_fy2026_pe_x_reconstructed":26.46,"valuation_status":"validated_forecast_only"},
+    {"date":"2026-08-18","type":"current_reunderwrite","price_usd":413.41,"price_basis":"IBKR_regular_session_close","ordinary_shares_b_reported":25.932,"adr_equivalent_shares_b_reconstructed":5.1864,"equity_value_usd_b_reconstructed":2144.11,"cash_and_marketables_ntd_b_reported_q2":3518.01,"long_term_interest_bearing_debt_ntd_b_reported_q2":864.27,"fx_ntd_per_usd_assumption":31.6,"net_cash_usd_b_inferred":83.98,"enterprise_value_usd_b_inferred":2060.13,"ttm_revenue_usd_b_reconstructed":142.93,"ttm_ev_sales_x_inferred":14.41,"ttm_adr_eps_usd_reconstructed":13.86,"ttm_pe_x_reconstructed":29.83,"forward_fy2026_adr_eps_usd_sell_side":16.45,"forward_fy2027_adr_eps_usd_sell_side":20.83,"forward_fy2026_pe_x_reconstructed":25.13,"forward_fy2027_pe_x_reconstructed":19.85,"ttm_operating_income_usd_b_reconstructed_approx":80.06,"ttm_ev_operating_income_x_inferred_approx":25.73,"ttm_capex_revenue_pct_reconstructed":33.58,"valuation_status":"provisional","note":"Current EV still uses the Q2 average FX analytical convention; P/E is cleaner. Sell-side forecast snapshot remains expectation evidence, not issuer guidance."}
   ],
   "forward_expectation_history": {
     "classification":"sell_side_forecast",
     "source_role":"expectation_evidence_not_load_bearing_company_fact",
-    "snapshots":[
-      {"available_from":"2025-08-12","fy2026_eps_usd":10.95},
-      {"available_from":"2025-10-03","fy2026_eps_usd":11.14},
-      {"available_from":"2025-11-14","fy2026_eps_usd":12.29},
-      {"available_from":"2026-01-30","fy2026_eps_usd":14.01,"fy2027_eps_usd":17.48},
-      {"available_from":"2026-07-21","fy2026_eps_usd":16.05,"fy2027_eps_usd":20.42},
-      {"available_from":"2026-08-18","fy2026_eps_usd":16.45,"fy2027_eps_usd":20.83}
-    ],
+    "snapshots":[{"available_from":"2025-08-12","fy2026_eps_usd":10.95},{"available_from":"2025-10-03","fy2026_eps_usd":11.14},{"available_from":"2025-11-14","fy2026_eps_usd":12.29},{"available_from":"2026-01-30","fy2026_eps_usd":14.01,"fy2027_eps_usd":17.48},{"available_from":"2026-07-21","fy2026_eps_usd":16.05,"fy2027_eps_usd":20.42},{"available_from":"2026-08-18","fy2026_eps_usd":16.45,"fy2027_eps_usd":20.83}],
     "key_inference":"The principal missed expectation gap was not whether AI existed, but the magnitude and duration of TSMC earnings conversion. FY2026 consensus rose roughly 50% from the last recovered pre-2025-08-19 snapshot to the current review snapshot."
   },
   "result_attribution": {
-    "primary_close_window":"2025-08-19_to_2026-08-17",
+    "primary_close_window":"2025-08-19_to_2026-08-18",
     "tsm_price_start_usd":232.70,
-    "tsm_price_end_usd":430.97,
-    "tsm_price_change_pct":85.20,
-    "benchmark_returns_pct":{"SOXX":128.07,"NVDA":28.11,"QQQ":28.21},
-    "relative_wealth_pct_approx":{"vs_QQQ":44.5,"vs_NVDA":44.6,"vs_SOXX":-18.8},
-    "benchmark_interpretation":"TSM materially outperformed broad technology and NVDA over the exact window, but underperformed SOXX. Broad-tech beta alone is insufficient to explain the move, while positive semiconductor-sector alpha is not established.",
-    "benchmark_method":"deterministic_close_to_close_comparison_not_multivariate_regression",
-    "trailing_earnings_bridge":{"ttm_eps_start_usd":8.77,"ttm_eps_end_usd":13.86,"ttm_eps_change_pct":58.04,"ttm_pe_start_x":26.53,"ttm_pe_end_x":30.30,"multiple_change_pct_approx":14.2,"log_earnings_share_of_price_move_approx_pct":77,"log_multiple_share_of_price_move_approx_pct":23},
-    "pit_forward_bridge":{"fy2026_eps_consensus_start_usd":10.95,"start_snapshot_available_from":"2025-08-12","fy2026_eps_consensus_current_usd":16.45,"current_snapshot_available_from":"2026-08-18","eps_revision_pct_approx":50.23,"start_forward_pe_x_at_2025_08_19":21.25,"current_forward_pe_x_at_2026_08_18_intraday_420":25.53,"interpretation":"Large earnings-estimate revision was the dominant fundamental repricing driver; multiple expansion was meaningful but secondary."},
+    "tsm_price_end_usd":413.41,
+    "tsm_price_change_pct":77.66,
+    "trailing_earnings_bridge":{"ttm_eps_start_usd":8.77,"ttm_eps_end_usd":13.86,"ttm_eps_change_pct":58.04,"ttm_pe_start_x":26.53,"ttm_pe_end_x":29.83,"multiple_change_pct_approx":12.41,"log_earnings_share_of_price_move_approx_pct":79.64,"log_multiple_share_of_price_move_approx_pct":20.36},
     "capital_structure":"immaterial_to_positive_net_cash; no material dilution",
-    "fx_adr_basis":"provisional; local-share/ADR comparison indicates FX and ADR-premium changes explain part of ADR-vs-local performance divergence, but the ending official same-date FX rate remains unvalidated in the canonical ledger",
-    "positioning_flow":"not_separately_quantified",
-    "execution_exit_management":"no verified executed position; opportunity cost only"
+    "benchmark_method":"A separate exact-window benchmark series exists through 2026-08-17; do not infer semiconductor-sector alpha from it without a formal factor model."
   },
   "upstream_monitor": {
-    "purpose":"Treat hyperscaler and accelerator evidence as upstream re-underwrite nodes for TSMC rather than as automatic trade signals.",
     "causal_chain":["hyperscaler_ai_demand_and_monetization","real_compute_capex","gpu_and_custom_asic_demand","tsmc_leading_edge_and_packaging_workload","monthly_revenue_and_hpc_node_mix","utilization_and_margin","cfo_capex_fcf","eps_revision_and_valuation"],
-    "historical_pit_support_before_first_research_date":["Alphabet Q2 2025 capex raise and expectation of further 2026 increase","Meta 2025 capex guide and expected similarly significant 2026 dollar growth","Microsoft FY2025 property/equipment additions","TSMC five-year AI accelerator planning view, CoWoS expansion and $38-42B 2025 capex"],
-    "monitor_ontology":["nominal_capex","gpu_cpu_accelerator_spend","data_center_buildings_and_networking","finance_leases","component_price_inflation","custom_silicon_vs_merchant_gpu_mix","cloud_ai_revenue_and_backlog","capacity_constraints","ai_roi_and_monetization"],
     "green":"At least two major hyperscalers maintain or raise real AI-infrastructure commitments while cloud/AI demand remains strong, and accelerator/custom-ASIC plus TSM monthly-revenue/guidance evidence remains intact.",
     "yellow":"Nominal capex remains high but incremental growth is increasingly buildings, leases or component inflation; cloud growth slows or supply constraints ease while TSM evidence remains intact.",
     "red":"At least two major hyperscalers materially cut real compute plans, combined with deterioration in cloud/AI demand and either TSM three-month revenue/guidance or accelerator/custom-ASIC demand signals.",
-    "next_evidence_nodes":["2026-08-26_NVDA_earnings","2026-09-10_TSM_August_revenue","2026-10-08_TSM_September_revenue","each_material_GOOGL_META_MSFT_AMZN_earnings_update"]
-  },
-  "attention_validation": {
-    "lesson_state":"candidate",
-    "TSM":"direct_support",
-    "NVDA":"partial_analogue_not_exact_validation",
-    "SNDK":"adjacent_event_readiness_case_not_same_failure_mode",
-    "MU":"insufficient_historical_evidence_do_not_use",
-    "operational_metadata":["attention_state","next_evidence_node","review_due","deprioritization_reason","stale_attention"],
-    "stale_attention_trigger":"Only if a case was explicitly thesis-ready/P0, a material evidence node was scheduled, the node passed without review, and no explicit intentional deprioritization reason exists.",
-    "counterexample_requirement":"Deliberate deprioritization may be correct because expected return is poor, downside is unacceptable, evidence quality declines, portfolio exposure is excessive, or a superior opportunity deserves scarce research time.",
-    "promotion_evidence_needed":"At least one additional timestamped case satisfying the full stale-attention chain plus at least one counterexample where deliberate deprioritization was correct."
+    "next_evidence_nodes":["2026-08-26_NVDA_earnings","2026-09-10_TSM_August_revenue","2026-10-08_TSM_September_revenue"]
   },
   "monitoring_policy": {
     "priority":"P0_persistent_monitor",
     "attention_state":"active",
-    "daily_exception_only":["single_day_move_abs_gte_7pct","drawdown_from_recent_high_gte_12pct","new_52_week_high","material_export_control_customer_or_geopolitical_event"],
-    "monthly_mandatory":["monthly_revenue","three_month_revenue_trend","quarter_guidance_bridge"],
-    "quarterly_mandatory":["revenue","platform_mix_hpc","node_mix","gross_margin","operating_margin","eps","operating_cash_flow","capex","free_cash_flow","inventory_days","ar_days","guidance","technology_roadmap","customer_concentration","valuation"],
-    "upstream_triggers":["material_hyperscaler_real_compute_capex_change","major_ai_accelerator_architecture_or_demand_change","advanced_packaging_or_hbm_bottleneck_change"],
+    "daily_exception_only":["single_day_move_abs_gte_7pct","drawdown_from_recent_high_gte_12pct","new_52_week_high","enter_action_zone","material_export_control_customer_or_geopolitical_event"],
     "next_evidence_node":"2026-08-26_NVDA_earnings",
     "review_due":"2026-08-26",
     "deprioritization_reason":null,
-    "stale_attention":false,
-    "staleness_rule":"If the next scheduled evidence node passes without review and no explicit deprioritization reason exists, mark stale_attention=true and return the case to the decision queue."
+    "stale_attention":false
   },
   "evidence_summary": {
     "source_policy":"Primary issuer/SEC and direct IBKR market/account data are load-bearing; third-party sell-side snapshots are used only as market-expectation evidence and remain explicitly classified as forecasts.",
-    "unknowns":[
-      "No verified contemporaneous 2025 TSM buy/add/trim/target/stop/size record was recovered.",
-      "Historical EV checkpoints require deterministic quarter-end FX validation before decision-grade promotion.",
-      "Ending same-date authoritative FX remains unvalidated for a production-grade ADR/local-share attribution.",
-      "Benchmark comparison is deterministic and does not separately regress semiconductor beta, broad-market beta, Taiwan risk, positioning, flow or rates."
-    ]
+    "unknowns":["No verified contemporaneous 2025 TSM buy/add/trim/target/stop/size record was recovered.","Historical EV checkpoints require deterministic quarter-end FX validation before decision-grade promotion.","Ending same-date authoritative FX remains unvalidated for a production-grade ADR/local-share attribution.","Benchmark comparison does not establish semiconductor-sector alpha without a formal factor model."]
   },
   "lessons": [
-    {"status":"candidate","principle":"Once a security is thesis-ready, missing a scheduled material evidence node without an explicit deprioritization reason is an attention-continuity process failure.","scope":"Core research universe securities with recurring public evidence."},
-    {"status":"candidate","principle":"Industry capex guidance can be an upstream evidence node for bottleneck suppliers and should trigger re-underwriting even without a company-specific announcement.","scope":"Semiconductor, cloud, power and other infrastructure bottleneck suppliers."},
-    {"status":"candidate","principle":"For capital-intensive quality compounders, evaluate capex productivity through utilization, margin, operating cash flow and FCF rather than treating capex magnitude as bullish or bearish by itself.","scope":"Capital-intensive profitable compounders."},
-    {"status":"candidate","principle":"A missed winner is not automatically an execution failure; distinguish awareness, preparation, priority, monitoring and execution from the contemporaneous record.","scope":"Historical missed-opportunity reviews."},
-    {"status":"candidate","principle":"Market awareness of a structural theme does not imply the market has correctly priced the magnitude and duration of future earnings revisions.","scope":"High-consensus structural-growth equities; requires cross-case validation before promotion."}
+    {"status":"candidate","principle":"Once a security is thesis-ready, missing a scheduled material evidence node without an explicit deprioritization reason is an attention-continuity process failure."},
+    {"status":"candidate","principle":"Industry capex guidance can be an upstream evidence node for bottleneck suppliers and should trigger re-underwriting even without a company-specific announcement."},
+    {"status":"candidate","principle":"For capital-intensive quality compounders, evaluate capex productivity through utilization, margin, operating cash flow and FCF rather than treating capex magnitude as bullish or bearish by itself."},
+    {"status":"candidate","principle":"A missed winner is not automatically an execution failure; distinguish awareness, preparation, priority, monitoring and execution from the contemporaneous record."},
+    {"status":"candidate","principle":"Market awareness of a structural theme does not imply the market has correctly priced the magnitude and duration of future earnings revisions."}
   ],
-  "promotion_requirements": [
-    "Validate historical balance-sheet-date FX convention and recompute EV checkpoints deterministically.",
-    "Validate a same-date authoritative ending FX rate if ADR/local-share attribution is to become production-grade.",
-    "Confirm or explicitly accept absence of any 2025 contemporaneous trade-decision record across other broker/account sources if available.",
-    "Upgrade deterministic benchmark comparison to a formal factor model if semiconductor-alpha claims are required.",
-    "Founder/reviewer explicitly approves current decision, sizing and kill criteria before decision_grade promotion."
-  ]
+  "promotion_requirements": ["Validate historical balance-sheet-date FX convention and recompute EV checkpoints deterministically.","Validate a same-date authoritative ending FX rate if ADR/local-share attribution is to become production-grade.","Confirm or explicitly accept absence of any 2025 contemporaneous trade-decision record across other broker/account sources if available.","Founder/reviewer explicitly approves current decision, sizing and kill criteria before decision_grade promotion."]
 }
