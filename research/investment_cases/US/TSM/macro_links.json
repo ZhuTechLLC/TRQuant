@@ -1,0 +1,87 @@
+{
+  "schema_version": "0.1.0",
+  "case_id": "US-TSM-2025-2026",
+  "as_of": "2026-08-18",
+  "macro_context_refs": [
+    "research/macro_context/2026-08-18_us_ai_semis_regime.md",
+    "research/macro_context/snapshots/2026-08-18_US_AI_SEMIS.json"
+  ],
+  "overall_macro_state": {
+    "operating_demand": "green",
+    "valuation_discount_rate": "yellow_red",
+    "geopolitical_operational_tail": "red_tail"
+  },
+  "transmission_channels": [
+    {
+      "channel": "direct_operating_demand",
+      "state": "green",
+      "drivers": ["hyperscaler_real_compute_capex", "accelerator_and_custom_asic_demand", "cloud_ai_monetization", "leading_edge_and_advanced_packaging_workload"],
+      "company_bridge": "AI/cloud demand -> customer tapeouts/design wins -> N2/N3/N5 wafer workload + CoWoS/advanced packaging -> utilization/mix/pricing -> revenue/margins -> EPS/FCF",
+      "current_interpretation": "Strong. The key risk is not lack of AI narrative awareness but whether real compute demand and TSMC earnings conversion continue to outrun already-high expectations."
+    },
+    {
+      "channel": "capital_cost_valuation",
+      "state": "yellow_red",
+      "drivers": ["fed_policy_rate", "core_inflation", "real_yields", "equity_risk_premium"],
+      "company_bridge": "Higher real discount rates -> lower acceptable long-duration multiple / higher required return; business cash flows are affected less directly than valuation.",
+      "current_interpretation": "Restrictive real-rate backdrop makes valuation compression possible even while operating fundamentals remain strong."
+    },
+    {
+      "channel": "margin_fx_cost",
+      "state": "yellow_monitor",
+      "drivers": ["usd_twd", "overseas_fab_cost", "energy_and_input_costs"],
+      "company_bridge": "USD-linked semiconductor economics and TWD reporting interact with cost geography; FX also affects ADR/local-share parity and historical EV reconstruction.",
+      "current_interpretation": "Material for margins and ADR basis, but current production-grade historical attribution still requires exact same-date official FX."
+    },
+    {
+      "channel": "policy_market_access",
+      "state": "yellow_structural",
+      "drivers": ["us_export_controls", "china_market_access", "industrial_policy", "subsidies_and_local_fab_requirements"],
+      "company_bridge": "Restrictions can change customer shipment mix and design demand; geographic diversification improves resilience but can raise overseas-fab costs.",
+      "current_interpretation": "Structural risk and margin trade-off; no thesis kill is asserted without verified operating impact."
+    },
+    {
+      "channel": "geopolitical_operational_tail",
+      "state": "red_tail",
+      "drivers": ["taiwan_strait_operational_risk", "shipping_and_logistics", "personnel_mobility", "insurance_and_cost_of_capital"],
+      "company_bridge": "A verified disruption can impair production/logistics/export capability and simultaneously increase the equity risk premium.",
+      "current_interpretation": "Low-frequency/high-severity tail; treat verified operational impairment as immediate re-underwrite/possible kill, not ordinary noise."
+    }
+  ],
+  "decision_integration": {
+    "business_thesis": "strong_validated",
+    "macro_effect_on_thesis": "supportive_operating_demand_but_adverse_valuation_overlay",
+    "macro_effect_on_action": "Raises the attractiveness of evidence-intact price resets but does not create an automatic buy signal.",
+    "current_price_trigger": {
+      "date": "2026-08-18",
+      "close_usd": 413.41,
+      "prior_close_usd": 430.97,
+      "one_day_change_pct_approx": -4.1,
+      "52w_high_usd": 478.89,
+      "drawdown_from_52w_high_pct_approx": -13.7,
+      "state": "first_accumulation_buy_review_zone",
+      "zone_usd": "395-420",
+      "instruction": "Re-underwrite; do not mechanically buy."
+    },
+    "research_action_zones": [
+      {"price_zone_usd":"395-420","state":"first_accumulation_buy_review","condition":"Thesis intact; EPS/guidance/upstream demand intact; portfolio concentration acceptable."},
+      {"price_zone_usd":"370-395","state":"higher_attractiveness_reunderwrite","condition":"No thesis break; determine whether price reset exceeds expectation deterioration."},
+      {"price_zone_usd":"above_480","state":"no_chase_reunderwrite","condition":"If EPS/guidance has not risen commensurately, expected return may be compressed."}
+    ]
+  },
+  "next_evidence_nodes": [
+    {"date":"2026-08-26","node":"NVIDIA earnings","purpose":"Validate accelerator demand, architecture transition, data-center demand and supply constraints."},
+    {"date":"2026-09-10","node":"TSMC August monthly revenue","purpose":"Validate Q3 revenue trajectory against $44.6-$45.8B guidance."},
+    {"date":"2026-10-08","node":"TSMC September monthly revenue","purpose":"Complete the Q3 monthly revenue bridge before/around quarterly results."}
+  ],
+  "monitoring_policy": {
+    "priority": "P0_persistent_monitor",
+    "notify_only_on_material_change": true,
+    "email_required_on_key_signal": true,
+    "price_triggers": ["abs_one_day_move_ge_7pct", "drawdown_from_recent_high_ge_12pct", "new_52w_high", "enter_action_zone", "major_trend_break"],
+    "fundamental_triggers": ["monthly_revenue_breaks_guidance_bridge", "guidance_or_eps_revision", "margin_framework_change", "N2_or_advanced_packaging_execution_change"],
+    "upstream_triggers": ["two_or_more_hyperscalers_materially_change_real_compute_capex", "material_accelerator_or_custom_asic_demand_change", "capacity_constraint_or_utilization_change"],
+    "macro_triggers": ["material_real_rate_or_liquidity_regime_change", "material_export_control_change", "verified_taiwan_operational_disruption", "unusual_usd_twd_or_adr_basis_change"],
+    "signal_classification": ["WATCH", "START_SMALL", "ADD", "HOLD", "REDUCE", "AVOID", "THESIS_REUNDERWRITE"]
+  }
+}
