@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1.0",
+  "context_id": "US-AI-SEMIS-2026-08-18",
+  "as_of": "2026-08-18",
+  "market": "US",
+  "theme": "ai_semiconductor_infrastructure",
+  "states": {
+    "operating_demand": "green",
+    "rates_inflation_valuation": "yellow_red",
+    "growth": "yellow_green",
+    "semiconductor_cycle": "green_high_expectations",
+    "fx_usd_twd": "yellow_monitor",
+    "trade_export_controls": "yellow_structural",
+    "geopolitical_operational_tail": "red_tail"
+  },
+  "observed_facts": [
+    {
+      "fact_id": "MACRO-20260818-001",
+      "claim_type": "reported_fact",
+      "metric": "federal_funds_target_range",
+      "value": "3.50%-3.75%",
+      "available_from": "2026-07-29",
+      "source_type": "central_bank"
+    },
+    {
+      "fact_id": "MACRO-20260818-002",
+      "claim_type": "reported_fact",
+      "metric": "core_pce_yoy_june_2026",
+      "value": 3.3,
+      "unit": "%",
+      "available_from": "2026-07-30",
+      "source_type": "statistical_agency"
+    },
+    {
+      "fact_id": "MACRO-20260818-003",
+      "claim_type": "reported_fact",
+      "metric": "us_real_gdp_q2_2026_annualized_advance",
+      "value": 1.5,
+      "unit": "%",
+      "available_from": "2026-07-30",
+      "source_type": "statistical_agency"
+    },
+    {
+      "fact_id": "MACRO-20260818-004",
+      "claim_type": "management_guidance",
+      "metric": "meta_2026_capex_including_finance_lease_principal",
+      "value": "130-145",
+      "unit": "USD_billion",
+      "available_from": "2026-07-29",
+      "source_type": "issuer_ir"
+    },
+    {
+      "fact_id": "MACRO-20260818-005",
+      "claim_type": "reported_fact_and_management_guidance",
+      "metric": "microsoft_fy26_q3_capex_and_calendar_2026_plan",
+      "value": "Q3 $31.9B; approximately two-thirds short-lived assets primarily GPUs/CPUs; next quarter >$40B; calendar 2026 ~ $190B including ~ $25B component-price impact",
+      "available_from": "2026-04-29",
+      "source_type": "issuer_ir"
+    },
+    {
+      "fact_id": "MACRO-20260818-006",
+      "claim_type": "reported_fact",
+      "metric": "nvidia_q1_fy2027_revenue_and_data_center",
+      "value": "Revenue $81.6B (+85% YoY); Data Center $75.2B (+92% YoY); Q2 revenue guide $91B +/-2% excluding China Data Center compute",
+      "available_from": "2026-05-20",
+      "source_type": "issuer_ir"
+    }
+  ],
+  "ontology": {
+    "nominal_ai_capex_components": [
+      "gpu_cpu_accelerator_and_server",
+      "data_center_buildings",
+      "networking",
+      "finance_leases",
+      "component_price_inflation",
+      "custom_silicon_vs_merchant_gpu"
+    ],
+    "demand_validation": [
+      "cloud_ai_revenue",
+      "backlog_or_rpo",
+      "capacity_constraints",
+      "utilization",
+      "customer_monetization"
+    ]
+  },
+  "reunderwrite_rules": {
+    "green_continuation": "At least two hyperscalers maintain or raise real compute commitments, accelerator/custom-ASIC demand remains strong, and TSMC revenue/guidance remains intact.",
+    "yellow": "Nominal capex stays high but real compute content weakens, cloud growth slows, rates/real yields rise materially, FX/ADR basis moves unusually, or export restrictions tighten without operating impairment.",
+    "red": "At least two hyperscalers materially cut real compute plans together with weaker AI/cloud demand and concurrent deterioration in TSMC revenue/guidance; or structural technology/packaging failure; or verified geopolitical operating impairment."
+  },
+  "linked_cases": ["US-TSM-2025-2026", "US-NVDA", "US-MU", "US-CRWV"],
+  "governance": "Macro context is evidence and scenario input, not an automatic trade signal."
+}
