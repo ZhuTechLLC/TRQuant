@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "contexts": [
+    {
+      "context_id": "MACRO-US-TW-AI-SEMIS-2026-08-18",
+      "as_of": "2026-08-18",
+      "status": "research_complete",
+      "title": "US-Taiwan AI Semiconductor Macro & Cross-Asset Context",
+      "domains": ["rates", "inflation", "growth", "ai_capex", "semiconductor_cycle", "fx", "export_controls", "industrial_policy", "geopolitics", "energy"],
+      "linked_cases": ["US-TSM-2025-2026"],
+      "path": "research/macro_context/contexts/US_TW_AI_SEMICONDUCTOR/2026-08-18"
+    }
+  ]
+}
