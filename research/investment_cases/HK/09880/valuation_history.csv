@@ -1,0 +1,3 @@
+date,price_hkd,market_cap_hkd_b,metric,value,classification,note
+2026-08-21,83.90,36.764,price_to_FY2025_revenue_rough_x,17,internal_calculation,"rough currency-unadjusted scale indicator; not canonical multiple and not suitable for peer comparison without FX/share reconciliation"
+2026-08-21,83.90,36.764,52w_high_hkd,161,market_data,"price well below prior high but drawdown is not a buy signal"

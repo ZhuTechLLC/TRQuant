@@ -1,0 +1,3 @@
+date,H_price_hkd,A_price_cny,HKD_CNY,H_price_cny_equiv,H_to_A_ratio_pct,H_discount_pct,classification
+2026-06-26,10.18,,, ,,,IPO_offer_reference
+2026-08-21,6.24,12.24,0.8571,5.35,43.7,56.3,market_expectation_and_internal_calculation
