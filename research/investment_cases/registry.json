@@ -32,6 +32,23 @@
       "canonical_price_usd": 413.41,
       "current_action": "start_small_or_buy_review_conditional",
       "promotion_note": "Research complete, not decision grade: historical EV history still uses provisional FX conventions, no verified original 2025 trade-decision provenance exists across all possible accounts, and current sizing/action/kill criteria still require explicit founder/reviewer approval. Formal factor regression is required only if semiconductor-sector alpha is claimed."
+    },
+    {
+      "case_id": "CN_A-300602-2026",
+      "market": "CN_A",
+      "ticker": "300602.SZ",
+      "company": "深圳市飞荣达科技股份有限公司",
+      "path": "research/investment_cases/CN_A/300602",
+      "status": "research_complete",
+      "golden_case": false,
+      "archetypes": ["ai_infrastructure_thermal_management","liquid_cooling_content_expansion","manufacturing_operating_leverage","robotics_growth_option","working_capital_conversion_risk","valuation_expectation_risk"],
+      "first_research_date": "2026-08-23",
+      "latest_review_date": "2026-08-23",
+      "dominant_variable": "ai_liquid_cooling_revenue_margin_cash_conversion_vs_expectations",
+      "canonical_price_date": "2026-08-21",
+      "canonical_price_cny": 41.57,
+      "current_action": "watch_no_default_new_capital",
+      "promotion_note": "Research complete, not decision grade: standalone AI-liquid-cooling revenue, gross margin, backlog and customer concentration are not disclosed; current FY2026-FY2028 sell-side expectation history has not yet been added; canonical CNINFO direct PDF reconciliation remains; the 2026-08-26 NVIDIA/U.S.-macro and 2026-08-28 joint liquid-cooling evidence nodes remain pending; founder/reviewer approval is required for action zones, sizing and kill criteria."
     }
   ]
 }

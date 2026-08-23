@@ -1,0 +1,60 @@
+{
+  "case_id": "CN_A-300602-2026",
+  "events": [
+    {
+      "date": "2025-04-28",
+      "type": "business_evidence",
+      "state": "ai_liquid_cooling_batch_delivery_evidence",
+      "note": "Company disclosed meaningful AI-server liquid-cooling revenue growth, batch orders and ongoing product development across single/two-phase modules and 3D VC."
+    },
+    {
+      "date": "2025-06-18",
+      "type": "productization",
+      "state": "robot_thermal_solution_public",
+      "note": "Company published one-stop humanoid robot thermal-management solution capability."
+    },
+    {
+      "date": "2026-04-27",
+      "type": "earnings",
+      "state": "fy2025_confirmation",
+      "note": "FY2025 revenue RMB 6.527bn, attributable NP RMB 364.6m, CFO RMB 437.0m; thermal-management revenue RMB 2.467bn."
+    },
+    {
+      "date": "2026-06-15",
+      "type": "strategic_option",
+      "state": "huake_cooling_core_integration_confirmed",
+      "note": "Company disclosed 7.7783% stake and suspended-pump technology integration with 华科冷芯."
+    },
+    {
+      "date": "2026-07-31",
+      "type": "price_checkpoint",
+      "state": "pre_attention_acceleration",
+      "price_cny": 31.72
+    },
+    {
+      "date": "2026-08-21",
+      "type": "earnings_and_product_evidence",
+      "state": "h1_2026_confirmation",
+      "price_cny": 41.57,
+      "note": "H1 revenue +28.64%, attributable NP +52.09%, deducted NP +91.30%; robot joint liquid-cooling module explicitly included in product portfolio; AI-server/data-center cooling orders continued to rise."
+    },
+    {
+      "date": "2026-08-23",
+      "type": "research_decision",
+      "state": "research_complete_watch",
+      "note": "Case classified as AI-liquid-cooling current engine + robot-liquid-cooling option. Valuation and cash conversion prevent automatic starter allocation."
+    },
+    {
+      "date": "2026-08-26",
+      "type": "scheduled_evidence_node",
+      "state": "pending",
+      "note": "NVIDIA FY27 Q2 plus U.S. macro update."
+    },
+    {
+      "date": "2026-08-28",
+      "type": "scheduled_review",
+      "state": "pending",
+      "note": "TRQuant robot + AI liquid-cooling + U.S. macro joint re-underwrite."
+    }
+  ]
+}

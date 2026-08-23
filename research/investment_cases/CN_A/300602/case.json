@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "CN_A-300602-2026",
+  "market": "CN_A",
+  "ticker": "300602.SZ",
+  "company": "深圳市飞荣达科技股份有限公司",
+  "security": "SZSE ChiNext A-share",
+  "status": "research_complete",
+  "as_of": "2026-08-23",
+  "golden_case": false,
+  "first_research_date": "2026-08-23",
+  "latest_review_date": "2026-08-23",
+  "archetypes": [
+    "ai_infrastructure_thermal_management",
+    "liquid_cooling_content_expansion",
+    "manufacturing_operating_leverage",
+    "robotics_growth_option",
+    "working_capital_conversion_risk",
+    "valuation_expectation_risk"
+  ],
+  "core_question": "Can Feirongda convert rising AI-server and data-center liquid-cooling demand into sustained revenue growth, higher-value system content, improving thermal-management margins and normalized cash conversion fast enough to justify a high earnings multiple, while humanoid-robot liquid cooling remains upside rather than a valuation dependency?",
+  "dominant_variable": "AI liquid-cooling revenue conversion, margin progression and cash conversion relative to already-elevated valuation expectations.",
+  "value_driver_chain": [
+    "ai_compute_demand",
+    "hyperscaler_and_domestic_compute_capex",
+    "rack_power_density",
+    "liquid_cooling_attach_rate",
+    "feirongda_customer_design_ins",
+    "cold_plate_cdu_flow_control_connector_and_system_content",
+    "batch_shipments",
+    "thermal_management_revenue",
+    "thermal_management_gross_margin",
+    "operating_profit",
+    "working_capital",
+    "operating_cash_flow",
+    "capex",
+    "free_cash_flow",
+    "earnings_revision",
+    "valuation_multiple",
+    "shareholder_return"
+  ],
+  "business_mix": {
+    "2026_h1_revenue_cny_b": 3.7088,
+    "2026_h1_thermal_management_revenue_cny_b": 1.3834,
+    "2026_h1_thermal_management_revenue_share_pct": 37.3,
+    "2026_h1_thermal_management_gross_margin_pct": 15.08,
+    "2026_h1_thermal_management_gross_margin_change_pp_yoy": -1.62,
+    "robotics_revenue_materiality": "small_not_material_to_current_results",
+    "ai_liquid_cooling_standalone_revenue": null,
+    "ai_liquid_cooling_standalone_margin": null
+  },
+  "financial_snapshot": {
+    "period_end": "2026-06-30",
+    "revenue_cny_b": 3.7088,
+    "revenue_yoy_pct": 28.64,
+    "attributable_net_profit_cny_m": 252.6,
+    "attributable_net_profit_yoy_pct": 52.09,
+    "deducted_net_profit_cny_m": 260.1,
+    "deducted_net_profit_yoy_pct": 91.30,
+    "gross_margin_pct": 21.66,
+    "rd_cny_m": 204.85,
+    "rd_yoy_pct": 31.36,
+    "cfo_cny_m": 185.01,
+    "cfo_yoy_pct": -36.15,
+    "cash_capex_ppe_intangibles_cny_m": 262.05,
+    "cash_cny_m": 802.83,
+    "accounts_receivable_cny_b": 3.0213,
+    "inventory_cny_b": 1.4250,
+    "short_term_borrowings_cny_m": 907.79,
+    "long_term_borrowings_cny_m": 446.98,
+    "current_portion_noncurrent_liabilities_cny_m": 226.07,
+    "debt_ratio_pct": 55.23,
+    "attributable_equity_cny_b": 4.3347
+  },
+  "technology_stack": {
+    "ai_data_center": ["TIM", "heat_sinks", "fans", "3D_VC", "single_phase_liquid_cold_plate", "two_phase_liquid_cold_plate", "flow_control_instrument", "CDU", "quick_connector", "liquid_cooling_chassis", "liquid_cooling_rack"],
+    "robot_joint_liquid_cooling": ["microchannel_or_embedded_flow_path", "micro_pump", "rotary_seal_joint", "external_radiator"],
+    "mobile_active_cooling": ["pump_driven_ultrathin_VC", "micro_pump_liquid_cooling"],
+    "suspended_pump_integration": "technical integration with Huake Cooling Core"
+  },
+  "strategic_investment": {
+    "company": "华科冷芯（上海）动力科技有限公司",
+    "reported_stake_pct": 7.7783,
+    "stake_as_of": "2026-06-15",
+    "relationship": "minority_equity_plus_suspended_pump_technical_integration",
+    "valuation_role": "option_only_not_controlled_subsidiary"
+  },
+  "lifecycle": [
+    {"date":"2025-04-28","state":"ai_liquid_cooling_batch_delivery_evidence"},
+    {"date":"2025-06-18","state":"robot_thermal_solution_public_productization"},
+    {"date":"2026-04-27","state":"fy2025_earnings_confirmation"},
+    {"date":"2026-06-15","state":"huake_cooling_core_stake_and_pump_integration_confirmed"},
+    {"date":"2026-08-21","state":"h1_2026_earnings_and_robot_liquid_cooling_product_confirmation","price_cny":41.57},
+    {"date":"2026-08-23","state":"active_case_reunderwrite"}
+  ],
+  "decision_state": {
+    "business_thesis": "positive_validated",
+    "thesis_confidence": "medium_high",
+    "stock_attractiveness": "moderate_price_sensitive",
+    "trade_state": "watch_after_earnings_with_high_expectations",
+    "action": "watch_no_default_new_capital",
+    "price_reference_cny": 41.57,
+    "price_reference_date": "2026-08-21",
+    "start_small_conditions": [
+      "Price resets to approximately CNY 35 or lower while AI-liquid-cooling demand, batch-delivery evidence and earnings thesis remain intact.",
+      "OR new evidence at a higher price establishes materially stronger AI-liquid-cooling revenue, margin and cash conversion such that 2028 base-case attributable net profit credibly exceeds roughly CNY 1.0-1.1bn.",
+      "Portfolio exposure to correlated AI/liquid-cooling themes remains acceptable.",
+      "Starter remains experimental/high-conviction and within the existing TRQuant starter-risk limit rather than a full target risk unit."
+    ],
+    "add_conditions": [
+      "AI liquid-cooling revenue or a defensible proxy grows materially faster than group revenue.",
+      "Thermal-management gross margin improves while liquid-cooling mix rises.",
+      "Rolling CFO/net-profit conversion normalizes above roughly 1x or working-capital build is visibly converted into revenue and cash.",
+      "Higher-content CDU, flow-control, quick-connect, pump-integrated or rack-level products become repeat batch revenue.",
+      "Major AI infrastructure customers maintain or raise real compute deployment plans."
+    ],
+    "trim_conditions": [
+      "Price/multiple expands materially faster than earnings evidence.",
+      "Robot-liquid-cooling narrative becomes a major valuation driver before robot revenue/order evidence is material.",
+      "AI/liquid-cooling factor concentration in the portfolio becomes excessive."
+    ],
+    "kill_criteria": [
+      "Two or more quarters of material AI-server/liquid-cooling order deterioration without a credible cyclical explanation.",
+      "Thermal-management revenue grows while gross margin continues structurally downward, indicating weak value capture or commodity competition.",
+      "Persistent CFO weakness, rising receivables/inventory and debt despite reported profit growth.",
+      "Material loss of key server/telecom customers or repeated failure to convert sample/pilot programs to batch orders.",
+      "Broad hyperscaler real-compute capex cuts coincide with weakening GPU/rack deployment evidence.",
+      "Robot revenue remains immaterial while the stock valuation becomes primarily dependent on robot-liquid-cooling expectations."
+    ]
+  },
+  "valuation": {
+    "price_date": "2026-08-21",
+    "price_cny": 41.57,
+    "shares_m": 586.0,
+    "market_cap_cny_b_calculated": 24.36,
+    "observed_ttm_pe_x": 54.06,
+    "observed_52w_high_cny": 52.92,
+    "observed_52w_low_cny": 26.34,
+    "h1_annualized_np_cny_m_calculated": 505.2,
+    "h1_annualized_pe_x_calculated": 48.2,
+    "reverse_valuation": {
+      "2028_np_required_for_flat_market_cap_at_30x_cny_m": 812.0,
+      "2028_np_required_for_15pct_2yr_return_at_35x_cny_m": 920.5,
+      "2028_np_required_for_15pct_2yr_return_at_30x_cny_m": 1073.9,
+      "2028_np_required_for_15pct_2yr_return_at_25x_cny_m": 1288.6
+    },
+    "interpretation": "Current valuation already requires rapid earnings compounding; robot option value should not be used to bridge missing AI-liquid-cooling cash conversion."
+  },
+  "scenarios": {
+    "bear": {
+      "2028_np_cny_b_range": [0.65,0.75],
+      "exit_pe_range": [25,28],
+      "implied_equity_value_cny_b_range": [16.25,21.0],
+      "conditions": ["AI infrastructure growth slows", "thermal margin fails to improve", "working capital remains cash consuming", "robot revenue remains pre-scale"]
+    },
+    "base": {
+      "2028_np_cny_b_range": [0.95,1.10],
+      "exit_pe_range": [30,35],
+      "implied_equity_value_cny_b_range": [28.5,38.5],
+      "conditions": ["multi-year AI liquid-cooling growth", "higher system content", "gradual margin improvement", "cash conversion normalization", "robot remains small but begins repeat-order validation"]
+    },
+    "bull": {
+      "2028_np_cny_b_range": [1.25,1.45],
+      "exit_pe_range": [35,40],
+      "implied_equity_value_cny_b_range": [43.75,58.0],
+      "conditions": ["faster rack-density and liquid-cooling penetration", "system content scales", "strong operating leverage and FCF", "robot cooling becomes a real second curve"]
+    },
+    "classification": "internal_scenario_not_company_guidance_not_sell_side_forecast"
+  },
+  "global_benchmark": {
+    "VRT": {"q2_2026_sales_yoy_pct":24,"q2_2026_adj_operating_profit_yoy_pct":51,"q2_2026_adj_operating_margin_pct":22.6,"q2_2026_adj_eps_yoy_pct":60,"q2_2026_fcf_yoy_pct":234,"fy2026_organic_sales_growth_guidance_pct_range":[30,32]},
+    "NVT": {"q2_2026_sales_yoy_pct":53,"q2_2026_organic_sales_yoy_pct":47,"q2_2026_adj_eps_yoy_pct":69,"q2_2026_fcf_yoy_pct":125,"fy2026_organic_sales_growth_guidance_pct_range":[32,34]},
+    "benchmark_principle": "Cross-market benchmarks define quality of revenue-to-margin-to-cash conversion; they are not mechanical fair-value comparables."
+  },
+  "macro_overlay": {
+    "us_fed_target_pct_range": [3.50,3.75],
+    "us_july_2026_cpi_yoy_pct": 3.4,
+    "us_july_2026_core_cpi_yoy_pct": 2.5,
+    "us_q2_2026_real_gdp_saar_pct_advance": 1.5,
+    "interpretation": "AI infrastructure demand remains structurally supportive, but sticky inflation/high rates increase discount-rate and valuation-compression risk."
+  },
+  "monitoring_policy": {
+    "priority": "P0_P1_active_case",
+    "attention_state": "active",
+    "next_evidence_nodes": ["2026-08-26_NVDA_FY27_Q2_and_US_macro","2026-08-28_TRQuant_liquid_cooling_joint_review"],
+    "review_due": "2026-08-28"
+  },
+  "evidence_summary": {
+    "primary_sources": 8,
+    "inference_count": 12,
+    "unknowns": [
+      "Standalone AI-liquid-cooling revenue is not disclosed.",
+      "Standalone AI-liquid-cooling gross margin is not disclosed.",
+      "Auditable AI-liquid-cooling backlog/order value and customer concentration are not disclosed.",
+      "Robot-liquid-cooling revenue and repeat production order value are not disclosed and are currently immaterial at group level.",
+      "Current FY2026-FY2028 sell-side consensus snapshot has not yet been added to the case.",
+      "Canonical CNINFO direct PDF URLs should be reconciled before decision-grade promotion.",
+      "A-share market-data permission was unavailable through IBKR; current price uses a completed-session public market-data source."
+    ]
+  },
+  "lessons": [
+    {"status":"candidate","principle":"For emerging thermal-management themes, separate the current cash-flow engine from future-option markets; do not use robot optionality to justify an AI-infrastructure valuation gap.","scope":"cross_theme_investment_cases"},
+    {"status":"candidate","principle":"Rising liquid-cooling penetration does not guarantee supplier margin expansion; track content value, gross margin and cash conversion together.","scope":"liquid_cooling_supply_chain"},
+    {"status":"candidate","principle":"Global leaders can be used to benchmark operating leverage and FCF quality without mechanically importing their valuation multiples into A-shares.","scope":"cross_market_benchmarking"}
+  ],
+  "promotion_requirements": [
+    "Reconcile load-bearing financial facts to canonical CNINFO direct filing URLs.",
+    "Obtain or explicitly close the gap on AI-liquid-cooling revenue/order/margin disclosure after targeted IR review.",
+    "Add current sell-side expectation history for FY2026-FY2028, classified as forecast evidence.",
+    "Complete the 2026-08-26 NVIDIA/U.S. macro evidence node and 2026-08-28 liquid-cooling re-underwrite.",
+    "Founder/reviewer explicitly approves action zones, sizing and kill criteria before decision_grade promotion."
+  ]
+}

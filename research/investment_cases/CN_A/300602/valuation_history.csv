@@ -1,0 +1,8 @@
+date,price_cny,shares_m,market_cap_cny_b,earnings_basis,earnings_cny_m,pe_x,valuation_type,status,notes
+2026-07-31,31.72,586.0,18.588,, , ,market_checkpoint,observed,"Pre-August attention acceleration checkpoint; no matching earnings denominator asserted."
+2026-08-21,41.57,586.0,24.360,TTM_market_source,,54.06,market_checkpoint,observed,"Completed-session public market data; IBKR A-share quote unavailable in this session."
+2026-08-23,41.57,586.0,24.360,H1_2026_annualized,505.206,48.22,internal_sensitivity,calculated,"Simple H1 annualization only; not a company forecast."
+2026-08-23,41.57,586.0,24.360,2028_flat_value_at_30x,812.0,30.00,reverse_valuation,calculated,"Net profit required in 2028 for flat current market cap at 30x exit P/E."
+2026-08-23,41.57,586.0,24.360,2028_15pct_2yr_return_at_35x,920.5,35.00,reverse_valuation,calculated,"Net profit required for ~15% annualized two-year return at 35x exit P/E."
+2026-08-23,41.57,586.0,24.360,2028_15pct_2yr_return_at_30x,1073.9,30.00,reverse_valuation,calculated,"Net profit required for ~15% annualized two-year return at 30x exit P/E."
+2026-08-23,41.57,586.0,24.360,2028_15pct_2yr_return_at_25x,1288.6,25.00,reverse_valuation,calculated,"Net profit required for ~15% annualized two-year return at 25x exit P/E."
