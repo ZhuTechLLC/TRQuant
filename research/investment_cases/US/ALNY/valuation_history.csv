@@ -1,0 +1,5 @@
+date,price_usd,metric,value,classification,note
+2026-08-21,236.22,approx_equity_value_usd_b,32.1,inference,"uses ~136m diluted Q2 share scale"
+2026-08-23,236.22,2026_total_revenue_component_midpoint_usd_b,5.5,inference,"midpoint of updated product plus collaboration/royalty guidance"
+2026-08-23,236.22,required_2028_revenue_at_6x_for_15pct_2yr_cagr_usd_b,7.08,inference,"reverse valuation"
+2026-08-23,236.22,required_2028_revenue_at_5x_for_15pct_2yr_cagr_usd_b,8.49,inference,"reverse valuation"
