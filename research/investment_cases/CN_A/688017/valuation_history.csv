@@ -1,0 +1,4 @@
+date,price_cny,market_cap_cny_b,metric,value,classification,note
+2026-08-21,314.35,57.6,ttm_pe_x,420,market_expectation,"approximate provider snapshot"
+2026-08-23,314.35,57.6,required_2028_np_at_80x_for_15pct_2yr_cagr_cny_m,953,inference,"reverse valuation"
+2026-08-23,314.35,57.6,required_2028_np_at_60x_for_15pct_2yr_cagr_cny_m,1271,inference,"reverse valuation"
