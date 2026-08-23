@@ -1,0 +1,5 @@
+date,price_usd,metric,value,classification,note
+2026-08-21,966.78,approx_equity_value_usd_t,1.107,inference,"uses ~1.145bn Q3 diluted share scale"
+2026-08-23,966.78,required_2028_eps_at_12x_for_15pct_2yr_cagr,106.55,inference,"reverse valuation"
+2026-08-23,966.78,required_2028_eps_at_10x_for_15pct_2yr_cagr,127.86,inference,"reverse valuation"
+2026-08-23,966.78,required_2028_eps_at_8x_for_15pct_2yr_cagr,159.82,inference,"reverse valuation"
