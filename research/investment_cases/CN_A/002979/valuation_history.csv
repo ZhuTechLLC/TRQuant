@@ -1,0 +1,4 @@
+date,price_cny,market_cap_cny_b,metric,value,classification,note
+2026-08-21,55.42,17.515,reconstructed_trailing_pe_x,59,inference,"uses reconstructed earnings bridge; not provider static PE"
+2026-08-23,55.42,17.515,required_2028_np_at_40x_for_15pct_2yr_cagr_cny_m,579,inference,"reverse valuation"
+2026-08-23,55.42,17.515,required_2028_np_at_30x_for_15pct_2yr_cagr_cny_m,772,inference,"reverse valuation"
