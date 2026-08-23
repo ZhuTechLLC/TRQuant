@@ -1,0 +1,42 @@
+{
+  "case_id": "CN_A-300602-2026",
+  "as_of": "2026-08-23",
+  "macro_relevance": "HIGH_FOR_DEMAND_AND_VALUATION",
+  "links": [
+    {
+      "channel": "us_ai_compute_capex",
+      "role": "direct_operating_demand",
+      "state": "supportive_but_roi_scrutiny_rising",
+      "transmission": ["hyperscaler_real_compute_capex", "gpu_and_rack_deployment", "rack_power_density", "liquid_cooling_attach_rate", "feirongda_ai_thermal_orders"],
+      "green": "Major hyperscalers maintain or raise real compute deployment and accelerator/rack demand remains supply constrained or strong.",
+      "yellow": "Nominal capex remains high but incremental spend shifts toward buildings/leases or AI monetization disappoints while rack deployments remain intact.",
+      "red": "Multiple major hyperscalers cut real compute plans and GPU/rack deployment evidence weakens concurrently."
+    },
+    {
+      "channel": "us_rates_and_inflation",
+      "role": "valuation_and_risk_budget",
+      "state": "restrictive",
+      "transmission": ["sticky_inflation", "high_long_rates", "global_ai_duration_multiple", "a_share_ai_theme_risk_premium"],
+      "note": "Rates are an overlay on stock attractiveness, not proof that Feirongda operating demand has weakened."
+    },
+    {
+      "channel": "china_ai_robotics_policy",
+      "role": "domestic_operating_demand",
+      "state": "structurally_supportive",
+      "transmission": ["domestic_ai_infrastructure", "server_and_data_center_buildout", "robot_productization", "thermal_management_design_ins"],
+      "note": "Policy support must convert into named/verified orders, revenue, margin and cash before it becomes load-bearing valuation evidence."
+    },
+    {
+      "channel": "fx_and_export_supply_chain",
+      "role": "margin_and_market_access",
+      "state": "monitor",
+      "transmission": ["rmb_usd", "export_customer_mix", "input_costs", "gross_margin_and_finance_expense"],
+      "note": "2026H1 finance expense rose materially in part because of FX; overseas sales carried higher gross margin than domestic sales."
+    }
+  ],
+  "next_evidence_nodes": [
+    "2026-08-26 NVIDIA FY27 Q2 results/guidance",
+    "2026-08-26 U.S. macro releases relevant to growth/inflation/rates",
+    "2026-08-28 TRQuant liquid-cooling joint review"
+  ]
+}
