@@ -2,13 +2,13 @@
 
 **Scope:** all 21 canonical cases currently registered across `US`, `CN_A`, and `HK`.  
 **Method:** `decision_grade_gate_v1.md`. No weighted score is used.  
-**Result:** **no bulk promotion**. One case is fully ready for explicit approval; three are near-ready remediation cases; seven are event-blocked; six are evidence-blocked; four remain reference/counterexample cases.
+**Result after targeted MU remediation:** **no bulk promotion**. Two cases are ready for explicit decision-grade approval; two are near-ready remediation cases; seven are event-blocked; six are evidence-blocked; four remain reference/counterexample cases.
 
 ## Executive conclusion
 
 The library is now broad enough to distinguish **research completeness** from **decision readiness**.
 
-The review rejects the tempting shortcut:
+The review rejects the shortcut:
 
 `more research files -> decision_grade`
 
@@ -18,17 +18,20 @@ and replaces it with:
 
 ### Highest-priority result
 
-**TSM is the only current case that passes the analytical/technical promotion checklist and is already documented as `READY FOR FOUNDER REVIEW FOR decision_grade`.** Its 2026-08-19 review resolved the prior historical FX/EV convention and added expected-return, sizing, add/trim and kill logic. The remaining gate is explicit approval of the current action, provisional sizing envelope and kill criteria.
+**TSM and MU are now the two current cases that pass the analytical/technical promotion gate and are ready for explicit founder/reviewer approval.**
 
-No status change is made in this library-wide review because that approval has not been explicitly recorded in the case.
+- **TSM:** prior review resolved historical FX/EV convention and completed expected-return, sizing, add/trim and kill logic. Only explicit approval remains.
+- **MU:** this review added current FY2027/FY2028 market-expectation evidence, normalized the FY26 Q4 period semantics, built explicit 12/24-month expected-return scenarios, and added sizing/add/hold/trim/kill logic. Only explicit approval remains.
+
+Neither case is automatically promoted and no order is created.
 
 ## 21-case review matrix
 
 | Case | Market | Current action | Review outcome | Binding promotion issue |
 |---|---|---|---|---|
-| **TSM** | US | START SMALL — CONDITIONAL | **READY_FOR_DECISION_GRADE_APPROVAL** | Only explicit founder/reviewer approval of action, provisional sizing and kill criteria remains. |
+| **TSM** | US | START SMALL — CONDITIONAL | **READY_FOR_DECISION_GRADE_APPROVAL** | Explicit founder/reviewer approval of action, provisional sizing and kill criteria. |
+| **MU** | US | START SMALL — CONDITIONAL | **READY_FOR_DECISION_GRADE_APPROVAL** | Explicit founder/reviewer approval of experimental starter, add/trim logic and kill criteria. |
 | **CRWV** | US | WATCH / START SMALL conditional | **NEAR_READY_REMEDIATION** | Historical 2025 valuation/share-count convention still requires deterministic independent recheck; large fundamental sizing still depends on capital-conversion evidence. |
-| **MU** | US | START SMALL / BUY REVIEW — CONDITIONAL | **NEAR_READY_REMEDIATION** | Reverse valuation is strong, but explicit sizing/trim framework and the normalization range for FY27 memory margin/earnings must be formalized before promotion. |
 | **HTFL** | US | WATCH / START SMALL conditional | **NEAR_READY_REMEDIATION** | Canonical NTM/FY27/FY28 expectation evidence, product-level Plaque attach/utilization/ASP bridge and current sizing remain incomplete. |
 | **NVDA** | US | WATCH / EVENT-READY | **EVENT_BLOCKED** | FY27 Q2 results on 2026-08-26 are a known material evidence node likely to change estimates/valuation. |
 | **ALNY** | US | START SMALL / BUY REVIEW — CONDITIONAL | **EVIDENCE_BLOCKED** | Post-Q2 ATTR-CM new-patient/persistence trend and competitive share evidence are load-bearing after the guidance reset. |
@@ -50,25 +53,38 @@ No status change is made in this library-wide review because that approval has n
 
 ## Promotion counts
 
-- `READY_FOR_DECISION_GRADE_APPROVAL`: **1** — TSM
-- `NEAR_READY_REMEDIATION`: **3** — CRWV, MU, HTFL
+- `READY_FOR_DECISION_GRADE_APPROVAL`: **2** — TSM, MU
+- `NEAR_READY_REMEDIATION`: **2** — CRWV, HTFL
 - `EVENT_BLOCKED`: **7** — NVDA, 飞荣达, 领益智造A, 雷赛智能, 绿的谐波, 领益智造H, 优必选
 - `EVIDENCE_BLOCKED`: **6** — ALNY, 同星科技, 奥比中光, 拓普集团, 双环传动, 卧龙电驱
 - `REFERENCE_COUNTEREXAMPLE`: **4** — 中大力德, 埃斯顿, 飞龙股份, 日发精机
 
 Total = **21**.
 
+## Targeted MU remediation — completed
+
+The initial library review classified MU as `NEAR_READY_REMEDIATION`. That gap has now been closed without broad new research.
+
+Completed items:
+1. normalized the FY26 Q4 fiscal-period semantics;
+2. added current FY2027/FY2028 public consensus snapshots strictly as `sell_side_forecast / market_expectation` evidence;
+3. built an explicit reverse-valuation and 12/24-month expected-return framework;
+4. added experimental starter, normal/max size envelope, add/hold/trim and kill logic;
+5. appended an immutable decision-grade candidate record.
+
+The resulting conclusion is deliberately not “low P/E = Buy.” At the 2026-08-21 close of $966.78, current FY2027 consensus around $155-$158 EPS implies a low forward multiple, but a 24-month base case around $160 EPS at an 8x exit multiple produces only roughly the target ~15% annualized return. MU therefore supports **START SMALL — CONDITIONAL**, with full sizing deferred until earnings durability is better established.
+
 ## Important audit findings
 
-### 1. TSM should not be reworked again
-The TSM decision-grade candidate review already passes primary-source coverage, PIT integrity, metric classification, historical valuation reproducibility, dominant-variable analysis, market expectations, counter-evidence, and sizing/exit separation. Repeating more research before recording the approval decision would be process drift.
+### 1. TSM and MU should not receive more undirected research before the approval decision
+Both now have current valuation/expectation bridges, explicit action states, sizing envelopes, add/trim logic and kill criteria. Repeating generic research before recording approval or rejection would be process drift.
 
 ### 2. Negative cases are valuable, but source hygiene still matters
 This review explicitly tested whether `AVOID` cases could be promoted first because zero capital can be a legitimate decision-grade outcome.
 
 The answer is **yes in principle, not yet for the current two strongest counterexamples**:
-- 飞龙: the avoid logic is economically persuasive, but the evidence ledger still needs canonical source/date cleanup.
-- 日发: the audit/profitability gate is persuasive, but the annual-report evidence needs canonical filing reconciliation and a valid availability date.
+- 飞龙: avoid logic is economically persuasive, but the evidence ledger still needs canonical source/date cleanup.
+- 日发: audit/profitability gate is persuasive, but annual-report evidence needs canonical filing reconciliation and a valid availability date.
 
 This prevents a lower evidence standard for bearish conclusions than for bullish conclusions.
 
@@ -84,17 +100,17 @@ Until that bridge is visible, supplier purity or technology capability should no
 
 ## Remediation queue
 
-### P0 — do now / next evidence node
-1. **TSM:** obtain explicit founder/reviewer approval or rejection of the already-documented action/sizing/kill framework; do not reopen deterministic research.
-2. **NVDA:** re-underwrite immediately after 2026-08-26 FY27 Q2.
-3. **飞荣达 / 领益 / 雷赛 / 绿的 / 优必选:** update after the scheduled 2026-08-26 to 2026-08-28 evidence window.
+### P0 — approval or imminent evidence node
+1. **TSM:** record explicit approval or rejection of the already-documented action/sizing/kill framework; do not reopen deterministic research.
+2. **MU:** record explicit approval or rejection of the new decision-grade candidate review; do not add full exposure merely from the low forward multiple.
+3. **NVDA:** re-underwrite immediately after 2026-08-26 FY27 Q2.
+4. **飞荣达 / 领益 / 雷赛 / 绿的 / 优必选:** update after the scheduled 2026-08-26 to 2026-08-28 evidence window.
 
 ### P1 — targeted remediation, no broad new research
-4. **MU:** add one decision-grade review specifying normalized FY27 EPS/margin bands, position-size envelope, add/trim/exit conditions and current market-expectation evidence.
 5. **CRWV:** finish the historical diluted-share/debt valuation recheck and convert capital-conversion thresholds into explicit sizing/trim rules.
 6. **HTFL:** close the canonical expectation/valuation gap and specify current entry/sizing without relying on unverified flow narratives.
 
-### P2 — keep as research/counterexample until evidence changes
+### P2 — remain research/counterexample until evidence changes
 7. ALNY and the remaining A-share/HK evidence-blocked cases stay `research_complete`.
 8. Counterexamples remain searchable and should not consume repeated research time unless a reopen condition is triggered.
 
@@ -128,5 +144,6 @@ These need more cross-sector/cross-market counterexamples before promotion to a 
 **No bulk status promotion is approved by this review.**
 
 - TSM: `READY_FOR_DECISION_GRADE_APPROVAL`.
+- MU: `READY_FOR_DECISION_GRADE_APPROVAL` after targeted remediation.
 - All other cases retain their current canonical status until their specified gate is closed.
 - No order, allocation or automatic sizing change is created.
