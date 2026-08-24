@@ -5,12 +5,12 @@
   "ticker": "TSM",
   "company": "Taiwan Semiconductor Manufacturing Company Limited",
   "security": "NYSE ADR",
-  "status": "research_complete",
-  "as_of": "2026-08-18",
+  "status": "decision_grade",
+  "as_of": "2026-08-24",
   "golden_case": false,
   "first_research_date": "2025-08-19",
   "original_decision_date": null,
-  "latest_review_date": "2026-08-18",
+  "latest_review_date": "2026-08-24",
   "archetypes": ["structural_compounder","ai_infrastructure_bottleneck","capital_intensive_quality","expectation_rerating","attention_failure","persistent_monitor"],
   "core_question": "Can TSMC continue converting the structural AI/HPC capital-spending cycle into leading-edge and advanced-packaging revenue, high utilization, durable operating margins and free cash flow fast enough to outrun elevated expectations while avoiding material technology, customer, overseas-cost or geopolitical impairment?",
   "dominant_variable": "Durability and capital productivity of AI/HPC-driven leading-edge and advanced-packaging capacity expansion relative to already-high market expectations.",
@@ -34,7 +34,8 @@
     {"date":"2025-10-16","state":"momentum_continuation","price_usd":299.84},
     {"date":"2026-01-15","state":"quality_compounder_harvest_boundary","price_usd":341.64},
     {"date":"2026-07-16","state":"confirmation_momentum_continuation","price_usd":null},
-    {"date":"2026-08-18","state":"first_accumulation_buy_review","price_usd":413.41,"price_basis":"IBKR_regular_session_close"}
+    {"date":"2026-08-18","state":"first_accumulation_buy_review","price_usd":413.41,"price_basis":"IBKR_regular_session_close"},
+    {"date":"2026-08-24","state":"decision_grade_promoted","price_usd":407.10,"price_basis":"IBKR_intraday_snapshot"}
   ],
   "decision_state": {
     "business_thesis": "strong_validated",
@@ -42,15 +43,16 @@
     "market_consensus": "high",
     "price_implied_expectations": "high",
     "trade_state": "confirmation_to_momentum_continuation",
-    "action": "start_small_or_buy_review_conditional",
-    "price_reference_usd": 413.41,
-    "price_reference_type": "regular_session_close",
-    "triggered_conditions": ["entered_395_420_first_accumulation_zone","drawdown_from_52w_high_gte_12pct"],
+    "action": "start_small_conditional",
+    "price_reference_usd": 407.10,
+    "price_reference_type": "IBKR_intraday_snapshot_2026-08-24",
+    "triggered_conditions": ["inside_395_420_first_accumulation_zone","drawdown_from_52w_high_gte_12pct"],
     "action_logic": "The $395-$420 zone and >=12% drawdown are re-underwrite triggers, not automatic trade signals. Require joint alignment of price, evidence, expectations and portfolio risk.",
     "start_small_conditions": ["Operating thesis remains intact.","FY2026/FY2027 EPS and company guidance have not deteriorated materially.","Upstream AI compute demand remains supportive.","Portfolio AI/semiconductor concentration is acceptable.","Initial position remains a small research sleeve rather than a full-size conviction position."],
     "add_conditions": ["Fundamental upgrade: revenue/EPS guidance or upstream AI capex evidence rises enough to improve expected return despite a higher price.","Price reset: valuation compresses materially while AI/HPC demand, technology execution, margin framework and geopolitical operating conditions remain intact."],
     "trim_conditions": ["Price/multiple expands materially faster than earnings estimates.","Portfolio AI/semiconductor concentration becomes excessive.","Expected return compresses without corresponding new fundamental evidence."],
-    "kill_criteria": ["AI/HPC demand deteriorates for multiple quarters and major customers materially reduce real infrastructure plans.","N2/A16/advanced-packaging execution or yield leadership suffers a structural failure or major leading-edge designs migrate away.","Gross/operating margin suffers persistent impairment beyond explained ramp/overseas-fab effects without a credible recovery path.","Capex stays elevated while utilization/revenue guidance and free cash flow deteriorate, indicating poor incremental capital productivity.","A geopolitical event materially impairs production, logistics, personnel, export capability or market access."]
+    "kill_criteria": ["AI/HPC demand deteriorates for multiple quarters and major customers materially reduce real infrastructure plans.","N2/A16/advanced-packaging execution or yield leadership suffers a structural failure or major leading-edge designs migrate away.","Gross/operating margin suffers persistent impairment beyond explained ramp/overseas-fab effects without a credible recovery path.","Capex stays elevated while utilization/revenue guidance and free cash flow deteriorate, indicating poor incremental capital productivity.","A geopolitical event materially impairs production, logistics, personnel, export capability or market access."],
+    "sizing_framework": {"research_position_pct_portfolio":"0.5-1.0","initial_position_pct_portfolio":"1.5-2.0","normal_conviction_pct_portfolio":"3.0-4.0","max_position_pct_portfolio":5.0,"execution_constraint":"reduce for aggregate AI/semiconductor factor exposure"}
   },
   "historical_checkpoints": [
     {"date":"2025-08-19","type":"reconstructed_valuation","price_usd":232.70,"ttm_adr_eps_usd_reconstructed":8.77,"ttm_pe_x_reconstructed":26.53,"forward_fy2026_adr_eps_usd_sell_side":10.95,"forward_fy2026_pe_x_reconstructed":21.25,"valuation_status":"provisional"},
@@ -58,7 +60,8 @@
     {"date":"2026-01-15","type":"reconstructed_valuation","price_usd":341.64,"fy2025_adr_eps_usd_reconstructed":10.65,"pe_x_reconstructed":32.08,"valuation_status":"provisional"},
     {"date":"2026-01-30","type":"sell_side_expectation_checkpoint","price_usd":330.56,"forward_fy2026_adr_eps_usd_sell_side":14.01,"forward_fy2027_adr_eps_usd_sell_side":17.48,"forward_fy2026_pe_x_reconstructed":23.59,"valuation_status":"validated_forecast_only"},
     {"date":"2026-07-21","type":"sell_side_expectation_checkpoint","price_usd":424.61,"forward_fy2026_adr_eps_usd_sell_side":16.05,"forward_fy2027_adr_eps_usd_sell_side":20.42,"forward_fy2026_pe_x_reconstructed":26.46,"valuation_status":"validated_forecast_only"},
-    {"date":"2026-08-18","type":"current_reunderwrite","price_usd":413.41,"price_basis":"IBKR_regular_session_close","ordinary_shares_b_reported":25.932,"adr_equivalent_shares_b_reconstructed":5.1864,"equity_value_usd_b_reconstructed":2144.11,"cash_and_marketables_ntd_b_reported_q2":3518.01,"long_term_interest_bearing_debt_ntd_b_reported_q2":864.27,"fx_ntd_per_usd_assumption":31.6,"net_cash_usd_b_inferred":83.98,"enterprise_value_usd_b_inferred":2060.13,"ttm_revenue_usd_b_reconstructed":142.93,"ttm_ev_sales_x_inferred":14.41,"ttm_adr_eps_usd_reconstructed":13.86,"ttm_pe_x_reconstructed":29.83,"forward_fy2026_adr_eps_usd_sell_side":16.45,"forward_fy2027_adr_eps_usd_sell_side":20.83,"forward_fy2026_pe_x_reconstructed":25.13,"forward_fy2027_pe_x_reconstructed":19.85,"ttm_operating_income_usd_b_reconstructed_approx":80.06,"ttm_ev_operating_income_x_inferred_approx":25.73,"ttm_capex_revenue_pct_reconstructed":33.58,"valuation_status":"provisional","note":"Current EV still uses the Q2 average FX analytical convention; P/E is cleaner. Sell-side forecast snapshot remains expectation evidence, not issuer guidance."}
+    {"date":"2026-08-18","type":"current_reunderwrite","price_usd":413.41,"price_basis":"IBKR_regular_session_close","ordinary_shares_b_reported":25.932,"adr_equivalent_shares_b_reconstructed":5.1864,"equity_value_usd_b_reconstructed":2144.11,"cash_and_marketables_ntd_b_reported_q2":3518.01,"long_term_interest_bearing_debt_ntd_b_reported_q2":864.27,"fx_ntd_per_usd_assumption":31.6,"net_cash_usd_b_inferred":83.98,"enterprise_value_usd_b_inferred":2060.13,"ttm_revenue_usd_b_reconstructed":142.93,"ttm_ev_sales_x_inferred":14.41,"ttm_adr_eps_usd_reconstructed":13.86,"ttm_pe_x_reconstructed":29.83,"forward_fy2026_adr_eps_usd_sell_side":16.45,"forward_fy2027_adr_eps_usd_sell_side":20.83,"forward_fy2026_pe_x_reconstructed":25.13,"forward_fy2027_pe_x_reconstructed":19.85,"ttm_operating_income_usd_b_reconstructed_approx":80.06,"ttm_ev_operating_income_x_inferred_approx":25.73,"ttm_capex_revenue_pct_reconstructed":33.58,"valuation_status":"provisional","note":"Current EV uses the analytical convention documented in the decision-grade candidate review; P/E remains the cleaner current valuation measure. Sell-side forecast snapshot is expectation evidence, not issuer guidance."},
+    {"date":"2026-08-24","type":"promotion_freshness_check","price_usd":407.10,"price_basis":"IBKR_intraday_snapshot","session_change_pct":-2.83,"note":"Still inside the existing first-accumulation review zone; promotion does not create an order."}
   ],
   "forward_expectation_history": {
     "classification":"sell_side_forecast",
@@ -93,7 +96,7 @@
   },
   "evidence_summary": {
     "source_policy":"Primary issuer/SEC and direct IBKR market/account data are load-bearing; third-party sell-side snapshots are used only as market-expectation evidence and remain explicitly classified as forecasts.",
-    "unknowns":["No verified contemporaneous 2025 TSM buy/add/trim/target/stop/size record was recovered.","Historical EV checkpoints require deterministic quarter-end FX validation before decision-grade promotion.","Ending same-date authoritative FX remains unvalidated for a production-grade ADR/local-share attribution.","Benchmark comparison does not establish semiconductor-sector alpha without a formal factor model."]
+    "unknowns":["No verified contemporaneous 2025 TSM buy/add/trim/target/stop/size record was recovered; historical performance claims remain constrained accordingly.","Same-date ADR/local-share FX attribution remains optional and is not required for the current decision.","Benchmark comparison does not establish semiconductor-sector alpha without a formal factor model."]
   },
   "lessons": [
     {"status":"candidate","principle":"Once a security is thesis-ready, missing a scheduled material evidence node without an explicit deprioritization reason is an attention-continuity process failure."},
@@ -102,5 +105,12 @@
     {"status":"candidate","principle":"A missed winner is not automatically an execution failure; distinguish awareness, preparation, priority, monitoring and execution from the contemporaneous record."},
     {"status":"candidate","principle":"Market awareness of a structural theme does not imply the market has correctly priced the magnitude and duration of future earnings revisions."}
   ],
-  "promotion_requirements": ["Validate historical balance-sheet-date FX convention and recompute EV checkpoints deterministically.","Validate a same-date authoritative ending FX rate if ADR/local-share attribution is to become production-grade.","Confirm or explicitly accept absence of any 2025 contemporaneous trade-decision record across other broker/account sources if available.","Founder/reviewer explicitly approves current decision, sizing and kill criteria before decision_grade promotion."]
+  "promotion": {
+    "promoted_on":"2026-08-24",
+    "promoted_from":"research_complete",
+    "promotion_record":"reviews/2026-08-24_decision_grade_promotion.md",
+    "approval_record":"decisions.jsonl#TSM-D006",
+    "approval_scope":"current action, sizing envelope and kill criteria; no order authorization"
+  },
+  "promotion_requirements": []
 }
