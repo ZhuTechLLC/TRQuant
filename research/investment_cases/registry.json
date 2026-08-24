@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "generated_from": "git",
+  "cases": [
+    {
+      "case_id": "US-CRWV-2025-2026",
+      "market": "US",
+      "ticker": "CRWV",
+      "company": "CoreWeave, Inc.",
+      "path": "research/investment_cases/US/CRWV",
+      "status": "research_complete",
+      "golden_case": true,
+      "archetypes": ["capital_intensive_hypergrowth","valuation_expansion","financing_dependency","strategy_drift_risk"],
+      "first_research_date": "2025-06-16",
+      "latest_review_date": "2026-08-16",
+      "dominant_variable": "capital_conversion",
+      "promotion_note": "Do not promote to decision_grade until the 2025 entry reconstruction, 2026 re-underwrite, and valuation checkpoints are independently rechecked and approved."
+    },
+    {
+      "case_id": "US-TSM-2025-2026",
+      "market": "US",
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Company Limited",
+      "path": "research/investment_cases/US/TSM",
+      "status": "research_complete",
+      "golden_case": false,
+      "archetypes": ["structural_compounder","ai_infrastructure_bottleneck","capital_intensive_quality","expectation_rerating","attention_failure","persistent_monitor"],
+      "first_research_date": "2025-08-19",
+      "latest_review_date": "2026-08-18",
+      "dominant_variable": "ai_hpc_capacity_capital_productivity_vs_expectations",
+      "canonical_price_date": "2026-08-18",
+      "canonical_price_usd": 413.41,
+      "current_action": "start_small_or_buy_review_conditional",
+      "promotion_note": "Research complete, not decision grade: historical EV history still uses provisional FX conventions, no verified original 2025 trade-decision provenance exists across all possible accounts, and current sizing/action/kill criteria still require explicit founder/reviewer approval. Formal factor regression is required only if semiconductor-sector alpha is claimed."
+    }
+  ]
+}

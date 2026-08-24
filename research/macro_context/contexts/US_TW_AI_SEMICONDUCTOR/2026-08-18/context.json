@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "context_id": "MACRO-US-TW-AI-SEMIS-2026-08-18",
+  "as_of": "2026-08-18",
+  "status": "research_complete",
+  "title": "US-Taiwan AI Semiconductor Macro & Cross-Asset Context",
+  "scope": "Reusable macro state for AI semiconductor bottleneck suppliers, with TSM-specific transmission kept in the linked Investment Case.",
+  "regime_summary": {
+    "operating_demand": "green",
+    "discount_rate": "yellow_red",
+    "us_growth": "yellow",
+    "inflation": "yellow_red",
+    "ai_capex": "green",
+    "semiconductor_cycle": "green",
+    "fx": "yellow",
+    "export_controls_industrial_policy": "yellow_red",
+    "taiwan_geopolitical_tail": "structural_red_tail_not_current_operational_impairment",
+    "energy_input_risk": "yellow"
+  },
+  "current_state": {
+    "fed_policy_rate_target_pct": "3.50-3.75",
+    "us_core_pce_yoy_pct_latest_verified": 3.3,
+    "us_q2_2026_real_gdp_annualized_pct_latest_verified": 1.5,
+    "us_10y_tips_real_yield_pct_2026_08_18": 2.41,
+    "tsm_close_usd_2026_08_18": 413.41,
+    "tsm_52w_high_usd": 478.89,
+    "tsm_drawdown_from_52w_high_pct_approx": -13.7,
+    "tsm_forward_fy2026_eps_consensus_usd": 16.45,
+    "tsm_forward_fy2026_pe_at_close_x_approx": 25.1
+  },
+  "factor_channels": [
+    {
+      "factor": "US real yields / discount rate",
+      "role": "valuation_overlay",
+      "transmission": "higher real yields -> higher required equity return -> lower acceptable P/E for long-duration growth; does not by itself invalidate foundry earnings",
+      "green": "10Y real yield sustainably <=2.0% with inflation/growth not collapsing",
+      "yellow": "roughly 2.0-2.75%",
+      "red_reunderwrite": "sustained >=2.75%, especially if earnings revisions flatten or risk premia widen"
+    },
+    {
+      "factor": "US inflation / policy",
+      "role": "valuation_and_demand_overlay",
+      "transmission": "sticky inflation delays easing and lifts discount rates; severe reacceleration can also weaken risk appetite and customer financing economics",
+      "red_reunderwrite": "renewed inflation acceleration that materially lifts expected policy rates/real yields"
+    },
+    {
+      "factor": "US/global growth",
+      "role": "mixed_operating_driver",
+      "transmission": "slower broad growth pressures consumer/industrial semis but AI/HPC can remain decoupled; recession matters if cloud monetization and enterprise AI demand also weaken",
+      "red_reunderwrite": "broad slowdown plus cloud/AI demand deterioration and TSM monthly/guidance weakness"
+    },
+    {
+      "factor": "Hyperscaler real AI compute capex",
+      "role": "primary_upstream_operating_driver",
+      "transmission": "real compute capex -> accelerator/custom ASIC demand -> TSM leading-edge and advanced-packaging workload -> utilization/margins -> EPS/FCF",
+      "green": "at least two major hyperscalers maintain/raise real compute plans and AI/cloud demand remains strong",
+      "yellow": "headline capex stays high but incremental spend shifts toward buildings, leases or component inflation",
+      "red_reunderwrite": "at least two major hyperscalers cut real compute plans plus cloud/AI demand and TSM/accelerator evidence deteriorate"
+    },
+    {
+      "factor": "Semiconductor cycle / advanced-node utilization",
+      "role": "primary_operating_driver",
+      "transmission": "industry demand and node transitions affect utilization, pricing, margin and capex productivity",
+      "red_reunderwrite": "persistent advanced-node/packaging utilization deterioration or broad inventory correction reaching AI/HPC"
+    },
+    {
+      "factor": "USD/TWD",
+      "role": "earnings_translation_and_adr_basis",
+      "transmission": "TSMC reports in TWD with much revenue economically linked to USD; FX influences translated margins/earnings and ADR/local-share parity",
+      "monitoring_rule": "track trend and abrupt moves; never treat FX alone as a trade signal"
+    },
+    {
+      "factor": "US export controls / industrial policy",
+      "role": "direct_operating_and_capex_driver",
+      "transmission": "rules can change customer addressable markets, accelerator shipments, equipment access and location/cost of capacity; subsidies and localization can partially offset but raise overseas-fab cost",
+      "red_reunderwrite": "new controls materially impair a major TSM customer/product class or production capability"
+    },
+    {
+      "factor": "Taiwan Strait geopolitical risk",
+      "role": "tail_risk_and_equity_risk_premium",
+      "transmission": "risk premium can widen long before cash flows change; actual disruption could impair production, logistics, power, personnel, shipping or market access",
+      "monitoring_rule": "distinguish rhetoric/exercises from verified operating impairment; operational disruption is immediate kill/reunderwrite trigger"
+    },
+    {
+      "factor": "Energy / power availability",
+      "role": "operating_cost_and_supply_resilience",
+      "transmission": "fabs are power intensive; persistent energy shocks or Taiwan power constraints can affect costs/resilience, while AI infrastructure power bottlenecks can also pace end-demand deployment",
+      "red_reunderwrite": "verified sustained production impact or hyperscaler deployment delay caused by power bottlenecks"
+    }
+  ],
+  "linked_cases": [
+    {
+      "case_id": "US-TSM-2025-2026",
+      "macro_relevance": "HIGH",
+      "dominant_macro_chain": "hyperscaler_real_compute_capex -> advanced_node_and_packaging_demand -> utilization_margin_fcf -> eps_revisions, overlaid by real_yields and Taiwan risk premium"
+    }
+  ],
+  "next_evidence_nodes": [
+    "2026-08-26 NVIDIA earnings",
+    "2026-09-10 TSMC August monthly revenue",
+    "2026-10-08 TSMC September monthly revenue",
+    "next FOMC decision and Summary of Economic Projections",
+    "each material GOOGL/META/MSFT/AMZN earnings update",
+    "any material US export-control or Taiwan-operational-risk event"
+  ],
+  "decision_rule": "Macro changes the hurdle rate, expected return, position risk budget and in some cases operating thesis. Never translate a single macro threshold into an automatic buy/sell instruction."
+}

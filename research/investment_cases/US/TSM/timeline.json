@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "US-TSM-2025-2026",
+  "timeline": [
+    {
+      "date":"2025-01-16",
+      "event":"TSMC_4Q24_results_and_2025_capex_guidance",
+      "price_usd":null,
+      "known_information":["Continued AI-related demand expected to partly offset smartphone seasonality.","2025 capital budget guided to $38-42B."],
+      "market_expectation_at_time":"AI growth was already visible, but durability and return on the coming capex cycle remained open questions.",
+      "expectation_type":"inference_from_guidance_and_price_context",
+      "investment_state":"Discovery",
+      "decision_record_type":"market_evidence_only_no_user_decision"
+    },
+    {
+      "date":"2025-04-17",
+      "event":"TSMC_1Q25_results_AI_long_term_guidance",
+      "price_usd":151.74,
+      "price_note":"Direct-market historical reconstruction.",
+      "known_information":["Q1 revenue $25.53B; HPC 59% of revenue; advanced technology 73% of wafer revenue.","AI accelerator revenue expected to double in 2025.","CoWoS capacity expected to double in 2025.","AI accelerator revenue planning view approached a mid-40s percentage CAGR for five years starting 2024.","2025 capex reiterated at $38-42B."],
+      "market_expectation_at_time":"Tariff/macro uncertainty was high while company-specific AI demand guidance remained strong.",
+      "expectation_type":"management_guidance_plus_price_implied_inference",
+      "investment_state":"Confirmation",
+      "decision_record_type":"retrospective_reconstruction_only"
+    },
+    {
+      "date":"2025-07-17",
+      "event":"TSMC_2Q25_results",
+      "price_usd":null,
+      "known_information":["Q2 revenue $30.07B, +44.4% YoY USD.","Gross margin 58.6%; operating margin 49.6%; ADR EPS $2.47.","Q3 revenue guided to $31.8-33.0B.","Management cited continued robust AI/HPC-related demand."],
+      "market_expectation_at_time":"The structural AI thesis had moved from discovery to broad confirmation; valuation and future estimate revisions became increasingly important.",
+      "expectation_type":"inference",
+      "investment_state":"Confirmation",
+      "decision_record_type":"retrospective_reconstruction_only"
+    },
+    {
+      "date":"2025-07-23",
+      "event":"Alphabet_2Q25_capex_update",
+      "price_usd":null,
+      "known_information":["Alphabet Q2 capex $22.4B.","2025 capex outlook raised to about $85B.","Further capex increase expected in 2026.","Cloud expected to remain in a tight demand-supply environment into 2026."],
+      "investment_state":"Confirmation",
+      "decision_record_type":"upstream_evidence_node"
+    },
+    {
+      "date":"2025-07-30",
+      "event":"Meta_2Q25_capex_update",
+      "price_usd":null,
+      "known_information":["Meta guided 2025 capex to $66-72B.","Meta expected another year of similarly significant capex-dollar growth in 2026."],
+      "investment_state":"Confirmation",
+      "decision_record_type":"upstream_evidence_node"
+    },
+    {
+      "date":"2025-08-19",
+      "event":"earliest_recovered_user_side_TSM_research_record",
+      "price_usd":232.70,
+      "price_note":"Direct IBKR close.",
+      "known_information":["TSMC April five-year AI accelerator growth framework was public.","Q2 financial acceleration and Q3 guidance were public.","TSMC $38-42B 2025 capex and CoWoS expansion were public.","Alphabet and Meta had already disclosed 2026 capex expansion expectations."],
+      "market_expectation_at_time":"The AI/TSMC thesis was no longer obscure; the relevant edge was whether earnings/capacity economics would exceed increasingly positive expectations.",
+      "expectation_type":"sell_side_snapshot_plus_price_implied_inference",
+      "investment_state":"Confirmation",
+      "secondary_state":"Momentum",
+      "decision_record_type":"verified_awareness_not_verified_trade_decision"
+    },
+    {
+      "date":"2025-10-16",
+      "event":"TSMC_3Q25_results",
+      "price_usd":299.84,
+      "price_note":"Direct IBKR historical close.",
+      "known_information":["Q3 revenue $33.10B, gross margin 59.5%, operating margin 50.6%.","Q4 revenue guidance $32.2-33.4B.","TTM ADR EPS approximately $9.75 and trailing P/E approximately 30.8x."],
+      "investment_state":"Momentum",
+      "decision_record_type":"missed_research_update_retrospective"
+    },
+    {
+      "date":"2026-01-15",
+      "event":"TSMC_4Q25_results",
+      "price_usd":341.64,
+      "price_note":"Direct IBKR historical close.",
+      "known_information":["Q4 revenue $33.73B, gross margin 62.3%, operating margin 54.0%, ADR EPS $3.14.","Full-year 2025 ADR EPS approximately $10.65.","Q1 2026 revenue guidance $34.6-35.8B."],
+      "investment_state":"Harvest",
+      "secondary_state":"Re_underwrite",
+      "decision_record_type":"missed_research_update_retrospective"
+    },
+    {
+      "date":"2026-04-16",
+      "event":"TSMC_1Q26_results",
+      "price_usd":null,
+      "known_information":["Q1 revenue $35.90B; gross margin 66.2%; operating margin 58.1%; ADR EPS $3.49.","Q2 revenue guidance $39.0-40.2B."],
+      "investment_state":"Re_ignition",
+      "secondary_state":"Momentum"
+    },
+    {
+      "date":"2026-07-16",
+      "event":"TSMC_2Q26_results",
+      "price_usd":null,
+      "known_information":["Q2 revenue $40.20B, +33.7% YoY USD; gross margin 67.7%; operating margin 60.3%; ADR EPS $4.31.","2nm represented 3% of wafer revenue.","Q3 revenue guidance $44.6-45.8B.","Full-year 2026 USD revenue growth expected slightly above 40%."],
+      "investment_state":"Momentum",
+      "secondary_state":"Confirmation"
+    },
+    {
+      "date":"2026-08-18",
+      "event":"investment_case_library_migration_review_and_regular_close_reunderwrite",
+      "price_usd":413.41,
+      "price_note":"IBKR regular-session close; open 416.84, high 419.63, low 410.76.",
+      "known_information":["Prior close $430.97.","52-week high $478.89.","Drawdown from 52-week high approximately 13.7%.","TTM ADR EPS approximately $13.86.","Trailing P/E approximately 29.83x.","FY2026 sell-side EPS consensus $16.45 implies approximately 25.13x forward P/E.","FY2027 sell-side EPS consensus $20.83 implies approximately 19.85x forward P/E."],
+      "market_expectation_at_time":"High thesis confidence and high consensus, but the price reset entered the first-accumulation/buy-review zone without evidence of an operating-thesis break.",
+      "expectation_type":"current_price_plus_sell_side_expectation_inference",
+      "investment_state":"First_accumulation_buy_review",
+      "secondary_state":"Re_underwrite",
+      "triggered_conditions":["entered_395_420_first_accumulation_zone","drawdown_from_52w_high_gte_12pct"],
+      "decision_record_type":"current_research_decision"
+    }
+  ]
+}

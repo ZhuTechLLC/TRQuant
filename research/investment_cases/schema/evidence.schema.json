@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trquant.local/schema/evidence-v1.json",
+  "title": "TRQuant Case Evidence Record",
+  "type": "object",
+  "required": ["evidence_id", "case_id", "available_from", "source_type", "source_url", "claim_type", "metric_or_claim", "reported_or_inferred"],
+  "properties": {
+    "evidence_id": {"type": "string"},
+    "case_id": {"type": "string"},
+    "period_end": {"type": ["string", "null"], "format": "date"},
+    "available_from": {"type": "string"},
+    "superseded_at": {"type": ["string", "null"]},
+    "retrieved_at": {"type": ["string", "null"]},
+    "source_type": {"enum": ["sec", "company_ir", "regulator", "exchange", "market_data", "sell_side", "media", "user_record", "internal_calculation"]},
+    "source_url": {"type": "string"},
+    "claim_type": {"enum": ["fact", "management_guidance", "sell_side_forecast", "market_expectation", "narrative", "inference", "unknown"]},
+    "metric_or_claim": {"type": "string"},
+    "value": {},
+    "unit": {"type": ["string", "null"]},
+    "reported_or_inferred": {"enum": ["reported", "calculated", "inferred", "unverified"]},
+    "pit_eligible": {"type": "boolean"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

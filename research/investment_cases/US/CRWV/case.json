@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "case_id": "US-CRWV-2025-2026",
+  "market": "US",
+  "ticker": "CRWV",
+  "company": "CoreWeave, Inc.",
+  "status": "research_complete",
+  "as_of": "2026-08-16",
+  "golden_case": true,
+  "archetypes": [
+    "capital_intensive_hypergrowth",
+    "valuation_expansion",
+    "financing_dependency",
+    "thin_float_momentum",
+    "strategy_drift_risk"
+  ],
+  "dominant_variable": "Whether contracted AI demand converts into shareholder cash flow after depreciation, interest, capex, leases, debt service, and dilution.",
+  "value_driver_chain": [
+    "contracted_demand",
+    "financing_capacity",
+    "active_capacity",
+    "utilization",
+    "revenue",
+    "operating_profit",
+    "interest",
+    "capex",
+    "debt_and_leases",
+    "dilution",
+    "shareholder_fcf"
+  ],
+  "lifecycle": [
+    {"date": "2025-03-28", "state": "ipo_discovery", "note": "Public listing created the investable vehicle; financing and customer concentration risks were already material."},
+    {"date": "2025-05-14", "state": "confirmation", "note": "Q1 2025 reported revenue growth of 420%, $25.9B revenue backlog, and strong adjusted EBITDA, accelerating market recognition."},
+    {"date": "2025-06-16", "state": "momentum_valuation_expansion", "note": "Price near $158 reflected substantial multiple expansion; valuation and capital structure became dominant variables."},
+    {"date": "2026-08-16", "state": "reunderwrite", "note": "Q2 2026 confirmed extraordinary demand and scale while debt, leases, interest expense, and capex remained central to equity economics."}
+  ],
+  "decision_state": {
+    "business_thesis": "bullish_on_demand_and_scale",
+    "stock_attractiveness": "conditional_not_unconditional_high_conviction",
+    "trade_state": "confirmation_to_early_momentum_after_q2_2026",
+    "action": "watch_or_start_small; require either improved price asymmetry or further proof of capital conversion before large fundamental sizing",
+    "kill_criteria": [
+      "Backlog or committed demand fails to convert into deployed capacity and recognized revenue on a credible schedule.",
+      "Adjusted operating margin stops improving while interest burden remains structurally high.",
+      "Debt, lease liabilities, or dilution continue to outgrow the cash-generating capacity of deployed assets.",
+      "Customer concentration, financing stress, or contract economics materially weaken the expected return on invested capital.",
+      "AI infrastructure supply normalizes enough to compress contract pricing before CoreWeave earns an adequate return on invested capital."
+    ]
+  },
+  "historical_checkpoints": [
+    {
+      "date": "2025-05-14",
+      "type": "reported_and_guided",
+      "q1_revenue_usd_m": 981.632,
+      "q1_revenue_yoy_pct": 420,
+      "q1_operating_income_usd_m": -27.470,
+      "q1_interest_expense_net_usd_m": -263.835,
+      "revenue_backlog_usd_b": 25.9,
+      "rpo_usd_b": 14.7,
+      "other_committed_contract_amount_usd_b": 11.2,
+      "active_power_mw": 420,
+      "contracted_power_gw": 1.6,
+      "note": "Reported figures from Q1 2025 earnings release; backlog remains subject to delivery and service-availability requirements."
+    },
+    {
+      "date": "2025-06-16",
+      "type": "reconstructed_valuation",
+      "price_usd": 158.50,
+      "economic_diluted_shares_m_assumption": 549.0,
+      "net_debt_usd_b_assumption": 7.44,
+      "fy2025_forward_revenue_usd_b_assumption": 5.0,
+      "fy2025_adjusted_operating_income_usd_b_assumption": 0.815,
+      "estimated_equity_value_usd_b": 87.02,
+      "estimated_ev_usd_b": 94.46,
+      "estimated_forward_ev_sales_x": 18.89,
+      "estimated_ev_adjusted_operating_income_x": 115.90,
+      "note": "Analytical reconstruction using a conservative economic diluted-share convention. Exact values vary with share-count and debt conventions; this checkpoint is an inference, not a company-reported valuation multiple."
+    },
+    {
+      "date": "2026-06-30",
+      "type": "reported",
+      "q2_revenue_usd_b": 2.575,
+      "q2_revenue_yoy_pct_approx": 112,
+      "q2_adjusted_ebitda_usd_b": 1.510,
+      "q2_adjusted_operating_income_usd_b": 0.128,
+      "q2_interest_expense_net_usd_b": 0.640,
+      "revenue_backlog_usd_b": 104.0,
+      "active_power_gw": 1.5,
+      "contracted_power_gw": 3.7,
+      "cash_usd_b": 5.524,
+      "property_and_equipment_net_usd_b": 46.736,
+      "financial_debt_usd_b": 35.068,
+      "operating_lease_liabilities_usd_b": 16.319,
+      "finance_lease_liabilities_usd_b": 0.221,
+      "stockholders_equity_usd_b": 5.024,
+      "note": "Reported Q2 2026 figures. Financial debt equals current and non-current recourse plus non-recourse debt; operating leases are tracked separately rather than relabeled as GAAP debt."
+    }
+  ],
+  "evidence_summary": {
+    "primary_sources": 3,
+    "inference_count": 1,
+    "unknowns": [
+      "Exact contemporaneous full trade record and original thesis of the external investor who entered near $156 are not established from screenshots alone.",
+      "A single canonical diluted-share convention for historical valuation must be fixed before production-grade PIT backtests.",
+      "The 2025 valuation checkpoint should be independently recomputed from the archived 10-Q/outlook presentation before promotion to decision_grade."
+    ]
+  },
+  "lessons": [
+    {"status": "candidate", "principle": "For capital-intensive hypergrowth, force the bridge from revenue to shareholder FCF through D&A, operating profit, interest, capex, leases/debt, and dilution.", "scope": "Capital-intensive growth equities."},
+    {"status": "candidate", "principle": "Financing availability is not equivalent to low cost of capital; debt-market access can de-risk execution while still transferring a large share of economics away from equity holders.", "scope": "Debt- or lease-funded growth models."},
+    {"status": "candidate", "principle": "A correct business thesis can coexist with a poor entry when valuation multiple expansion has already converted discovery into momentum/expectation risk.", "scope": "High-growth public equities."},
+    {"status": "candidate", "principle": "A momentum entry must retain momentum-style exit rules; do not let a failed trend trade drift into an undocumented long-term fundamental position.", "scope": "Event-driven and momentum trades."}
+  ]
+}
