@@ -7,7 +7,7 @@ Updated: 2026-08-24
 **Stage 1 mechanical eligibility audit: COMPLETE**  
 **Stage P1.5 PIT provenance & timestamp integrity audit: COMPLETE**  
 **Stage P2 H1 pilot: COMPLETE — `INCONCLUSIVE`**  
-**Stage P2E single permitted H1 expansion: PROTOCOL FROZEN — CANDIDATE DISCOVERY NEXT**
+**Stage P2E single permitted H1 expansion: PROTOCOL + SOURCE POPULATION FROZEN — MANIFEST BUILD NEXT**
 
 ### Stage 1 authoritative QuantConnect run
 
@@ -88,6 +88,12 @@ Frozen manifest schema:
 
 `M6.2_P2E_EXPANSION_MANIFEST_SCHEMA_V0_1.md`
 
+Frozen source-population specification:
+
+`M6.2_P2E_SOURCE_POPULATION_SPEC_V0_1.md`
+
+The source-population spec fixes SEC EDGAR 8-K/8-K-A/6-K as the primary discovery backbone, defines allowed official FDA/government supplements, freezes category admission terms, deduplication, timestamp handling, and deterministic SHA-256 selection. It explicitly prohibits stopping after finding five attractive events; the category-year source population must be enumerated before hash ranking.
+
 ### Locked expansion design
 
 P2E adds exactly **125 candidate events** before mechanical/PIT exclusions:
@@ -98,7 +104,7 @@ P2E adds exactly **125 candidate events** before mechanical/PIT exclusions:
 - 25 E4 Strategic / Product
 - 25 E5 M&A / Policy
 
-Each category contributes exactly 5 candidates for each calendar year 2021–2025. Candidate identity is selected from source-defined populations by a deterministic SHA-256 ranking, not from remembered winners or price screens.
+Each category contributes exactly 5 candidates for each calendar year 2021–2025. Candidate identity is selected from source-defined populations by deterministic SHA-256 ranking, not from remembered winners or price screens.
 
 Across the combined pilot + expansion candidate manifest, one ticker may contribute at most 2 events.
 
@@ -126,15 +132,16 @@ There is no second `INCONCLUSIVE` expansion round. If fewer than 90 new events a
 5. Do not reuse pilot outcomes as the primary validation cohort.
 6. Do not conduct a second sample expansion if P2E fails the final gate.
 7. Mechanical/PIT failures remain in the audit trail and are not replaced after outcomes are known.
+8. Do not change the source-population definition or hash-selection rule after candidate returns are available.
 
 ## Next gate
 
-`M6.2-P2E-A — Build and freeze the 125-event source-defined expansion candidate manifest`
+`M6.2-P2E-A — Enumerate source populations and freeze the 125-event expansion candidate manifest`
 
-The next work item is candidate discovery only. It must populate the frozen manifest fields and hash-ranked category-year cells without calculating any post-entry return, MFE/MAE, win/loss or strategy PnL.
+The next work item is candidate discovery only. It must populate the frozen manifest fields and the full/hash-reconstructable category-year source populations without calculating any post-entry return, MFE/MAE, win/loss or strategy PnL.
 
 Only after the 125-event candidate manifest is frozen may the existing QuantConnect mechanical eligibility gate and PIT provenance audit be applied.
 
 ## Research boundary
 
-The 46-event P2 result is a pilot with an `INCONCLUSIVE` H1 classification. The P2E protocol is now fixed before any new-event outcome extraction. **No production-alpha, position-sizing or live-trading claim is established at this stage.**
+The 46-event P2 result is a pilot with an `INCONCLUSIVE` H1 classification. The P2E research design and source universe are now fixed before any new-event outcome extraction. **No production-alpha, position-sizing or live-trading claim is established at this stage.**
