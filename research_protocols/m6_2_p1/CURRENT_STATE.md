@@ -1,13 +1,13 @@
 # M6.2-P1 Current State
 
-Updated: 2026-08-23
+Updated: 2026-08-24
 
 ## Status
 
 **Stage 1 mechanical eligibility audit: COMPLETE**  
 **Stage P1.5 PIT provenance & timestamp integrity audit: COMPLETE**  
-**Stage P2 H1 outcome protocol: FROZEN**  
-**Stage P2 execution: BLOCKED BY QUANTCONNECT NODE CAPACITY — NO H1 RESULT YET**
+**Stage P2 H1 pilot: COMPLETE — `INCONCLUSIVE`**  
+**Stage P2E single permitted H1 expansion: PROTOCOL FROZEN — CANDIDATE DISCOVERY NEXT**
 
 ### Stage 1 authoritative QuantConnect run
 
@@ -34,71 +34,107 @@ Audit artifact: `M6.2_P1_5_PIT_PROVENANCE_AUDIT_V0_1.md`
 - `PIT_FAIL`: **1**
 - Primary P2-eligible sample: **46**
 
-Non-primary records:
-- `E3-GOOGL-20240426` — `PIT_AMBIGUOUS`: same-day Google primary source is date-only; pre-10:00 ET public availability was not established. Also flagged `CONCURRENT_EARNINGS_PRIOR_EVENING`.
-- `E4-META-20240418` — `PIT_FAIL`: frozen 10:00 ET decision precedes the earliest independently verified contemporaneous dissemination found in the audit (~12:00 ET). The record is not rescued by shifting its entry time.
+Non-primary records remain in the audit trail:
+- `E3-GOOGL-20240426` — `PIT_AMBIGUOUS`
+- `E4-META-20240418` — `PIT_FAIL`
 
-### P2 frozen protocol
+## P2 H1 pilot — completed
 
-Protocol artifact:
+Protocol:
 
 `M6.2_P2_OUTCOME_EXTRACTION_PROTOCOL_V0_1.md`
 
-Primary H1 endpoint:
+Results:
 
-> Cross-event mean of T+3 net directional SPY-excess return using a frozen 25 bps round-trip implementation-cost assumption.
+`M6.2_P2_H1_RESULTS_V0_1.md`
 
-Secondary/frozen robustness diagnostics include T+1/T+5, median, 10% trimmed mean, issuer-clustered bootstrap 95% CI, hit rate, direction counts, contribution concentration, and 10/50 bps cost sensitivities.
-
-No GPT catalyst grade, semantic score, analyst-revision overlay, RVOL threshold, PROBE/CONFIRM state logic, support/resistance, RSI/MACD, or category-selection layer is permitted before H1 is adjudicated.
-
-### P2 implementation and execution status
-
-Corrected event-driven QuantConnect source:
+Corrected event-driven source:
 
 `quantconnect/M6.2_P2_V0_1R_MAIN.py`
 
-Implementation tag:
+Authoritative QuantConnect run:
 
-`v0.1R_EVENT_DRIVEN_NO_FUTURE_HISTORY`
+- Project: `M6.2 P2 Catalyst Outcome Extraction V01`
+- Project ID: `35546834`
+- Backtest: `M6.2-P2 H1 Outcome Extraction v0.1R - 46 PIT PASS - NO ORDERS`
+- Backtest ID: `08399f885022cd3c77d612b0e7b3f195`
+- Status: `Completed.`
+- Expected: **46**
+- Extracted: **46**
+- Data limited: **0**
+- Delayed entry: **0**
+- Orders: **0**
 
-Planned QuantConnect project:
+Primary T+3 result at 25 bps round-trip cost:
 
-`M6.2 P2 Catalyst Outcome Extraction V01`
+- mean net directional SPY-excess: **+1.7035%**
+- median: **-0.6438%**
+- 10% trimmed mean: **+0.6244%**
+- hit rate: **47.83%**
+- issuer-clustered 95% bootstrap CI: **[-0.6331%, +4.3043%]**
+- top-3 positive contribution share: **45.08%**
 
-Planned authoritative backtest:
+Frozen H1 pilot gate: **`INCONCLUSIVE`**.
 
-`M6.2-P2 H1 Outcome Extraction v0.1R - 46 PIT PASS - NO ORDERS`
+Interpretation: the simple continuation hypothesis remains plausible and positively skewed, but the pilot does not establish a statistically defensible positive mean because the clustered confidence interval crosses zero. H2/H3 remain closed.
 
-The corrected implementation removes future-event history calls from initialization while preserving the frozen research protocol. The DevOps two-step confirmation guard was completed, but QuantConnect rejected backtest creation because no spare Cloud backtest node was available. A second attempt returned the same capacity condition.
+## P2E — single permitted expansion
 
-Execution detail artifact:
+Frozen protocol:
 
-`M6.2_P2_EXECUTION_STATUS.md`
+`M6.2_P2E_SAMPLE_EXPANSION_PROTOCOL_V0_1.md`
 
-**H1 remains `NOT RUN / NOT CALIBRATED`. No alpha or profitability conclusion is permitted from the capacity error.**
+Frozen manifest schema:
+
+`M6.2_P2E_EXPANSION_MANIFEST_SCHEMA_V0_1.md`
+
+### Locked expansion design
+
+P2E adds exactly **125 candidate events** before mechanical/PIT exclusions:
+
+- 25 E1 Clinical / Regulatory
+- 25 E2 Earnings / Guidance
+- 25 E3 Contract / Capacity
+- 25 E4 Strategic / Product
+- 25 E5 M&A / Policy
+
+Each category contributes exactly 5 candidates for each calendar year 2021–2025. Candidate identity is selected from source-defined populations by a deterministic SHA-256 ranking, not from remembered winners or price screens.
+
+Across the combined pilot + expansion candidate manifest, one ticker may contribute at most 2 events.
+
+The same $5 price gate, prior-20 median $20M daily-dollar-volume gate, PIT provenance rules, SPY benchmark, direction rule, T+1/T+3/T+5 horizons and 10/25/50 bps cost assumptions remain unchanged.
+
+### Critical replication rule
+
+The final H1 decision is based on the **new P2E expansion cohort only**. The 46 pilot observations may be pooled afterward for a secondary precision estimate but cannot determine the final gate.
+
+A valid empirical expansion adjudication requires at least **90 new `PIT_PASS` events**.
+
+After a valid P2E run, only two research conclusions are permitted:
+
+- `FINAL_GO` — expansion-only T+3 mean > 0, trimmed mean > 0, issuer-clustered 95% CI excludes zero positively, and horizon/concentration diagnostics do not contradict continuation.
+- `FINAL_NO_GO` — execution-integrity minimum is met but any required `FINAL_GO` condition fails.
+
+There is no second `INCONCLUSIVE` expansion round. If fewer than 90 new events are PIT-valid/data-complete, classify `DESIGN_NOT_EXECUTABLE_AT_REQUIRED_COVERAGE`; H2/H3 remain closed and no hand-picked rescue sample is allowed.
 
 ## Locked methodological decisions
 
-1. The 46 `PIT_PASS` IDs are the **frozen primary H1 sample** for M6.2-P2.
-2. Do not add replacement events for the two non-primary records.
-3. Do not alter the $5 price gate, $20M prior-20 median daily dollar-volume gate, or ticker-frequency cap based on outcomes.
-4. Do not alter any frozen decision timestamp after seeing returns.
-5. `E3-GOOGL-20240426` stays in the audit trail and remains excluded from primary labels unless its timestamp is independently resolved without using subsequent price behavior.
-6. `E4-META-20240418` stays `PIT_FAIL` in this sample; a future protocol may define a different event-relative entry rule only on a newly frozen sample.
-7. No post-entry return, MFE/MAE, win/loss label, or outcome-dependent sample choice was used in P1/P1.5.
-8. Do not change P2 methodology merely because QuantConnect compute capacity is temporarily unavailable.
+1. Do not change the pilot sample after seeing P2 outcomes.
+2. Do not promote Clinical/Regulatory or any other category because a few pilot events contributed large gains.
+3. Do not introduce GPT catalyst grade, semantic score, RVOL, analyst revision, technical indicators, PROBE/CONFIRM or category-return filters before final H1 adjudication.
+4. Do not select P2E candidates from known winners or from post-event price screens.
+5. Do not reuse pilot outcomes as the primary validation cohort.
+6. Do not conduct a second sample expansion if P2E fails the final gate.
+7. Mechanical/PIT failures remain in the audit trail and are not replaced after outcomes are known.
 
 ## Next gate
 
-`M6.2-P2 — Execute exact v0.1R and adjudicate H1`
+`M6.2-P2E-A — Build and freeze the 125-event source-defined expansion candidate manifest`
 
-When a Cloud backtest node is available, rerun the exact persisted v0.1R source. First verify extraction integrity (`Expected=46`, exact data-limited IDs, zero orders, entry timing), then evaluate the frozen H1 metrics.
+The next work item is candidate discovery only. It must populate the frozen manifest fields and hash-ranked category-year cells without calculating any post-entry return, MFE/MAE, win/loss or strategy PnL.
 
-- `GO` → broader out-of-sample replication before H2.
-- `INCONCLUSIVE` → only one pre-specified sample-expansion step; no feature mining.
-- `NO-GO` → stop H2/H3.
+Only after the 125-event candidate manifest is frozen may the existing QuantConnect mechanical eligibility gate and PIT provenance audit be applied.
 
 ## Research boundary
 
-P1.5 establishes point-in-time admissibility for 46 events. The frozen P2 protocol defines how H1 will be tested. **Neither establishes alpha, profitability, win rate, expected return, or a validated trading strategy until the corrected P2 run completes.**
+The 46-event P2 result is a pilot with an `INCONCLUSIVE` H1 classification. The P2E protocol is now fixed before any new-event outcome extraction. **No production-alpha, position-sizing or live-trading claim is established at this stage.**
