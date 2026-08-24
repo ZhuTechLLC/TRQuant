@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "review_date": "2026-08-23",
   "scope": "all_registered_cases",
   "case_count": 21,
   "gate": "research/investment_cases/library_reviews/decision_grade_gate_v1.md",
   "promotion_mode": "explicit_non_scoring",
   "summary": {
-    "READY_FOR_DECISION_GRADE_APPROVAL": 1,
-    "NEAR_READY_REMEDIATION": 3,
+    "READY_FOR_DECISION_GRADE_APPROVAL": 2,
+    "NEAR_READY_REMEDIATION": 2,
     "EVENT_BLOCKED": 7,
     "EVIDENCE_BLOCKED": 6,
     "REFERENCE_COUNTEREXAMPLE": 4,
@@ -15,8 +15,8 @@
   },
   "cases": [
     {"case_id":"US-TSM-2025-2026","outcome":"READY_FOR_DECISION_GRADE_APPROVAL","primary_blocker":"explicit_founder_or_reviewer_approval_of_action_sizing_kill_criteria"},
+    {"case_id":"US-MU-2026","outcome":"READY_FOR_DECISION_GRADE_APPROVAL","primary_blocker":"explicit_founder_or_reviewer_approval_of_start_small_sizing_add_trim_kill_framework","review_artifact":"research/investment_cases/US/MU/reviews/2026-08-23_decision_grade_candidate_review.md"},
     {"case_id":"US-CRWV-2025-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"deterministic_historical_valuation_share_count_recheck_and_capital_conversion_sizing"},
-    {"case_id":"US-MU-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"normalized_FY27_margin_eps_band_plus_explicit_sizing_trim_exit_framework"},
     {"case_id":"US-HTFL-2025-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"canonical_forward_expectations_product_level_attach_asp_and_current_sizing"},
     {"case_id":"US-NVDA-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026_08_26_FY27_Q2_results"},
     {"case_id":"US-ALNY-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"post_Q2_ATTR_CM_new_patient_persistence_and_competitive_share"},
@@ -35,6 +35,14 @@
     {"case_id":"CN_A-002747-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"humanoid_early_stage_and_nonrecurring_turnaround_noise"},
     {"case_id":"CN_A-002536-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"canonical_source_and_availability_date_cleanup_before_any_zero_capital_decision_grade_promotion"},
     {"case_id":"CN_A-002520-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"canonical_annual_report_audit_source_and_availability_date_cleanup_before_zero_capital_promotion"}
+  ],
+  "completed_remediation": [
+    {
+      "case_id":"US-MU-2026",
+      "date":"2026-08-23",
+      "changes":["normalized_FY26_Q4_period_semantics","added_current_FY27_FY28_market_expectation_evidence","added_expected_return_scenarios","added_provisional_sizing_add_hold_trim_framework","recorded_decision_grade_candidate_decision"],
+      "result":"READY_FOR_DECISION_GRADE_APPROVAL"
+    }
   ],
   "skill_evolution": {
     "supported_lessons": [
