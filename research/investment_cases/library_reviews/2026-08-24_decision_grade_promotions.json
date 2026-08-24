@@ -1,0 +1,40 @@
+{
+  "review_date": "2026-08-24",
+  "review_type": "decision_grade_promotion_update",
+  "prior_review": "research/investment_cases/library_reviews/2026-08-23_case_library_decision_grade_review.md",
+  "promotions": [
+    {
+      "case_id": "US-TSM-2025-2026",
+      "from": "research_complete",
+      "to": "decision_grade",
+      "action": "start_small_conditional",
+      "live_price_usd": 407.10,
+      "live_change_pct": -2.83,
+      "order_created": false,
+      "approval_record": "research/investment_cases/US/TSM/decisions.jsonl#TSM-D006",
+      "promotion_review": "research/investment_cases/US/TSM/reviews/2026-08-24_decision_grade_promotion.md"
+    },
+    {
+      "case_id": "US-MU-2026",
+      "from": "research_complete",
+      "to": "decision_grade",
+      "action": "start_small_conditional_intraday_reunderwrite_before_execution",
+      "live_price_usd": 894.0,
+      "live_change_pct": -7.53,
+      "order_created": false,
+      "approval_record": "research/investment_cases/US/MU/decisions.jsonl#MU-D003",
+      "promotion_review": "research/investment_cases/US/MU/reviews/2026-08-24_decision_grade_promotion.md",
+      "freshness_review": "research/investment_cases/US/MU/reviews/2026-08-24_intraday_promotion_freshness_check.md"
+    }
+  ],
+  "library_status": {
+    "canonical_cases": 21,
+    "decision_grade": 2,
+    "research_complete": 19
+  },
+  "next_evidence_nodes": [
+    "2026-08-26_NVDA_FY27_Q2",
+    "2026-08-28_robotics_liquid_cooling_joint_reunderwrite"
+  ],
+  "orders_created": false
+}
