@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "review_date": "2026-08-23",
+  "scope": "all_registered_cases",
+  "case_count": 21,
+  "gate": "research/investment_cases/library_reviews/decision_grade_gate_v1.md",
+  "promotion_mode": "explicit_non_scoring",
+  "summary": {
+    "READY_FOR_DECISION_GRADE_APPROVAL": 1,
+    "NEAR_READY_REMEDIATION": 3,
+    "EVENT_BLOCKED": 7,
+    "EVIDENCE_BLOCKED": 6,
+    "REFERENCE_COUNTEREXAMPLE": 4,
+    "DECISION_GRADE_PROMOTED": 0
+  },
+  "cases": [
+    {"case_id":"US-TSM-2025-2026","outcome":"READY_FOR_DECISION_GRADE_APPROVAL","primary_blocker":"explicit_founder_or_reviewer_approval_of_action_sizing_kill_criteria"},
+    {"case_id":"US-CRWV-2025-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"deterministic_historical_valuation_share_count_recheck_and_capital_conversion_sizing"},
+    {"case_id":"US-MU-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"normalized_FY27_margin_eps_band_plus_explicit_sizing_trim_exit_framework"},
+    {"case_id":"US-HTFL-2025-2026","outcome":"NEAR_READY_REMEDIATION","primary_blocker":"canonical_forward_expectations_product_level_attach_asp_and_current_sizing"},
+    {"case_id":"US-NVDA-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026_08_26_FY27_Q2_results"},
+    {"case_id":"US-ALNY-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"post_Q2_ATTR_CM_new_patient_persistence_and_competitive_share"},
+    {"case_id":"CN_A-300602-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026_08_26_NVDA_macro_and_2026_08_28_joint_liquid_cooling_reunderwrite","secondary_blockers":["canonical_filing_reconciliation","standalone_AI_liquid_cooling_economics"]},
+    {"case_id":"CN_A-002600-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026H1_full_financial_reunderwrite","secondary_blockers":["standalone_AI_liquid_cooling_robot_economics"]},
+    {"case_id":"CN_A-002979-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026H1_full_cash_flow_and_balance_sheet","secondary_blockers":["standalone_robot_revenue_margin_customer_concentration"]},
+    {"case_id":"CN_A-688017-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026H1_full_financials_and_cash_conversion","secondary_blockers":["current_humanoid_revenue_share","architecture_supplier_mix"]},
+    {"case_id":"HK-01688-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026H1_operating_results","secondary_blockers":["A_H_discount_sustainability","standalone_AI_robot_economics"]},
+    {"case_id":"HK-09880-2026","outcome":"EVENT_BLOCKED","primary_blocker":"2026_08_28_interim_results","secondary_blockers":["humanoid_margin","cash_burn_runway","customer_concentration"]},
+    {"case_id":"CN_A-301252-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"robot_thermal_small_batch_to_profitable_scale_conversion"},
+    {"case_id":"CN_A-688322-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"robot_vision_revenue_reacceleration_R_and_D_leverage_and_cash_conversion"},
+    {"case_id":"CN_A-601689-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"separate_robot_actuator_and_AI_liquid_cooling_economics_materiality"},
+    {"case_id":"CN_A-002472-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"ownership_adjusted_huandong_humanoid_revenue_profit_value_capture"},
+    {"case_id":"CN_A-600580-2026","outcome":"EVIDENCE_BLOCKED","primary_blocker":"batch_robot_revenue_and_liquid_cooling_commercialization_economics"},
+    {"case_id":"CN_A-002896-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"current_humanoid_customer_batch_economics_unverified_and_financial_deterioration"},
+    {"case_id":"CN_A-002747-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"humanoid_early_stage_and_nonrecurring_turnaround_noise"},
+    {"case_id":"CN_A-002536-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"canonical_source_and_availability_date_cleanup_before_any_zero_capital_decision_grade_promotion"},
+    {"case_id":"CN_A-002520-2026","outcome":"REFERENCE_COUNTEREXAMPLE","primary_blocker":"canonical_annual_report_audit_source_and_availability_date_cleanup_before_zero_capital_promotion"}
+  ],
+  "skill_evolution": {
+    "supported_lessons": [
+      {
+        "id": "supplier_evidence_conversion_ladder",
+        "principle": "Supplier evidence should progress from capability through design-in, validation, batch supply, material revenue, margin, cash conversion and EPS revision before it supports a full equity thesis.",
+        "status": "SUPPORTED_CASE_LAYER",
+        "core_skill_change": false
+      }
+    ],
+    "candidate_lessons": [
+      "robot_BOM_claims_should_be_keyed_by_model_year_component",
+      "parent_subsidiary_robotics_value_capture_requires_ownership_and_dilution_adjustment",
+      "dual_listed_operating_company_can_support_different_security_actions",
+      "AI_compute_and_humanoid_active_cooling_convergence_as_cross_theme_map"
+    ],
+    "no_duplicate_core_rules": [
+      "business_quality_vs_stock_attractiveness",
+      "orders_revenue_vs_shareholder_cash_flow",
+      "price_to_operating_outcome_valuation_bridge",
+      "deliberate_no_action",
+      "event_as_reunderwrite_trigger"
+    ]
+  },
+  "orders_created": false,
+  "automatic_status_promotions": false
+}
