@@ -1,0 +1,94 @@
+{
+  "schema_version": "counterexample_case_import_manifest_v1",
+  "generated_at": "2026-08-28T13:55:00Z",
+  "staging_branch": "case-library/counterexamples-20260828",
+  "purpose": "Remove winner/survivorship bias before cross-case outcome review.",
+  "canonical_write_authority": "TRQuant Research Control V1 only",
+  "staging_must_not_modify_registry": true,
+  "expected_pre_import_state": {
+    "us_registry_cases": 29,
+    "v1_native_cases": 29,
+    "integrity_error_cases": 0
+  },
+  "imports": [
+    {
+      "ticker": "PTON",
+      "case_id": "US-PTON-20260828-PANDEMIC-PULLFORWARD-CHASE-v1",
+      "case_path": "research/investment_cases/US/PTON/case.json",
+      "case_blob_sha": "580990378ebb9101d520b94de70f784547ee2efa",
+      "evidence_path": "research/investment_cases/US/PTON/evidence.jsonl",
+      "evidence_blob_sha": "efe3cf191c813ea64e7070e44d3f6afb3c0d417f",
+      "review_path": "research/investment_cases/US/PTON/reviews/PTON-R001.json",
+      "mode": "historical_analogue_created_2026",
+      "target_lifecycle": "research_complete",
+      "target_decision_state": "NO_ACTION",
+      "failure_mode": "wrong_chase_demand_pullforward"
+    },
+    {
+      "ticker": "META",
+      "case_id": "US-META-20260828-BROKEN-THESIS-REIGNITION-v1",
+      "case_path": "research/investment_cases/US/META/case.json",
+      "case_blob_sha": "5e94d9b186e1c0a060f63a4b6ac205691d5e7edc",
+      "evidence_path": "research/investment_cases/US/META/evidence.jsonl",
+      "evidence_blob_sha": "26670cf1a3289eed01986b7d89193ae884f84866",
+      "review_path": "research/investment_cases/US/META/reviews/META-R001.json",
+      "mode": "historical_analogue_created_2026",
+      "target_lifecycle": "research_complete",
+      "target_decision_state": "NO_ACTION",
+      "failure_mode": "broken_thesis_then_reignition"
+    },
+    {
+      "ticker": "WBA",
+      "case_id": "US-WBA-20260828-VALUE-DIVIDEND-TRAP-v1",
+      "case_path": "research/investment_cases/US/WBA/case.json",
+      "case_blob_sha": "bfc794d44bcd055a9851a8f6dd295f91e1fdcc9b",
+      "evidence_path": "research/investment_cases/US/WBA/evidence.jsonl",
+      "evidence_blob_sha": "f647fffbe5d664a7801e07879af5fefca3881ce5",
+      "review_path": "research/investment_cases/US/WBA/reviews/WBA-R001.json",
+      "mode": "historical_analogue_created_2026",
+      "target_lifecycle": "research_complete",
+      "target_decision_state": "NO_ACTION",
+      "failure_mode": "value_dividend_trap"
+    },
+    {
+      "ticker": "FRC",
+      "case_id": "US-FRC-20260828-DEPOSIT-RUN-TERMINAL-FAILURE-v1",
+      "case_path": "research/investment_cases/US/FRC/case.json",
+      "case_blob_sha": "7d79442b3b4451db8a6de69c1b878a9867cd3f2e",
+      "evidence_path": "research/investment_cases/US/FRC/evidence.jsonl",
+      "evidence_blob_sha": "4d6361645fcdc438a910a708fb957a764f4e9cb3",
+      "review_path": "research/investment_cases/US/FRC/reviews/FRC-R001.json",
+      "mode": "historical_analogue_created_2026",
+      "target_lifecycle": "research_complete",
+      "target_decision_state": "NO_ACTION",
+      "failure_mode": "correct_avoid_terminal_failure"
+    },
+    {
+      "ticker": "HTFL",
+      "mode": "restore_original_historical_assets_then_append_review",
+      "manifest_path": "research/investment_cases/US/HTFL/backfill_manifest_20260828.json",
+      "manifest_blob_sha": "c39d5b024ad80b47ccba491ff86c1620205af284",
+      "source_branch": "case-library/htfl-migration-20260818",
+      "preserve_original_history": true,
+      "append_review_type": "missed_opportunity_classification_error",
+      "failure_mode": "false_new_ignition_classification_attention_failure"
+    }
+  ],
+  "canonical_sequence": [
+    "verify Research Control HEALTHY, MATCH, write_eligible=true and 29 US V1-native cases",
+    "for PTON and META verify get_case_record=NOT_FOUND then confirm=false returns CREATE_INITIAL_CASE",
+    "persist PTON, META, WBA and FRC through record_case_review using evidence ledger and historical-analogue provenance",
+    "restore HTFL original Git assets from preserved source branch without rewriting historical decisions",
+    "append HTFL missed-opportunity/classification-error review only after restoration",
+    "reread all five cases",
+    "audit PIT/evidence timeline",
+    "verify target state: 34 US cases, all V1 native, zero integrity errors, clean journals, HEALTHY/MATCH/write_eligible"
+  ],
+  "forbidden": [
+    "do not merge staging branch directly into old main registry",
+    "do not backdate reconstructed recommendations",
+    "do not promote historical analogues to decision_grade or postmortem_complete automatically",
+    "do not rewrite HTFL original decisions/evidence/timeline/valuation history",
+    "do not infer trade authority from historical analogue status"
+  ]
+}
