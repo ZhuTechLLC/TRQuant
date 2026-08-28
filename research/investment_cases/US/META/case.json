@@ -1,0 +1,21 @@
+{
+  "schema_version":"case_record_v1",
+  "case_id":"US-META-20260828-BROKEN-THESIS-REIGNITION-v1",
+  "case_version":1,
+  "as_of":"2026-08-28T13:38:00Z",
+  "lifecycle":"research_complete",
+  "current_decision_state":"NO_ACTION",
+  "identity":{"schema_version":"us_security_ref_v1","case_id":"US-META-20260828-BROKEN-THESIS-REIGNITION-v1","ticker":"META","issuer_name":"Meta Platforms, Inc.","market":"US","listing_venue":"NASDAQ","cik":null,"figi":null,"aliases":[],"identity_as_of":"2026-08-28T13:38:00Z"},
+  "dominant_variable":"Whether expense discipline and core ad monetization could recover faster than the market expected while Reality Labs losses remained bounded enough for consolidated margins and FCF to re-accelerate.",
+  "business_thesis":"Historical analogue: a broken thesis can become investable again when the dominant variables genuinely change. Meta's 2022 deterioration was followed by explicit cost discipline and a large recovery in revenue growth and operating margin.",
+  "counter_thesis":"A rebound could have been only cyclical or multiple-driven if ad demand recovered without durable cost discipline, or if Reality Labs and AI capex absorbed the restored operating leverage.",
+  "market_expectation_assessment":"Retrospective reconstruction. The case is useful because 'correct avoid' in 2022 should not become a permanent exclusion once evidence on costs, margins and revenue trend reverses.",
+  "valuation_framework":"Compare the depressed 2022 earnings/FCF expectations with normalized ad revenue growth, consolidated operating margin, capex intensity and FCF after the Year of Efficiency. Treat multiple re-rating as secondary to earnings-revision evidence.",
+  "value_driver_chain":["user engagement","ad impressions and pricing","revenue growth","cost discipline","Reality Labs losses","AI/infrastructure capex","operating margin","free cash flow","per-share value"],
+  "risks":["reacceleration proves temporary","capex re-expands faster than monetization","Reality Labs losses persist","regulatory/platform risk","multiple outruns revisions"],
+  "kill_criteria":["Revenue reacceleration fades while expense growth reaccelerates.","Operating margin improvement reverses without offsetting long-duration growth evidence.","AI and Reality Labs investment grows materially faster than monetization and FCF.","Valuation re-rates materially faster than durable earnings revisions."],
+  "current_evidence_refs":["META-E001","META-E002","META-E003"],
+  "unresolved_evidence_gaps":["Exact contemporaneous 2022-2023 consensus distributions are not fully persisted.","No contemporaneous TRQuant recommendation is asserted."],
+  "candidate_lesson_refs":[],"latest_review_ref":"META-R001","latest_decision_ref":null,"latest_valuation_ref":null,"monitoring_refs":[],"external_experiment_refs":[],"external_market_context_refs":[],
+  "provenance":{"actor":"GPT-5.6 Sol","generated_at":"2026-08-28T13:38:00Z","base_commit":"main","repo_commit":"STAGING_BRANCH","note":"historical analogue created in 2026; not evidence of contemporaneous TRQuant recommendation"}
+}
