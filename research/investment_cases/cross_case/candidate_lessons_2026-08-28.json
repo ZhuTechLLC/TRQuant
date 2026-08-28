@@ -1,42 +1,136 @@
 {
   "schema_version": "cross_case_lesson_registry_v1",
   "as_of": "2026-08-28",
-  "research_control_source_commit": "f2bc6efa61180e24a0b3b82c3a136d484b4554b1",
-  "dataset": {"market":"US","case_count":40,"v1_native_count":40,"foundation_ready":true},
+  "research_control_source_commit": "cbfdd1de748d83a03b5ce6f507cc3255b85e1ea3",
+  "dataset": {
+    "market": "US",
+    "case_count": 40,
+    "v1_native_count": 40,
+    "foundation_ready": true,
+    "p1_1d_cycle_1_complete": true
+  },
   "lessons": [
     {
-      "lesson_id":"CCL-20260828-L01-NORMALIZE-VALUATION-DENOMINATOR",
-      "state":"supported",
-      "claim":"Normalize earnings/cash-flow denominator and capital structure before interpreting headline valuation multiples.",
-      "supporting_cases":["MU","WBA","OXY","FRC","COST","INTC"],
-      "validation_mode":"economic_regime_conditioned_quantitative_validation",
-      "validation_ref":{"project_id":35759404,"backtest_id":"6defddb2f3357eddc476a1eba5a042ed","result_sha256":"dad1001dc923eb9cb4f2f7934785185be32d3f234bfbb38941bd2e035b55bb24","role":"QV02_SIMPLE_FCF_EARNINGS_PROXY"},
-      "quant_status":"simple_fcf_to_earnings_quality_proxy_rejected; explicit cyclical_financing_lifecycle conditioning required",
-      "promotion_eligible_now":false
+      "lesson_id": "CCL-20260828-L01-NORMALIZE-VALUATION-DENOMINATOR",
+      "state": "supported",
+      "claim": "Normalize earnings/cash-flow denominator and capital structure before interpreting headline valuation multiples.",
+      "supporting_cases": ["MU", "WBA", "OXY", "FRC", "COST", "INTC"],
+      "validation_mode": "economic_regime_conditioned_quantitative_validation",
+      "validation_ref": {
+        "project_id": 35759404,
+        "backtest_id": "6defddb2f3357eddc476a1eba5a042ed",
+        "result_sha256": "dad1001dc923eb9cb4f2f7934785185be32d3f234bfbb38941bd2e035b55bb24",
+        "role": "QV02_SIMPLE_FCF_EARNINGS_PROXY"
+      },
+      "quant_status": "simple_fcf_to_earnings_quality_proxy_rejected; explicit cyclical_financing_lifecycle conditioning required",
+      "promotion_eligible_now": false
     },
     {
-      "lesson_id":"CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL",
-      "state":"supported",
-      "claim":"Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
-      "supporting_cases":["CRWV","ALNY","INTC","AZO","OXY","NVDA"],
-      "validation_mode":"quantitative_cross_section",
-      "validation_refs":[{"project_id":35758787,"backtest_id":"a80785079574e41f7f076505d5c96cf0","result_sha256":"c0488bd0ca40119978a6df05ef8c3f1d15121d30b14da8c8bca2d89878f950c5","role":"QV01_V1"},{"project_id":35759236,"backtest_id":"ac766a54491b4029624618082c43a618","result_sha256":"2b507a2cd5a18fdef83d576d32123b5fac1ed36c2a32f535d458e0d74bfdec1f","role":"QV01_DIAGNOSTIC_V2"}],
-      "quant_status":"supported_underwriting_principle_universal_factor_rejected",
-      "promotion_eligible_now":false
+      "lesson_id": "CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL",
+      "state": "supported",
+      "claim": "Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
+      "supporting_cases": ["CRWV", "ALNY", "INTC", "AZO", "OXY", "NVDA"],
+      "validation_mode": "quantitative_cross_section",
+      "validation_refs": [
+        {
+          "project_id": 35758787,
+          "backtest_id": "a80785079574e41f7f076505d5c96cf0",
+          "result_sha256": "c0488bd0ca40119978a6df05ef8c3f1d15121d30b14da8c8bca2d89878f950c5",
+          "role": "QV01_V1"
+        },
+        {
+          "project_id": 35759236,
+          "backtest_id": "ac766a54491b4029624618082c43a618",
+          "result_sha256": "2b507a2cd5a18fdef83d576d32123b5fac1ed36c2a32f535d458e0d74bfdec1f",
+          "role": "QV01_DIAGNOSTIC_V2"
+        }
+      ],
+      "quant_status": "supported_underwriting_principle_universal_factor_rejected; lifecycle_conditioning_required",
+      "promotion_eligible_now": true,
+      "promotion_scope": "underwriting principle only; not a universal ranking factor"
     },
     {
-      "lesson_id":"CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
-      "state":"supported",
-      "claim":"Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible; research-state labels must not mechanically create capital authority.",
-      "supporting_cases":["HTFL","META","NVDA","PTON","FRC"],
-      "validation_mode":"case_regression_and_state_machine",
-      "validation_refs":[{"project_id":35478113,"backtest_id":"26799faa3f56a4fb29940dabf20f2a3a","role":"M2_state_capital_allocation_counterevidence"},{"project_id":35478581,"backtest_id":"9c1913333c05d11a00a35401cdf03d8e","role":"M4_strict_oos_capital_weight_counterevidence"}],
-      "promotion_eligible_now":false
+      "lesson_id": "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
+      "state": "supported",
+      "claim": "Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible; research-state labels must not mechanically create capital authority.",
+      "supporting_cases": ["HTFL", "META", "NVDA", "PTON", "FRC"],
+      "validation_mode": "case_regression_state_machine_and_production_projection",
+      "validation_refs": [
+        {
+          "project_id": 35478113,
+          "backtest_id": "26799faa3f56a4fb29940dabf20f2a3a",
+          "role": "M2_state_capital_allocation_counterevidence"
+        },
+        {
+          "project_id": 35478581,
+          "backtest_id": "9c1913333c05d11a00a35401cdf03d8e",
+          "role": "M4_strict_oos_capital_weight_counterevidence"
+        },
+        {
+          "research_control_commit": "cbfdd1de748d83a03b5ce6f507cc3255b85e1ea3",
+          "role": "P1_1C_production_research_state_projection"
+        }
+      ],
+      "promotion_eligible_now": true,
+      "promotion_scope": "research-state protocol; no capital authority"
     },
-    {"lesson_id":"CCL-20260828-L04-REVISION-VS-RERATING","state":"candidate","claim":"Decompose catalyst response into estimate revision, price change, multiple rerating and price acceptance; test whether revisions outrunning rerating create better forward asymmetry.","supporting_cases":["HTFL","MU","NVDA","COST","ALNY"],"validation_mode":"pit_event_study","promotion_eligible_now":false},
-    {"lesson_id":"CCL-20260828-L05-GROWTH-PERSISTENCE-MECHANISM","state":"candidate","claim":"Classify high growth by persistence mechanism rather than headline rate, separating pull-forward, recurring installed-base, contracted, second-S-curve, structural value-pool and cyclical-scarcity growth.","supporting_cases":["PTON","HTFL","MU","NVDA","CRWV"],"validation_mode":"ontology_then_quantitative_validation","promotion_eligible_now":false},
-    {"lesson_id":"CCL-20260828-L06-PRICE-ZONE-REQUIRES-EVIDENCE-STATE","state":"candidate","claim":"Price zones should be interpreted jointly with thesis evidence and opportunity state; crossing a price threshold alone must not trigger a buy, add, trim or exit.","supporting_cases":["ALNY","CRWV","MU","VRT","CEG"],"validation_mode":"repeated_investment_result_reviews_then_counterexample_search","promotion_eligible_now":false},
-    {"lesson_id":"CCL-20260828-L07-LIFECYCLE-CONDITIONED-CONVERSION","state":"candidate","claim":"Per-share conversion must be conditioned on lifecycle/economic model; negative-FCF growth companies should not be ranked on the same contemporaneous FCF-yield framework used for mature positive-FCF companies.","supporting_cases":["CRWV","ALNY","INTC","NVDA","AZO","OXY"],"validation_mode":"cross_case_plus_stage_conditioned_quantitative_validation","validation_ref":{"project_id":35759236,"backtest_id":"ac766a54491b4029624618082c43a618","role":"QV01_DIAGNOSTIC_V2"},"promotion_eligible_now":false}
+    {
+      "lesson_id": "CCL-20260828-L04-REVISION-VS-RERATING",
+      "state": "candidate",
+      "claim": "Decompose catalyst response into estimate revision, price change, multiple rerating and price acceptance; test whether revisions outrunning rerating create better forward asymmetry.",
+      "supporting_cases": ["HTFL", "MU", "NVDA", "COST", "ALNY"],
+      "validation_mode": "pit_event_study",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L05-GROWTH-PERSISTENCE-MECHANISM",
+      "state": "candidate",
+      "claim": "Classify high growth by persistence mechanism rather than headline rate, separating pull-forward, recurring installed-base, contracted, second-S-curve, structural value-pool and cyclical-scarcity growth.",
+      "supporting_cases": ["PTON", "HTFL", "MU", "NVDA", "CRWV"],
+      "validation_mode": "ontology_then_quantitative_validation",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L06-PRICE-ZONE-REQUIRES-EVIDENCE-STATE",
+      "state": "supported",
+      "claim": "Price zones should be interpreted jointly with thesis evidence and opportunity state; crossing a price threshold alone must not trigger a buy, add, trim or exit.",
+      "supporting_cases": ["ALNY", "CRWV", "MU", "VRT", "CEG"],
+      "validation_mode": "cross_case_investment_result_review",
+      "validation_ref": {
+        "path": "research/investment_cases/cross_case/P1_1D_OUTCOME_LEARNING_CYCLE_2026-08-28.md",
+        "cutoff": "2026-08-27"
+      },
+      "validation_scope": "supported process/governance rule; not an alpha or return prediction",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L07-LIFECYCLE-CONDITIONED-CONVERSION",
+      "state": "supported",
+      "claim": "Per-share conversion must be conditioned on lifecycle/economic model; negative-FCF growth companies should not be ranked on the same contemporaneous FCF-yield framework used for mature positive-FCF companies.",
+      "supporting_cases": ["CRWV", "ALNY", "INTC", "NVDA", "AZO", "OXY"],
+      "validation_mode": "cross_case_plus_stage_conditioned_quantitative_validation",
+      "validation_ref": {
+        "project_id": 35759236,
+        "backtest_id": "ac766a54491b4029624618082c43a618",
+        "result_sha256": "2b507a2cd5a18fdef83d576d32123b5fac1ed36c2a32f535d458e0d74bfdec1f",
+        "role": "QV01_DIAGNOSTIC_V2"
+      },
+      "quant_status": "positive_fcf_subset_supports_conversion_signal; non_positive_fcf_subset_rejects_same_factor_framework",
+      "promotion_eligible_now": false
+    }
   ],
-  "explicit_rejections":["large_earnings_gap_implies_chase","low_pe_implies_value","high_valuation_implies_avoid","once_avoid_always_avoid","headline_revenue_growth_implies_shareholder_return","crossing_entry_price_zone_implies_automatic_buy","one_universal_fcf_yield_factor_for_all_lifecycles","fcf_to_earnings_ratio_as_universal_valuation_denominator_quality_gate"]
+  "promotion_queue": [
+    "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
+    "CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL"
+  ],
+  "explicit_rejections": [
+    "large_earnings_gap_implies_chase",
+    "low_pe_implies_value",
+    "high_valuation_implies_avoid",
+    "once_avoid_always_avoid",
+    "headline_revenue_growth_implies_shareholder_return",
+    "crossing_entry_price_zone_implies_automatic_buy",
+    "one_universal_fcf_yield_factor_for_all_lifecycles",
+    "fcf_to_earnings_ratio_as_universal_valuation_denominator_quality_gate"
+  ]
 }
