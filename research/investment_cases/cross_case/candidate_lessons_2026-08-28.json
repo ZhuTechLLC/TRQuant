@@ -15,6 +15,7 @@
       "claim": "Normalize earnings/cash-flow denominator and capital structure before interpreting headline valuation multiples.",
       "supporting_cases": ["MU", "WBA", "OXY", "FRC", "COST", "INTC"],
       "validation_mode": "quantitative_cross_section",
+      "quant_status": "queued_after_qv01_diagnostic",
       "promotion_eligible_now": false
     },
     {
@@ -23,14 +24,27 @@
       "claim": "Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
       "supporting_cases": ["CRWV", "ALNY", "INTC", "AZO", "OXY", "NVDA"],
       "validation_mode": "quantitative_cross_section",
+      "validation_ref": {
+        "project_id": 35758787,
+        "backtest_id": "a80785079574e41f7f076505d5c96cf0",
+        "result_sha256": "c0488bd0ca40119978a6df05ef8c3f1d15121d30b14da8c8bca2d89878f950c5",
+        "observations": 35143,
+        "cross_sections": 71,
+        "unique_symbols": 1456
+      },
+      "quant_status": "partial_validation_requires_diagnostic_v2",
       "promotion_eligible_now": false
     },
     {
       "lesson_id": "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
       "state": "supported",
-      "claim": "Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible.",
+      "claim": "Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible; research-state labels must not mechanically create capital authority.",
       "supporting_cases": ["HTFL", "META", "NVDA", "PTON", "FRC"],
       "validation_mode": "case_regression_and_state_machine",
+      "validation_refs": [
+        {"project_id": 35478113, "backtest_id": "26799faa3f56a4fb29940dabf20f2a3a", "role": "M2_state_capital_allocation_counterevidence"},
+        {"project_id": 35478581, "backtest_id": "9c1913333c05d11a00a35401cdf03d8e", "role": "M4_strict_oos_capital_weight_counterevidence"}
+      ],
       "promotion_eligible_now": false
     },
     {
@@ -48,6 +62,14 @@
       "supporting_cases": ["PTON", "HTFL", "MU", "NVDA", "CRWV"],
       "validation_mode": "ontology_then_quantitative_validation",
       "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L06-PRICE-ZONE-REQUIRES-EVIDENCE-STATE",
+      "state": "candidate",
+      "claim": "Price zones should be interpreted jointly with thesis evidence and opportunity state; crossing a price threshold alone must not trigger a buy, add, trim or exit.",
+      "supporting_cases": ["ALNY", "CRWV", "MU", "VRT", "CEG"],
+      "validation_mode": "repeated_investment_result_reviews_then_counterexample_search",
+      "promotion_eligible_now": false
     }
   ],
   "explicit_rejections": [
@@ -55,6 +77,7 @@
     "low_pe_implies_value",
     "high_valuation_implies_avoid",
     "once_avoid_always_avoid",
-    "headline_revenue_growth_implies_shareholder_return"
+    "headline_revenue_growth_implies_shareholder_return",
+    "crossing_entry_price_zone_implies_automatic_buy"
   ]
 }
