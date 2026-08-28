@@ -1,0 +1,26 @@
+{
+  "schema_version":"historical_case_backfill_manifest_v1",
+  "ticker":"HTFL",
+  "market":"US",
+  "status":"staging_for_canonical_backfill",
+  "source_branch":"case-library/htfl-migration-20260818",
+  "source_path":"research/investment_cases/US/HTFL/",
+  "preserve_original_history":true,
+  "do_not_reconstruct_or_backdate":true,
+  "source_assets":[
+    {"path":"case.json","git_blob_sha":"fe6726f9211b81884348e88489ba7d90b2618f21"},
+    {"path":"case.md","git_blob_sha":"5f7ba127062becce440f59f01e59f1de6c76fbce"},
+    {"path":"decisions.jsonl","git_blob_sha":"43252cf39bfcb382f2fd05d42a560dc1a2fcce4b"},
+    {"path":"evidence.jsonl","git_blob_sha":"8574955eb984fc5379a251a16dac782d1471930a"},
+    {"path":"timeline.json","git_blob_sha":"79f0bf122af5d8431f1b0a19538cb1a28cdc44a3"},
+    {"path":"valuation_history.csv","git_blob_sha":"aba13ea777d2b32c2da2261ed87abae0b447310a"},
+    {"path":"reviews/","git_tree_sha":"729329a25a50bf8c8ccd112f7b7b2d89f1571aca"}
+  ],
+  "required_post_backfill_review":{
+    "review_type":"missed_opportunity_classification_error",
+    "rule":"append only after original assets are restored; do not modify prior decisions",
+    "known_outcome_context":"2026-08-13 close 31.01; 2026-08-14 open 39.06 and close 42.08; subsequent closes remained materially above the pre-event level",
+    "candidate_lesson":"false_new_ignition does not imply false_opportunity; classification rejection must hand off to a separate opportunity-state review rather than terminate attention"
+  },
+  "provenance":{"actor":"GPT-5.6 Sol","generated_at":"2026-08-28T13:45:00Z","note":"Manifest references preserved Git history; no historical asset is rewritten in staging."}
+}
