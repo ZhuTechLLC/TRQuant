@@ -15,7 +15,7 @@
       "claim": "Normalize earnings/cash-flow denominator and capital structure before interpreting headline valuation multiples.",
       "supporting_cases": ["MU", "WBA", "OXY", "FRC", "COST", "INTC"],
       "validation_mode": "quantitative_cross_section",
-      "quant_status": "queued_after_qv01_diagnostic",
+      "quant_status": "next_priority",
       "promotion_eligible_now": false
     },
     {
@@ -24,15 +24,11 @@
       "claim": "Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
       "supporting_cases": ["CRWV", "ALNY", "INTC", "AZO", "OXY", "NVDA"],
       "validation_mode": "quantitative_cross_section",
-      "validation_ref": {
-        "project_id": 35758787,
-        "backtest_id": "a80785079574e41f7f076505d5c96cf0",
-        "result_sha256": "c0488bd0ca40119978a6df05ef8c3f1d15121d30b14da8c8bca2d89878f950c5",
-        "observations": 35143,
-        "cross_sections": 71,
-        "unique_symbols": 1456
-      },
-      "quant_status": "partial_validation_requires_diagnostic_v2",
+      "validation_refs": [
+        {"project_id": 35758787, "backtest_id": "a80785079574e41f7f076505d5c96cf0", "result_sha256": "c0488bd0ca40119978a6df05ef8c3f1d15121d30b14da8c8bca2d89878f950c5", "role": "QV01_V1"},
+        {"project_id": 35759236, "backtest_id": "ac766a54491b4029624618082c43a618", "result_sha256": "2b507a2cd5a18fdef83d576d32123b5fac1ed36c2a32f535d458e0d74bfdec1f", "role": "QV01_DIAGNOSTIC_V2"}
+      ],
+      "quant_status": "supported_underwriting_principle_universal_factor_rejected",
       "promotion_eligible_now": false
     },
     {
@@ -70,6 +66,15 @@
       "supporting_cases": ["ALNY", "CRWV", "MU", "VRT", "CEG"],
       "validation_mode": "repeated_investment_result_reviews_then_counterexample_search",
       "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L07-LIFECYCLE-CONDITIONED-CONVERSION",
+      "state": "candidate",
+      "claim": "Per-share conversion must be conditioned on lifecycle/economic model; negative-FCF growth companies should not be ranked on the same contemporaneous FCF-yield framework used for mature positive-FCF companies.",
+      "supporting_cases": ["CRWV", "ALNY", "INTC", "NVDA", "AZO", "OXY"],
+      "validation_mode": "cross_case_plus_stage_conditioned_quantitative_validation",
+      "validation_ref": {"project_id": 35759236, "backtest_id": "ac766a54491b4029624618082c43a618", "role": "QV01_DIAGNOSTIC_V2"},
+      "promotion_eligible_now": false
     }
   ],
   "explicit_rejections": [
@@ -78,6 +83,7 @@
     "high_valuation_implies_avoid",
     "once_avoid_always_avoid",
     "headline_revenue_growth_implies_shareholder_return",
-    "crossing_entry_price_zone_implies_automatic_buy"
+    "crossing_entry_price_zone_implies_automatic_buy",
+    "one_universal_fcf_yield_factor_for_all_lifecycles"
   ]
 }
