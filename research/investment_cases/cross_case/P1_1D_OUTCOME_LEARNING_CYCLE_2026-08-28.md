@@ -34,12 +34,11 @@ This supports `CCL-20260828-L06-PRICE-ZONE-REQUIRES-EVIDENCE-STATE` as a **suppo
 
 ## Cycle B — Per-share conversion / lifecycle conditioning
 
-Existing QV-01 evidence:
+QV-01 V2 was independently re-read from the persisted QuantConnect result:
 
-- V1: 35,143 PIT observations / 71 monthly cross-sections / 1,456 symbols.
-- Revenue-growth-only rank IC: approximately +0.003 / -0.011 / -0.021 at 20D / 60D / 120D.
-- Per-share conversion rank IC: approximately +0.028 / +0.028 / +0.041.
-- V2 independent 2024–2025 time split retained positive composite rank IC.
+- 35,143 PIT observations / 71 monthly cross-sections / 1,456 symbols.
+- Composite conversion-score rank IC: about +0.028 / +0.028 / +0.041 at 20D / 60D / 120D.
+- 2024–2025 validation split retained positive composite rank IC: about +0.031 / +0.022 / +0.017.
 - Positive-FCF subset Q5-Q1: +0.46% / +1.12% / +1.43% at 20D / 60D / 120D.
 - Non-positive-FCF subset: 60D -2.99%, 120D -4.56%, with negative rank-IC behavior.
 
@@ -49,16 +48,35 @@ The underwriting principle is supported, but a universal contemporaneous FCF-yie
 
 This upgrades `CCL-20260828-L07-LIFECYCLE-CONDITIONED-CONVERSION` from **candidate** to **supported**.
 
-## Cycle C — Reversible independent states
+## Cycle C — Valuation denominator
 
-P1-1C production reads now expose machine-readable `research_state_v1`:
+QV-02 was independently re-read from the persisted QuantConnect result:
+
+- 35,152 PIT observations / 71 monthly cross-sections / 1,351 symbols.
+- Cheap positive trailing P/E had positive cross-sectional rank IC.
+- Splitting by the simple `FCF / earnings_proxy` denominator-quality measure did **not** create stable improvement.
+- In the 2024–2025 validation split, the low-quality bucket was not consistently worse and in several return comparisons was better.
+
+### Cycle C conclusion
+
+`CCL-20260828-L01-NORMALIZE-VALUATION-DENOMINATOR` remains economically supported by heterogeneous Cases, but the simple FCF/Earnings quality proxy is **rejected**. No parameter retuning is authorized to rescue it. Future validation must explicitly condition on cycle, financing structure and lifecycle.
+
+## Cycle D — Reversible independent states
+
+P1-1C production reads expose machine-readable `research_state_v1`:
 
 - HTFL: `reunderwrite_required / underwrite_in_progress / continuation / INVESTIGATE / mixed`
 - NVDA: `monitoring / intact / continuation / INVESTIGATE / mixed`
 - FRC: `terminal_resolution / historical / none / NO_ACTION / not_applicable`
 - PTON and META remain readable historical analogues without becoming active capital signals.
 
-Together with prior M2/M4 counterevidence against mechanical state-to-capital weighting, this validates the separation of lifecycle, thesis, opportunity, decision, freshness and capital authority.
+M2 was independently re-read and shows that WATCH / INVESTIGATE / CONFIRMED do not provide a stable monotonic capital-weight mapping: several state-return differences have 95% confidence intervals crossing zero and transition errors remain economically material.
+
+M4 is **not load-bearing evidence** because its replication checksum failed and `decision_eligible=false`. Its correct role is a governance example: a failed reproducibility gate must block capital-rule promotion even when a headline return delta appears favorable.
+
+### Cycle D conclusion
+
+Together, M2 plus the production P1-1C state regressions support separation of lifecycle, thesis, opportunity, decision, freshness and capital authority.
 
 `CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES` is **supported and protocol-promotion eligible**, but is not marked `promoted` until a reusable Skill protocol update is separately approved and completed.
 
@@ -68,7 +86,7 @@ Together with prior M2/M4 counterevidence against mechanical state-to-capital we
 |---|---|
 | L01 Normalize valuation denominator | SUPPORTED; simple FCF/Earnings quality proxy rejected; not promotion-ready |
 | L02 Per-share conversion firewall | SUPPORTED; quantitative evidence strong; protocol-promotion eligible with lifecycle scope |
-| L03 Reversible independent states | SUPPORTED; production validated; protocol-promotion eligible |
+| L03 Reversible independent states | SUPPORTED; M2 + production state regression support; protocol-promotion eligible |
 | L04 Revision vs rerating | CANDIDATE; requires PIT estimate-revision event study |
 | L05 Growth persistence mechanism | CANDIDATE; ontology and historical validation still required |
 | L06 Price zone requires evidence state | **SUPPORTED PROCESS RULE**; not an alpha claim |
