@@ -2,7 +2,7 @@
 
 ## Production state
 
-Research Control currently reports:
+Research Control independently verified after the PIT metadata correction:
 
 - US Cases: 40
 - V1-native US Cases: 40
@@ -13,15 +13,19 @@ Research Control currently reports:
 - Research Control: HEALTHY
 - runtime drift: MATCH
 - write eligible: true
+- transaction journals: 0
+- initial-case journals: 0
 
-Targeted timeline audit adds a stricter requirement beyond the global status summary. Four same-day metadata timing defects were found in newly added TRQuant inference records:
+Targeted PIT timeline audits passed for all six newly added historical anchors:
 
-- KO-E003
-- AZO-E003
-- OXY-E004
-- GE-E004
+- KO — AUDITED, warnings = [], integrity_errors = []
+- AZO — AUDITED, warnings = [], integrity_errors = []
+- BBY — AUDITED, warnings = [], integrity_errors = []
+- OXY — AUDITED, warnings = [], integrity_errors = []
+- GE — AUDITED, warnings = [], integrity_errors = []
+- ATVI — AUDITED, warnings = [], integrity_errors = []
 
-The declared `available_from` timestamps were a few minutes later than the actual canonical first-recorded timestamps. Historical company/regulatory evidence is unaffected. BBY and ATVI passed targeted PIT audit.
+The earlier same-day creation-time metadata defects in KO-E003, AZO-E003, OXY-E004 and GE-E004 were corrected to the canonical first-recorded timestamps. Historical company/regulatory source availability was not changed.
 
 ## 1. Lynch coverage
 
@@ -98,19 +102,21 @@ KO, AZO, BBY, OXY, GE and ATVI are intentionally `research_complete` historical 
 
 The 40-Case dataset covers the required major archetypes and styles.
 
-### Foundation Ready — PENDING FINAL PIT CLEANUP
+### Foundation Ready — PASS / CLOSED
 
-Only four same-day metadata timestamps need correction and clean re-audit. This is the sole current Foundation blocker.
+All six targeted historical anchors pass PIT timeline audit. Research Control is HEALTHY/MATCH, all 40 US Cases are V1-native, there are zero integrity errors, no dirty library state and no leftover transaction journals.
 
-### Pattern Mining — MAY PREPARE, DO NOT PROMOTE RULES YET
+The Case Library is now sufficiently complete to serve as the foundation for Cross-Case Pattern development, Multi-Axis analogue retrieval, Investment Result Review development, candidate-lesson generation and quantitative-validation design.
 
-Framework development and taxonomy/index work may proceed. Lesson promotion should wait for the Foundation PIT cleanup and then continue with explicit counterexample testing.
+### Pattern Mining — READY TO START / MATURITY STILL ACCUMULATING
+
+Pattern Mining may begin now. Candidate lessons must continue to be tested against disconfirming Cases and should remain scoped until they survive cross-case review.
 
 ### Rule Promotion — NOT YET GLOBAL
 
-No universal screening, execution or capital-allocation rule should be promoted from the Case Library alone. Statistical claims require substantially larger independent samples.
+No universal screening, execution or capital-allocation rule should be promoted from the Case Library alone. Statistical claims require substantially larger independent samples and explicit false-positive/false-negative validation.
 
-## 7. Remaining non-blocking gaps after PIT cleanup
+## 7. Remaining non-blocking gaps
 
 1. Negative merger-arbitrage / broken-special-situation pair for ATVI.
 2. More 6-12 month governed Outcome Reviews.
