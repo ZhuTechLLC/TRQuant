@@ -1,0 +1,60 @@
+{
+  "schema_version": "cross_case_lesson_registry_v1",
+  "as_of": "2026-08-28",
+  "research_control_source_commit": "f2bc6efa61180e24a0b3b82c3a136d484b4554b1",
+  "dataset": {
+    "market": "US",
+    "case_count": 40,
+    "v1_native_count": 40,
+    "foundation_ready": true
+  },
+  "lessons": [
+    {
+      "lesson_id": "CCL-20260828-L01-NORMALIZE-VALUATION-DENOMINATOR",
+      "state": "supported",
+      "claim": "Normalize earnings/cash-flow denominator and capital structure before interpreting headline valuation multiples.",
+      "supporting_cases": ["MU", "WBA", "OXY", "FRC", "COST", "INTC"],
+      "validation_mode": "quantitative_cross_section",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL",
+      "state": "supported",
+      "claim": "Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
+      "supporting_cases": ["CRWV", "ALNY", "INTC", "AZO", "OXY", "NVDA"],
+      "validation_mode": "quantitative_cross_section",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
+      "state": "supported",
+      "claim": "Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible.",
+      "supporting_cases": ["HTFL", "META", "NVDA", "PTON", "FRC"],
+      "validation_mode": "case_regression_and_state_machine",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L04-REVISION-VS-RERATING",
+      "state": "candidate",
+      "claim": "Decompose catalyst response into estimate revision, price change, multiple rerating and price acceptance; test whether revisions outrunning rerating create better forward asymmetry.",
+      "supporting_cases": ["HTFL", "MU", "NVDA", "COST", "ALNY"],
+      "validation_mode": "pit_event_study",
+      "promotion_eligible_now": false
+    },
+    {
+      "lesson_id": "CCL-20260828-L05-GROWTH-PERSISTENCE-MECHANISM",
+      "state": "candidate",
+      "claim": "Classify high growth by persistence mechanism rather than headline rate, separating pull-forward, recurring installed-base, contracted, second-S-curve, structural value-pool and cyclical-scarcity growth.",
+      "supporting_cases": ["PTON", "HTFL", "MU", "NVDA", "CRWV"],
+      "validation_mode": "ontology_then_quantitative_validation",
+      "promotion_eligible_now": false
+    }
+  ],
+  "explicit_rejections": [
+    "large_earnings_gap_implies_chase",
+    "low_pe_implies_value",
+    "high_valuation_implies_avoid",
+    "once_avoid_always_avoid",
+    "headline_revenue_growth_implies_shareholder_return"
+  ]
+}
