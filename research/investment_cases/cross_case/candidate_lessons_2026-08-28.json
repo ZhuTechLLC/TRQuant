@@ -20,7 +20,7 @@
         "project_id": 35759404,
         "backtest_id": "6defddb2f3357eddc476a1eba5a042ed",
         "result_sha256": "dad1001dc923eb9cb4f2f7934785185be32d3f234bfbb38941bd2e035b55bb24",
-        "role": "QV02_SIMPLE_FCF_EARNINGS_PROXY"
+        "role": "QV02_SIMPLE_FCF_EARNINGS_PROXY_REJECTED"
       },
       "quant_status": "simple_fcf_to_earnings_quality_proxy_rejected; explicit cyclical_financing_lifecycle conditioning required",
       "promotion_eligible_now": false
@@ -59,16 +59,21 @@
         {
           "project_id": 35478113,
           "backtest_id": "26799faa3f56a4fb29940dabf20f2a3a",
-          "role": "M2_state_capital_allocation_counterevidence"
-        },
-        {
-          "project_id": 35478581,
-          "backtest_id": "9c1913333c05d11a00a35401cdf03d8e",
-          "role": "M4_strict_oos_capital_weight_counterevidence"
+          "result_sha256": "5901402a39d6289dd480c589d526e2a38b6e68907552ae4c19a6fd8e95ad827b",
+          "role": "M2_state_capital_allocation_non_monotonic_evidence"
         },
         {
           "research_control_commit": "cbfdd1de748d83a03b5ce6f507cc3255b85e1ea3",
           "role": "P1_1C_production_research_state_projection"
+        }
+      ],
+      "non_load_bearing_validation_refs": [
+        {
+          "project_id": 35478581,
+          "backtest_id": "9c1913333c05d11a00a35401cdf03d8e",
+          "result_sha256": "3940b1264282f977ada5dffd956e75ca808c80ae065e1817f090e1b6a433ae7d",
+          "role": "M4_failed_replication_checksum_governance_example",
+          "decision_eligible": false
         }
       ],
       "promotion_eligible_now": true,
