@@ -7,7 +7,8 @@
     "case_count": 40,
     "v1_native_count": 40,
     "foundation_ready": true,
-    "p1_1d_cycle_1_complete": true
+    "p1_1d_cycle_1_complete": true,
+    "p1_1e_lesson_promotion_complete": true
   },
   "lessons": [
     {
@@ -27,7 +28,7 @@
     },
     {
       "lesson_id": "CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL",
-      "state": "supported",
+      "state": "promoted",
       "claim": "Underwrite the bridge from business growth to shareholder cash flow and diluted per-share value after reinvestment, financing and capital allocation.",
       "supporting_cases": ["CRWV", "ALNY", "INTC", "AZO", "OXY", "NVDA"],
       "validation_mode": "quantitative_cross_section",
@@ -46,12 +47,15 @@
         }
       ],
       "quant_status": "supported_underwriting_principle_universal_factor_rejected; lifecycle_conditioning_required",
-      "promotion_eligible_now": true,
-      "promotion_scope": "underwriting principle only; not a universal ranking factor"
+      "promotion_eligible_now": false,
+      "promotion_scope": "underwriting principle only; not a universal ranking factor",
+      "promoted_into": "trquant-equity-investment-case",
+      "promotion_date": "2026-08-28",
+      "protocol_scope": "SKILL.md core principle 18; research-protocol 0I; case-lessons evidence lineage"
     },
     {
       "lesson_id": "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
-      "state": "supported",
+      "state": "promoted",
       "claim": "Lifecycle, thesis, opportunity, decision and evidence-freshness states must remain independent and evidence-reversible; research-state labels must not mechanically create capital authority.",
       "supporting_cases": ["HTFL", "META", "NVDA", "PTON", "FRC"],
       "validation_mode": "case_regression_state_machine_and_production_projection",
@@ -76,8 +80,11 @@
           "decision_eligible": false
         }
       ],
-      "promotion_eligible_now": true,
-      "promotion_scope": "research-state protocol; no capital authority"
+      "promotion_eligible_now": false,
+      "promotion_scope": "research-state protocol; no capital authority",
+      "promoted_into": "trquant-equity-investment-case",
+      "promotion_date": "2026-08-28",
+      "protocol_scope": "SKILL.md core principle 17; research-protocol 0H; investment-epistemology capital-boundary clarification"
     },
     {
       "lesson_id": "CCL-20260828-L04-REVISION-VS-RERATING",
@@ -124,10 +131,7 @@
       "promotion_eligible_now": false
     }
   ],
-  "promotion_queue": [
-    "CCL-20260828-L03-REVERSIBLE-INDEPENDENT-STATES",
-    "CCL-20260828-L02-PER-SHARE-CONVERSION-FIREWALL"
-  ],
+  "promotion_queue": [],
   "explicit_rejections": [
     "large_earnings_gap_implies_chase",
     "low_pe_implies_value",
